@@ -1,0 +1,499 @@
+{
+ "repo": "makeplane/plane",
+ "url": "https://github.com/makeplane/plane",
+ "category": "project-management",
+ "note": null,
+ "commit": "c7a5afee6afd15f16038ebda1ec1489ebd8af67d",
+ "commit_date": "2026-10-01",
+ "audited_at": "2026-10-03",
+ "tool_commit": "34d6ce1e1c1b55ea7c8895891c73553e736c6c62",
+ "stars": 59799,
+ "pushed_at": "2026-09-23",
+ "default_branch": "preview",
+ "description": "🔥🔥🔥 Open-source Jira, Linear, Monday, and ClickUp alternative. Plane is a modern project management platform to manage tasks, sprints, docs, and triage.",
+ "meta_source": "repos.ecosyste.ms",
+ "owner_type": "Organization",
+ "tms": [],
+ "tms_evidence": {},
+ "automation": [],
+ "activity": {
+  "available": true,
+  "window_days": 180,
+  "commits": 217,
+  "authors": 44,
+  "outside_commits": 56,
+  "outside_authors": 36,
+  "locale_commits": 12,
+  "outside_locale_commits": 8,
+  "outside_locale_authors": 8,
+  "bot_locale_commits": 0,
+  "last_outside_locale_commit": "2026-09-24",
+  "last_outside_commit": "2026-10-01",
+  "bot_locale_tms": {}
+ },
+ "locale_groups": [
+  {
+   "pattern": "packages/i18n/src/locales/{loc}/*.json",
+   "source": "packages/i18n/src/locales/en/*.json",
+   "source_locale": "en",
+   "mode": "icu",
+   "source_strings": 3659,
+   "locales": [
+    "cs",
+    "de",
+    "es",
+    "fr",
+    "id",
+    "it",
+    "ja",
+    "ka-ge",
+    "ko",
+    "nl",
+    "pl",
+    "pt-BR",
+    "ro",
+    "ru",
+    "sk",
+    "tr-TR",
+    "vi-VN",
+    "zh-CN",
+    "zh-TW"
+   ],
+   "findings": 11
+  }
+ ],
+ "locales": [
+  "cs",
+  "de",
+  "es",
+  "fr",
+  "id",
+  "it",
+  "ja",
+  "ka-ge",
+  "ko",
+  "nl",
+  "pl",
+  "pt-BR",
+  "ro",
+  "ru",
+  "sk",
+  "tr-TR",
+  "vi-VN",
+  "zh-CN",
+  "zh-TW"
+ ],
+ "locales_count": 19,
+ "strings_checked": 69481,
+ "findings_total": 11,
+ "findings_by_kind": {
+  "syntax": 0,
+  "renamed": 0,
+  "dropped": 9,
+  "extra": 2,
+  "broken": 0,
+  "mixed": 0,
+  "tag": 0,
+  "plural_count": 0
+ },
+ "findings_per_1k": 0.16,
+ "locales_with_findings": 9,
+ "worst_locales": [
+  {
+   "locale": "fr",
+   "findings": 2,
+   "checked": 3657
+  },
+  {
+   "locale": "ru",
+   "findings": 2,
+   "checked": 3657
+  },
+  {
+   "locale": "id",
+   "findings": 1,
+   "checked": 3657
+  },
+  {
+   "locale": "ja",
+   "findings": 1,
+   "checked": 3656
+  },
+  {
+   "locale": "ko",
+   "findings": 1,
+   "checked": 3656
+  }
+ ],
+ "per_locale": {
+  "cs": {
+   "checked": 3657,
+   "syntax": 0,
+   "renamed": 0,
+   "dropped": 0,
+   "extra": 0,
+   "broken": 0,
+   "mixed": 0,
+   "tag": 0,
+   "plural_count": 0
+  },
+  "de": {
+   "checked": 3657,
+   "syntax": 0,
+   "renamed": 0,
+   "dropped": 0,
+   "extra": 0,
+   "broken": 0,
+   "mixed": 0,
+   "tag": 0,
+   "plural_count": 0
+  },
+  "es": {
+   "checked": 3657,
+   "syntax": 0,
+   "renamed": 0,
+   "dropped": 0,
+   "extra": 0,
+   "broken": 0,
+   "mixed": 0,
+   "tag": 0,
+   "plural_count": 0
+  },
+  "fr": {
+   "checked": 3657,
+   "syntax": 0,
+   "renamed": 0,
+   "dropped": 2,
+   "extra": 0,
+   "broken": 0,
+   "mixed": 0,
+   "tag": 0,
+   "plural_count": 0
+  },
+  "id": {
+   "checked": 3657,
+   "syntax": 0,
+   "renamed": 0,
+   "dropped": 1,
+   "extra": 0,
+   "broken": 0,
+   "mixed": 0,
+   "tag": 0,
+   "plural_count": 0
+  },
+  "it": {
+   "checked": 3657,
+   "syntax": 0,
+   "renamed": 0,
+   "dropped": 0,
+   "extra": 0,
+   "broken": 0,
+   "mixed": 0,
+   "tag": 0,
+   "plural_count": 0
+  },
+  "ja": {
+   "checked": 3656,
+   "syntax": 0,
+   "renamed": 0,
+   "dropped": 1,
+   "extra": 0,
+   "broken": 0,
+   "mixed": 0,
+   "tag": 0,
+   "plural_count": 0
+  },
+  "ka-ge": {
+   "checked": 3657,
+   "syntax": 0,
+   "renamed": 0,
+   "dropped": 0,
+   "extra": 0,
+   "broken": 0,
+   "mixed": 0,
+   "tag": 0,
+   "plural_count": 0
+  },
+  "ko": {
+   "checked": 3656,
+   "syntax": 0,
+   "renamed": 0,
+   "dropped": 1,
+   "extra": 0,
+   "broken": 0,
+   "mixed": 0,
+   "tag": 0,
+   "plural_count": 0
+  },
+  "nl": {
+   "checked": 3657,
+   "syntax": 0,
+   "renamed": 0,
+   "dropped": 0,
+   "extra": 0,
+   "broken": 0,
+   "mixed": 0,
+   "tag": 0,
+   "plural_count": 0
+  },
+  "pl": {
+   "checked": 3657,
+   "syntax": 0,
+   "renamed": 0,
+   "dropped": 0,
+   "extra": 0,
+   "broken": 0,
+   "mixed": 0,
+   "tag": 0,
+   "plural_count": 0
+  },
+  "pt-BR": {
+   "checked": 3657,
+   "syntax": 0,
+   "renamed": 0,
+   "dropped": 0,
+   "extra": 0,
+   "broken": 0,
+   "mixed": 0,
+   "tag": 0,
+   "plural_count": 0
+  },
+  "ro": {
+   "checked": 3657,
+   "syntax": 0,
+   "renamed": 0,
+   "dropped": 0,
+   "extra": 0,
+   "broken": 0,
+   "mixed": 0,
+   "tag": 0,
+   "plural_count": 0
+  },
+  "ru": {
+   "checked": 3657,
+   "syntax": 0,
+   "renamed": 0,
+   "dropped": 0,
+   "extra": 2,
+   "broken": 0,
+   "mixed": 0,
+   "tag": 0,
+   "plural_count": 0
+  },
+  "sk": {
+   "checked": 3657,
+   "syntax": 0,
+   "renamed": 0,
+   "dropped": 0,
+   "extra": 0,
+   "broken": 0,
+   "mixed": 0,
+   "tag": 0,
+   "plural_count": 0
+  },
+  "tr-TR": {
+   "checked": 3657,
+   "syntax": 0,
+   "renamed": 0,
+   "dropped": 1,
+   "extra": 0,
+   "broken": 0,
+   "mixed": 0,
+   "tag": 0,
+   "plural_count": 0
+  },
+  "vi-VN": {
+   "checked": 3657,
+   "syntax": 0,
+   "renamed": 0,
+   "dropped": 1,
+   "extra": 0,
+   "broken": 0,
+   "mixed": 0,
+   "tag": 0,
+   "plural_count": 0
+  },
+  "zh-CN": {
+   "checked": 3657,
+   "syntax": 0,
+   "renamed": 0,
+   "dropped": 1,
+   "extra": 0,
+   "broken": 0,
+   "mixed": 0,
+   "tag": 0,
+   "plural_count": 0
+  },
+  "zh-TW": {
+   "checked": 3657,
+   "syntax": 0,
+   "renamed": 0,
+   "dropped": 1,
+   "extra": 0,
+   "broken": 0,
+   "mixed": 0,
+   "tag": 0,
+   "plural_count": 0
+  }
+ },
+ "examples": [
+  {
+   "locale": "ru",
+   "file": "packages/i18n/src/locales/ru/workflow.json",
+   "line": 60,
+   "key": "workflows.toasts.enable_disable.error.title",
+   "kind": "extra",
+   "missing": "",
+   "extra": "{action}",
+   "source": "Error",
+   "translation": "Ошибка {action} рабочих процессов"
+  },
+  {
+   "locale": "zh-CN",
+   "file": "packages/i18n/src/locales/zh-CN/workspace.json",
+   "line": 357,
+   "key": "workspace.members_import.summary.message.success",
+   "kind": "dropped",
+   "missing": "{plural}",
+   "extra": "",
+   "source": "Successfully added {count} member{plural} to the workspace.",
+   "translation": "成功将{count}名成员添加到工作区。"
+  },
+  {
+   "locale": "zh-TW",
+   "file": "packages/i18n/src/locales/zh-TW/workspace.json",
+   "line": 357,
+   "key": "workspace.members_import.summary.message.success",
+   "kind": "dropped",
+   "missing": "{plural}",
+   "extra": "",
+   "source": "Successfully added {count} member{plural} to the workspace.",
+   "translation": "成功將{count}名成員新增至工作區。"
+  }
+ ],
+ "parse_errors": [],
+ "findings": [
+  {
+   "locale": "fr",
+   "file": "packages/i18n/src/locales/fr/work-item-type.json",
+   "line": 152,
+   "key": "work_item_types.settings.properties.toast.enable_disable.error.message",
+   "kind": "dropped",
+   "missing": "{action}",
+   "extra": "",
+   "source": "Failed to {action} property. Please try again!",
+   "translation": "Échec de l'{action} de la propriété. Veuillez réessayer !"
+  },
+  {
+   "locale": "fr",
+   "file": "packages/i18n/src/locales/fr/work-item-type.json",
+   "line": 286,
+   "key": "work_item_types.enable_disable.toast.error.message",
+   "kind": "dropped",
+   "missing": "{action}",
+   "extra": "",
+   "source": "Failed to {action} work item type. Please try again!",
+   "translation": "Échec de l'{action} du type d'élément de travail. Veuillez réessayer !"
+  },
+  {
+   "locale": "id",
+   "file": "packages/i18n/src/locales/id/workspace.json",
+   "line": 357,
+   "key": "workspace.members_import.summary.message.success",
+   "kind": "dropped",
+   "missing": "{plural}",
+   "extra": "",
+   "source": "Successfully added {count} member{plural} to the workspace.",
+   "translation": "Berhasil menambahkan {count} anggota ke workspace."
+  },
+  {
+   "locale": "ja",
+   "file": "packages/i18n/src/locales/ja/workspace.json",
+   "line": 357,
+   "key": "workspace.members_import.summary.message.success",
+   "kind": "dropped",
+   "missing": "{plural}",
+   "extra": "",
+   "source": "Successfully added {count} member{plural} to the workspace.",
+   "translation": "{count}人のメンバーをワークスペースに追加しました。"
+  },
+  {
+   "locale": "ko",
+   "file": "packages/i18n/src/locales/ko/workspace.json",
+   "line": 357,
+   "key": "workspace.members_import.summary.message.success",
+   "kind": "dropped",
+   "missing": "{plural}",
+   "extra": "",
+   "source": "Successfully added {count} member{plural} to the workspace.",
+   "translation": "{count}명의 구성원을 워크스페이스에 추가했습니다."
+  },
+  {
+   "locale": "ru",
+   "file": "packages/i18n/src/locales/ru/workflow.json",
+   "line": 56,
+   "key": "workflows.toasts.enable_disable.success.title",
+   "kind": "extra",
+   "missing": "",
+   "extra": "{action}",
+   "source": "Success",
+   "translation": "Рабочие процессы {action} успешно"
+  },
+  {
+   "locale": "ru",
+   "file": "packages/i18n/src/locales/ru/workflow.json",
+   "line": 60,
+   "key": "workflows.toasts.enable_disable.error.title",
+   "kind": "extra",
+   "missing": "",
+   "extra": "{action}",
+   "source": "Error",
+   "translation": "Ошибка {action} рабочих процессов"
+  },
+  {
+   "locale": "tr-TR",
+   "file": "packages/i18n/src/locales/tr-TR/workspace.json",
+   "line": 357,
+   "key": "workspace.members_import.summary.message.success",
+   "kind": "dropped",
+   "missing": "{plural}",
+   "extra": "",
+   "source": "Successfully added {count} member{plural} to the workspace.",
+   "translation": "Çalışma alanına başarıyla {count} üye eklendi."
+  },
+  {
+   "locale": "vi-VN",
+   "file": "packages/i18n/src/locales/vi-VN/workspace.json",
+   "line": 357,
+   "key": "workspace.members_import.summary.message.success",
+   "kind": "dropped",
+   "missing": "{plural}",
+   "extra": "",
+   "source": "Successfully added {count} member{plural} to the workspace.",
+   "translation": "Đã thêm thành công {count} thành viên vào không gian làm việc."
+  },
+  {
+   "locale": "zh-CN",
+   "file": "packages/i18n/src/locales/zh-CN/workspace.json",
+   "line": 357,
+   "key": "workspace.members_import.summary.message.success",
+   "kind": "dropped",
+   "missing": "{plural}",
+   "extra": "",
+   "source": "Successfully added {count} member{plural} to the workspace.",
+   "translation": "成功将{count}名成员添加到工作区。"
+  },
+  {
+   "locale": "zh-TW",
+   "file": "packages/i18n/src/locales/zh-TW/workspace.json",
+   "line": 357,
+   "key": "workspace.members_import.summary.message.success",
+   "kind": "dropped",
+   "missing": "{plural}",
+   "extra": "",
+   "source": "Successfully added {count} member{plural} to the workspace.",
+   "translation": "成功將{count}名成員新增至工作區。"
+  }
+ ],
+ "findings_truncated": false
+}

@@ -1,0 +1,24 @@
+{
+ "repo": "ckeditor/strapi-plugin-ckeditor",
+ "url": "https://github.com/ckeditor/strapi-plugin-ckeditor",
+ "category": "plugin",
+ "note": null,
+ "commit": "920fad23a78dbae1abd7c4737d1d2b1c843bf8bf",
+ "commit_date": "2026-02-16",
+ "audited_at": "2026-10-03",
+ "tool_commit": "34d6ce1e1c1b55ea7c8895891c73553e736c6c62",
+ "stars": 78,
+ "pushed_at": "2026-02-16",
+ "default_branch": "master",
+ "description": "CKEditor 5 - Official Integration for Strapi",
+ "meta_source": "repos.ecosyste.ms",
+ "owner_type": "Organization",
+ "tms": [],
+ "tms_evidence": {},
+ "automation": [],
+ "activity": {
+  "available": false,
+  "window_days": 180
+ },
+ "skipped": "no locale files with an English source and 2+ translations found"
+}

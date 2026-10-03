@@ -1,0 +1,250 @@
+{
+ "repo": "activepieces/activepieces",
+ "url": "https://github.com/activepieces/activepieces",
+ "category": "automation",
+ "note": null,
+ "commit": "e3e1cbebb6dafbf2bb0da35effc6dfd58b8c13e3",
+ "commit_date": "2026-10-02",
+ "audited_at": "2026-10-03",
+ "tool_commit": "34d6ce1e1c1b55ea7c8895891c73553e736c6c62",
+ "stars": 24738,
+ "pushed_at": "2026-09-26",
+ "default_branch": "main",
+ "description": "AI Agents & MCPs & AI Workflow Automation • (~400 MCP servers for AI agents) • AI Automation / AI Agent with MCPs • AI Workflows & AI Agents • MCPs for AI Agents",
+ "meta_source": "repos.ecosyste.ms",
+ "owner_type": "Organization",
+ "tms": [
+  "crowdin"
+ ],
+ "tms_evidence": {
+  "crowdin": [
+   "config file crowdin.yml",
+   "mentioned in .github/workflows/crowdin-pr-merger.yml: \"...name: Auto Merge Crowdin PRs Action  on:   pull_request:     types: [opened, synchro...\"",
+   "mentioned in README.md: \"...e/dynamic/json?color=blue&label=fr&style=for-the-badge&logo=crowdin&query=%24.progress[?(@.data.languageId==%27fr%27)].data.tra...\"",
+   "mentioned in docs/about/i18n.mdx: \"...d how to change or add new translations.  Activepieces uses Crowdin because it helps translators who don't know how to code. It...\""
+  ]
+ },
+ "automation": [],
+ "activity": {
+  "available": true,
+  "window_days": 180,
+  "commits": 1979,
+  "authors": 78,
+  "outside_commits": 66,
+  "outside_authors": 46,
+  "locale_commits": 50,
+  "outside_locale_commits": 0,
+  "outside_locale_authors": 0,
+  "bot_locale_commits": 6,
+  "last_outside_locale_commit": null,
+  "last_outside_commit": "2026-09-27",
+  "bot_locale_tms": {
+   "crowdin": 6
+  }
+ },
+ "locale_groups": [
+  {
+   "pattern": "packages/pieces/community/postmark/src/i18n/{loc}.json",
+   "source": "packages/pieces/community/postmark/src/i18n/en.json",
+   "source_locale": "en",
+   "mode": "icu",
+   "source_strings": 8,
+   "locales": [],
+   "findings": 0
+  },
+  {
+   "pattern": "packages/web/public/locales/{loc}/*.json",
+   "source": "packages/web/public/locales/en/translation.json",
+   "source_locale": "en",
+   "mode": "icu",
+   "source_strings": 3157,
+   "locales": [
+    "ar",
+    "de",
+    "es",
+    "fr",
+    "ja",
+    "nl",
+    "pt",
+    "ru",
+    "zh",
+    "zh-TW"
+   ],
+   "findings": 1
+  }
+ ],
+ "locales": [
+  "ar",
+  "de",
+  "es",
+  "fr",
+  "ja",
+  "nl",
+  "pt",
+  "ru",
+  "zh",
+  "zh-TW"
+ ],
+ "locales_count": 10,
+ "strings_checked": 14122,
+ "findings_total": 1,
+ "findings_by_kind": {
+  "syntax": 0,
+  "renamed": 0,
+  "dropped": 0,
+  "extra": 0,
+  "broken": 1,
+  "mixed": 0,
+  "tag": 0,
+  "plural_count": 0
+ },
+ "findings_per_1k": 0.07,
+ "locales_with_findings": 1,
+ "worst_locales": [
+  {
+   "locale": "ar",
+   "findings": 1,
+   "checked": 686
+  }
+ ],
+ "per_locale": {
+  "ar": {
+   "checked": 686,
+   "syntax": 0,
+   "renamed": 0,
+   "dropped": 0,
+   "extra": 0,
+   "broken": 1,
+   "mixed": 0,
+   "tag": 0,
+   "plural_count": 0
+  },
+  "de": {
+   "checked": 1808,
+   "syntax": 0,
+   "renamed": 0,
+   "dropped": 0,
+   "extra": 0,
+   "broken": 0,
+   "mixed": 0,
+   "tag": 0,
+   "plural_count": 0
+  },
+  "es": {
+   "checked": 1808,
+   "syntax": 0,
+   "renamed": 0,
+   "dropped": 0,
+   "extra": 0,
+   "broken": 0,
+   "mixed": 0,
+   "tag": 0,
+   "plural_count": 0
+  },
+  "fr": {
+   "checked": 1805,
+   "syntax": 0,
+   "renamed": 0,
+   "dropped": 0,
+   "extra": 0,
+   "broken": 0,
+   "mixed": 0,
+   "tag": 0,
+   "plural_count": 0
+  },
+  "ja": {
+   "checked": 1808,
+   "syntax": 0,
+   "renamed": 0,
+   "dropped": 0,
+   "extra": 0,
+   "broken": 0,
+   "mixed": 0,
+   "tag": 0,
+   "plural_count": 0
+  },
+  "nl": {
+   "checked": 1808,
+   "syntax": 0,
+   "renamed": 0,
+   "dropped": 0,
+   "extra": 0,
+   "broken": 0,
+   "mixed": 0,
+   "tag": 0,
+   "plural_count": 0
+  },
+  "pt": {
+   "checked": 1808,
+   "syntax": 0,
+   "renamed": 0,
+   "dropped": 0,
+   "extra": 0,
+   "broken": 0,
+   "mixed": 0,
+   "tag": 0,
+   "plural_count": 0
+  },
+  "ru": {
+   "checked": 768,
+   "syntax": 0,
+   "renamed": 0,
+   "dropped": 0,
+   "extra": 0,
+   "broken": 0,
+   "mixed": 0,
+   "tag": 0,
+   "plural_count": 0
+  },
+  "zh": {
+   "checked": 1808,
+   "syntax": 0,
+   "renamed": 0,
+   "dropped": 0,
+   "extra": 0,
+   "broken": 0,
+   "mixed": 0,
+   "tag": 0,
+   "plural_count": 0
+  },
+  "zh-TW": {
+   "checked": 15,
+   "syntax": 0,
+   "renamed": 0,
+   "dropped": 0,
+   "extra": 0,
+   "broken": 0,
+   "mixed": 0,
+   "tag": 0,
+   "plural_count": 0
+  }
+ },
+ "examples": [
+  {
+   "locale": "ar",
+   "file": "packages/web/public/locales/ar/translation.json",
+   "line": 1125,
+   "key": "recordsCount",
+   "kind": "broken",
+   "missing": "",
+   "extra": "",
+   "source": "{recordsCount, plural, =0 {0 Records} =1 {1 Record} other {# Records}}",
+   "translation": "{{recordsCount, plural, =0 {0 Records} =1 {1 Record} other {# Records}}"
+  }
+ ],
+ "parse_errors": [],
+ "findings": [
+  {
+   "locale": "ar",
+   "file": "packages/web/public/locales/ar/translation.json",
+   "line": 1125,
+   "key": "recordsCount",
+   "kind": "broken",
+   "missing": "",
+   "extra": "",
+   "source": "{recordsCount, plural, =0 {0 Records} =1 {1 Record} other {# Records}}",
+   "translation": "{{recordsCount, plural, =0 {0 Records} =1 {1 Record} other {# Records}}"
+  }
+ ],
+ "findings_truncated": false
+}

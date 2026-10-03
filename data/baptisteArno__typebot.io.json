@@ -1,0 +1,270 @@
+{
+ "repo": "baptisteArno/typebot.io",
+ "url": "https://github.com/baptisteArno/typebot.io",
+ "category": "chatbots",
+ "note": null,
+ "commit": "b19de808de32d5f4f376b3c5750676b5f4a656aa",
+ "commit_date": "2026-09-30",
+ "audited_at": "2026-10-03",
+ "tool_commit": "34d6ce1e1c1b55ea7c8895891c73553e736c6c62",
+ "stars": 10333,
+ "pushed_at": "2026-09-14",
+ "default_branch": "main",
+ "description": "💬 Typebot is a powerful chatbot builder that you can self-host.",
+ "meta_source": "repos.ecosyste.ms",
+ "owner_type": "User",
+ "tms": [
+  "tolgee"
+ ],
+ "tms_evidence": {
+  "tolgee": [
+   "config file .tolgeerc"
+  ]
+ },
+ "automation": [],
+ "activity": {
+  "available": true,
+  "window_days": 180,
+  "commits": 155,
+  "authors": 11,
+  "outside_commits": 10,
+  "outside_authors": 9,
+  "locale_commits": 0,
+  "outside_locale_commits": 0,
+  "outside_locale_authors": 0,
+  "bot_locale_commits": 0,
+  "last_outside_locale_commit": null,
+  "last_outside_commit": "2026-08-19",
+  "bot_locale_tms": {}
+ },
+ "locale_groups": [
+  {
+   "pattern": "apps/builder/src/i18n/{loc}.json",
+   "source": "apps/builder/src/i18n/en.json",
+   "source_locale": "en",
+   "mode": "icu",
+   "source_strings": 625,
+   "locales": [
+    "de",
+    "el",
+    "es",
+    "fr",
+    "it",
+    "pt",
+    "pt-BR",
+    "ro"
+   ],
+   "findings": 4
+  }
+ ],
+ "locales": [
+  "de",
+  "el",
+  "es",
+  "fr",
+  "it",
+  "pt",
+  "pt-BR",
+  "ro"
+ ],
+ "locales_count": 8,
+ "strings_checked": 3027,
+ "findings_total": 4,
+ "findings_by_kind": {
+  "syntax": 0,
+  "renamed": 4,
+  "dropped": 0,
+  "extra": 0,
+  "broken": 0,
+  "mixed": 0,
+  "tag": 0,
+  "plural_count": 0
+ },
+ "findings_per_1k": 1.32,
+ "locales_with_findings": 2,
+ "worst_locales": [
+  {
+   "locale": "it",
+   "findings": 2,
+   "checked": 464
+  },
+  {
+   "locale": "ro",
+   "findings": 2,
+   "checked": 243
+  }
+ ],
+ "per_locale": {
+  "de": {
+   "checked": 240,
+   "syntax": 0,
+   "renamed": 0,
+   "dropped": 0,
+   "extra": 0,
+   "broken": 0,
+   "mixed": 0,
+   "tag": 0,
+   "plural_count": 0
+  },
+  "el": {
+   "checked": 464,
+   "syntax": 0,
+   "renamed": 0,
+   "dropped": 0,
+   "extra": 0,
+   "broken": 0,
+   "mixed": 0,
+   "tag": 0,
+   "plural_count": 0
+  },
+  "es": {
+   "checked": 243,
+   "syntax": 0,
+   "renamed": 0,
+   "dropped": 0,
+   "extra": 0,
+   "broken": 0,
+   "mixed": 0,
+   "tag": 0,
+   "plural_count": 0
+  },
+  "fr": {
+   "checked": 527,
+   "syntax": 0,
+   "renamed": 0,
+   "dropped": 0,
+   "extra": 0,
+   "broken": 0,
+   "mixed": 0,
+   "tag": 0,
+   "plural_count": 0
+  },
+  "it": {
+   "checked": 464,
+   "syntax": 0,
+   "renamed": 2,
+   "dropped": 0,
+   "extra": 0,
+   "broken": 0,
+   "mixed": 0,
+   "tag": 0,
+   "plural_count": 0
+  },
+  "pt": {
+   "checked": 319,
+   "syntax": 0,
+   "renamed": 0,
+   "dropped": 0,
+   "extra": 0,
+   "broken": 0,
+   "mixed": 0,
+   "tag": 0,
+   "plural_count": 0
+  },
+  "pt-BR": {
+   "checked": 527,
+   "syntax": 0,
+   "renamed": 0,
+   "dropped": 0,
+   "extra": 0,
+   "broken": 0,
+   "mixed": 0,
+   "tag": 0,
+   "plural_count": 0
+  },
+  "ro": {
+   "checked": 243,
+   "syntax": 0,
+   "renamed": 2,
+   "dropped": 0,
+   "extra": 0,
+   "broken": 0,
+   "mixed": 0,
+   "tag": 0,
+   "plural_count": 0
+  }
+ },
+ "examples": [
+  {
+   "locale": "it",
+   "file": "apps/builder/src/i18n/it.json",
+   "line": 433,
+   "key": "timeSince.seconds",
+   "kind": "renamed",
+   "missing": "{count}",
+   "extra": "{conto}",
+   "source": "{count}s ago",
+   "translation": "{conto} fa"
+  },
+  {
+   "locale": "ro",
+   "file": "apps/builder/src/i18n/ro.json",
+   "line": 56,
+   "key": "auth.socialLogin.azureButton.label",
+   "kind": "renamed",
+   "missing": "{azureProviderName}",
+   "extra": "{customProviderName}",
+   "source": "Continue with {azureProviderName}",
+   "translation": "Continuați cu {customProviderName}"
+  },
+  {
+   "locale": "it",
+   "file": "apps/builder/src/i18n/it.json",
+   "line": 465,
+   "key": "workspace.settings.modal.menu.version.label",
+   "kind": "renamed",
+   "missing": "{version}",
+   "extra": "{versione}",
+   "source": "Version: {version}",
+   "translation": "Versione: {versione}"
+  }
+ ],
+ "parse_errors": [],
+ "findings": [
+  {
+   "locale": "it",
+   "file": "apps/builder/src/i18n/it.json",
+   "line": 433,
+   "key": "timeSince.seconds",
+   "kind": "renamed",
+   "missing": "{count}",
+   "extra": "{conto}",
+   "source": "{count}s ago",
+   "translation": "{conto} fa"
+  },
+  {
+   "locale": "it",
+   "file": "apps/builder/src/i18n/it.json",
+   "line": 465,
+   "key": "workspace.settings.modal.menu.version.label",
+   "kind": "renamed",
+   "missing": "{version}",
+   "extra": "{versione}",
+   "source": "Version: {version}",
+   "translation": "Versione: {versione}"
+  },
+  {
+   "locale": "ro",
+   "file": "apps/builder/src/i18n/ro.json",
+   "line": 56,
+   "key": "auth.socialLogin.azureButton.label",
+   "kind": "renamed",
+   "missing": "{azureProviderName}",
+   "extra": "{customProviderName}",
+   "source": "Continue with {azureProviderName}",
+   "translation": "Continuați cu {customProviderName}"
+  },
+  {
+   "locale": "ro",
+   "file": "apps/builder/src/i18n/ro.json",
+   "line": 60,
+   "key": "auth.socialLogin.gitlabButton.label",
+   "kind": "renamed",
+   "missing": "{gitlabProviderName}",
+   "extra": "{customProviderName}",
+   "source": "Continue with {gitlabProviderName}",
+   "translation": "Continuați cu {customProviderName}"
+  }
+ ],
+ "findings_truncated": false
+}

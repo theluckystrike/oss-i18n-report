@@ -1,0 +1,613 @@
+{
+ "repo": "documenso/documenso",
+ "url": "https://github.com/documenso/documenso",
+ "category": "documents",
+ "note": null,
+ "commit": "80823ede73a5889753c341f2a5a22d1459cd99b7",
+ "commit_date": "2026-10-03",
+ "audited_at": "2026-10-03",
+ "tool_commit": "34d6ce1e1c1b55ea7c8895891c73553e736c6c62",
+ "stars": 15184,
+ "pushed_at": "2026-09-25",
+ "default_branch": "main",
+ "description": "The Open Source DocuSign Alternative.",
+ "meta_source": "repos.ecosyste.ms",
+ "owner_type": "Organization",
+ "tms": [
+  "crowdin"
+ ],
+ "tms_evidence": {
+  "crowdin": [
+   "config file crowdin.yml",
+   "mentioned in .github/workflows/translations-force-pull.yml: \"...eck to allow us to # forcefully pull down translations from Crowdin and create a PR regardless if all the translations are fulf...\"",
+   "mentioned in .github/workflows/translations-pull.yml: \"...# Pull down translations from Crowdin every two hours or when triggered manually.  name: 'Pull tr...\"",
+   "mentioned in .github/workflows/translations-upload.yml: \"....compile_translations.outcome == 'failure' }}         uses: crowdin/github-action@v2         with:           upload_sources: true           u...\""
+  ]
+ },
+ "automation": [],
+ "activity": {
+  "available": true,
+  "window_days": 180,
+  "commits": 312,
+  "authors": 38,
+  "outside_commits": 44,
+  "outside_authors": 31,
+  "locale_commits": 39,
+  "outside_locale_commits": 4,
+  "outside_locale_authors": 4,
+  "bot_locale_commits": 16,
+  "last_outside_locale_commit": "2026-09-29",
+  "last_outside_commit": "2026-10-01",
+  "bot_locale_tms": {}
+ },
+ "locale_groups": [
+  {
+   "pattern": "packages/lib/translations/{loc}/*.po",
+   "source": "packages/lib/translations/en/web.po",
+   "source_locale": "en",
+   "mode": "icu",
+   "source_strings": 3199,
+   "locales": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "ko",
+    "nl",
+    "pl",
+    "pt-BR",
+    "sq",
+    "zh"
+   ],
+   "findings": 24
+  }
+ ],
+ "locales": [
+  "de",
+  "es",
+  "fr",
+  "it",
+  "ja",
+  "ko",
+  "nl",
+  "pl",
+  "pt-BR",
+  "sq",
+  "zh"
+ ],
+ "locales_count": 11,
+ "strings_checked": 31117,
+ "findings_total": 24,
+ "findings_by_kind": {
+  "syntax": 0,
+  "renamed": 1,
+  "dropped": 4,
+  "extra": 19,
+  "broken": 0,
+  "mixed": 0,
+  "tag": 6,
+  "plural_count": 0
+ },
+ "findings_per_1k": 0.77,
+ "locales_with_findings": 7,
+ "worst_locales": [
+  {
+   "locale": "zh",
+   "findings": 6,
+   "checked": 3011
+  },
+  {
+   "locale": "it",
+   "findings": 5,
+   "checked": 3008
+  },
+  {
+   "locale": "ko",
+   "findings": 4,
+   "checked": 3011
+  },
+  {
+   "locale": "pl",
+   "findings": 4,
+   "checked": 3198
+  },
+  {
+   "locale": "ja",
+   "findings": 3,
+   "checked": 3011
+  }
+ ],
+ "per_locale": {
+  "de": {
+   "checked": 3011,
+   "syntax": 0,
+   "renamed": 0,
+   "dropped": 0,
+   "extra": 0,
+   "broken": 0,
+   "mixed": 0,
+   "tag": 0,
+   "plural_count": 0
+  },
+  "es": {
+   "checked": 3011,
+   "syntax": 0,
+   "renamed": 0,
+   "dropped": 0,
+   "extra": 1,
+   "broken": 0,
+   "mixed": 0,
+   "tag": 0,
+   "plural_count": 0
+  },
+  "fr": {
+   "checked": 3011,
+   "syntax": 0,
+   "renamed": 0,
+   "dropped": 0,
+   "extra": 1,
+   "broken": 0,
+   "mixed": 0,
+   "tag": 1,
+   "plural_count": 0
+  },
+  "it": {
+   "checked": 3008,
+   "syntax": 0,
+   "renamed": 0,
+   "dropped": 0,
+   "extra": 5,
+   "broken": 0,
+   "mixed": 0,
+   "tag": 0,
+   "plural_count": 0
+  },
+  "ja": {
+   "checked": 3011,
+   "syntax": 0,
+   "renamed": 0,
+   "dropped": 0,
+   "extra": 3,
+   "broken": 0,
+   "mixed": 0,
+   "tag": 1,
+   "plural_count": 0
+  },
+  "ko": {
+   "checked": 3011,
+   "syntax": 0,
+   "renamed": 1,
+   "dropped": 2,
+   "extra": 1,
+   "broken": 0,
+   "mixed": 0,
+   "tag": 1,
+   "plural_count": 0
+  },
+  "nl": {
+   "checked": 3011,
+   "syntax": 0,
+   "renamed": 0,
+   "dropped": 0,
+   "extra": 0,
+   "broken": 0,
+   "mixed": 0,
+   "tag": 0,
+   "plural_count": 0
+  },
+  "pl": {
+   "checked": 3198,
+   "syntax": 0,
+   "renamed": 0,
+   "dropped": 0,
+   "extra": 4,
+   "broken": 0,
+   "mixed": 0,
+   "tag": 2,
+   "plural_count": 0
+  },
+  "pt-BR": {
+   "checked": 2219,
+   "syntax": 0,
+   "renamed": 0,
+   "dropped": 0,
+   "extra": 0,
+   "broken": 0,
+   "mixed": 0,
+   "tag": 0,
+   "plural_count": 0
+  },
+  "sq": {
+   "checked": 1615,
+   "syntax": 0,
+   "renamed": 0,
+   "dropped": 0,
+   "extra": 0,
+   "broken": 0,
+   "mixed": 0,
+   "tag": 0,
+   "plural_count": 0
+  },
+  "zh": {
+   "checked": 3011,
+   "syntax": 0,
+   "renamed": 0,
+   "dropped": 2,
+   "extra": 4,
+   "broken": 0,
+   "mixed": 0,
+   "tag": 1,
+   "plural_count": 0
+  }
+ },
+ "examples": [
+  {
+   "locale": "it",
+   "file": "packages/lib/translations/it/web.po",
+   "line": 906,
+   "key": "1 month",
+   "kind": "extra",
+   "missing": "",
+   "extra": "{VAR_PLURAL}",
+   "source": "1 month",
+   "translation": "{VAR_PLURAL, select, one {1 mese} other {# mesi}}"
+  },
+  {
+   "locale": "ko",
+   "file": "packages/lib/translations/ko/web.po",
+   "line": 232,
+   "key": "{0, plural, one {Page {1} of {2} - # field found} other {Page {3} of {4} - # fields found}}",
+   "kind": "dropped",
+   "missing": "{3},{4}",
+   "extra": "",
+   "source": "{0, plural, one {Page {1} of {2} - # field found} other {Page {3} of {4} - # fields found}}",
+   "translation": "{0, plural, other {페이지 {1}/{2} - 필드 #개 발견됨}}"
+  },
+  {
+   "locale": "es",
+   "file": "packages/lib/translations/es/web.po",
+   "line": 15003,
+   "key": "Your direct signing templates",
+   "kind": "extra",
+   "missing": "",
+   "extra": "{0}",
+   "source": "Your direct signing templates",
+   "translation": "Tus {0} plantillas de firma directa"
+  }
+ ],
+ "parse_errors": [],
+ "findings": [
+  {
+   "locale": "es",
+   "file": "packages/lib/translations/es/web.po",
+   "line": 15003,
+   "key": "Your direct signing templates",
+   "kind": "extra",
+   "missing": "",
+   "extra": "{0}",
+   "source": "Your direct signing templates",
+   "translation": "Tus {0} plantillas de firma directa"
+  },
+  {
+   "locale": "fr",
+   "file": "packages/lib/translations/fr/web.po",
+   "line": 480,
+   "key": "{recipientName} has rejected the document '{documentName}'",
+   "kind": "extra",
+   "missing": "",
+   "extra": "{documentName}",
+   "source": "{recipientName} has rejected the document '{documentName}'",
+   "translation": "{recipientName} a rejeté le document \"{documentName}\""
+  },
+  {
+   "locale": "it",
+   "file": "packages/lib/translations/it/web.po",
+   "line": 906,
+   "key": "1 month",
+   "kind": "extra",
+   "missing": "",
+   "extra": "{VAR_PLURAL}",
+   "source": "1 month",
+   "translation": "{VAR_PLURAL, select, one {1 mese} other {# mesi}}"
+  },
+  {
+   "locale": "it",
+   "file": "packages/lib/translations/it/web.po",
+   "line": 910,
+   "key": "12 months",
+   "kind": "extra",
+   "missing": "",
+   "extra": "{VAR_PLURAL}",
+   "source": "12 months",
+   "translation": "{VAR_PLURAL, select, one {1 mese} other {12 mesi}}"
+  },
+  {
+   "locale": "it",
+   "file": "packages/lib/translations/it/web.po",
+   "line": 926,
+   "key": "3 months",
+   "kind": "extra",
+   "missing": "",
+   "extra": "{VAR_PLURAL}",
+   "source": "3 months",
+   "translation": "{VAR_PLURAL, select, one {1 mese} other {3 mesi}}"
+  },
+  {
+   "locale": "it",
+   "file": "packages/lib/translations/it/web.po",
+   "line": 1004,
+   "key": "6 months",
+   "kind": "extra",
+   "missing": "",
+   "extra": "{VAR_PLURAL}",
+   "source": "6 months",
+   "translation": "{VAR_PLURAL, select, one {1 mese} other {6 mesi}}"
+  },
+  {
+   "locale": "it",
+   "file": "packages/lib/translations/it/web.po",
+   "line": 1008,
+   "key": "7 days",
+   "kind": "extra",
+   "missing": "",
+   "extra": "{VAR_PLURAL}",
+   "source": "7 days",
+   "translation": "{VAR_PLURAL, select, one {1 giorno} other {7 giorni}}"
+  },
+  {
+   "locale": "ja",
+   "file": "packages/lib/translations/ja/web.po",
+   "line": 480,
+   "key": "{recipientName} has rejected the document '{documentName}'",
+   "kind": "extra",
+   "missing": "",
+   "extra": "{documentName}",
+   "source": "{recipientName} has rejected the document '{documentName}'",
+   "translation": "{recipientName} がドキュメント「{documentName}」を却下しました"
+  },
+  {
+   "locale": "ja",
+   "file": "packages/lib/translations/ja/web.po",
+   "line": 14674,
+   "key": "You must enter '{deleteMessage}' to proceed",
+   "kind": "extra",
+   "missing": "",
+   "extra": "{deleteMessage}",
+   "source": "You must enter '{deleteMessage}' to proceed",
+   "translation": "' {deleteMessage}' と入力する必要があります"
+  },
+  {
+   "locale": "ja",
+   "file": "packages/lib/translations/ja/web.po",
+   "line": 14683,
+   "key": "You must type '{deleteMessage}' to confirm",
+   "kind": "extra",
+   "missing": "",
+   "extra": "{deleteMessage}",
+   "source": "You must type '{deleteMessage}' to confirm",
+   "translation": "確認するには「{deleteMessage}」と入力する必要があります"
+  },
+  {
+   "locale": "ko",
+   "file": "packages/lib/translations/ko/web.po",
+   "line": 232,
+   "key": "{0, plural, one {Page {1} of {2} - # field found} other {Page {3} of {4} - # fields found}}",
+   "kind": "dropped",
+   "missing": "{3},{4}",
+   "extra": "",
+   "source": "{0, plural, one {Page {1} of {2} - # field found} other {Page {3} of {4} - # fields found}}",
+   "translation": "{0, plural, other {페이지 {1}/{2} - 필드 #개 발견됨}}"
+  },
+  {
+   "locale": "ko",
+   "file": "packages/lib/translations/ko/web.po",
+   "line": 241,
+   "key": "{0, plural, one {Page {1} of {2} - # recipient found} other {Page {3} of {4} - # recipients found}}",
+   "kind": "dropped",
+   "missing": "{3},{4}",
+   "extra": "",
+   "source": "{0, plural, one {Page {1} of {2} - # recipient found} other {Page {3} of {4} - # recipients found}}",
+   "translation": "{0, plural, other {페이지 {1}/{2} - 수신자 #명 발견됨}}"
+  },
+  {
+   "locale": "ko",
+   "file": "packages/lib/translations/ko/web.po",
+   "line": 436,
+   "key": "{inviterName} on behalf of \"{teamName}\" has invited you to {0}<0/>\"{documentName}\"",
+   "kind": "renamed",
+   "missing": "{teamName}",
+   "extra": "{recipientActionVerb}",
+   "source": "{inviterName} on behalf of \"{teamName}\" has invited you to {0}<0/>\"{documentName}\"",
+   "translation": "{inviterName}이(가) \"{0}\"을(를) 대신하여 문서 \"{documentName}\"에 대해 귀하께 {recipientActionVerb}하도록 초대했습니다<0/>"
+  },
+  {
+   "locale": "ko",
+   "file": "packages/lib/translations/ko/web.po",
+   "line": 14674,
+   "key": "You must enter '{deleteMessage}' to proceed",
+   "kind": "extra",
+   "missing": "",
+   "extra": "{deleteMessage}",
+   "source": "You must enter '{deleteMessage}' to proceed",
+   "translation": "' {deleteMessage}'를 입력해야 계속 진행할 수 있습니다"
+  },
+  {
+   "locale": "pl",
+   "file": "packages/lib/translations/pl/web.po",
+   "line": 480,
+   "key": "{recipientName} has rejected the document '{documentName}'",
+   "kind": "extra",
+   "missing": "",
+   "extra": "{documentName}",
+   "source": "{recipientName} has rejected the document '{documentName}'",
+   "translation": "Użytkownik {recipientName} odrzucił dokument „{documentName}”"
+  },
+  {
+   "locale": "pl",
+   "file": "packages/lib/translations/pl/web.po",
+   "line": 14614,
+   "key": "You have rejected the document '{documentName}'",
+   "kind": "extra",
+   "missing": "",
+   "extra": "{documentName}",
+   "source": "You have rejected the document '{documentName}'",
+   "translation": "Dokument „{documentName}” został odrzucony"
+  },
+  {
+   "locale": "pl",
+   "file": "packages/lib/translations/pl/web.po",
+   "line": 14700,
+   "key": "You must enter '{deleteMessage}' to proceed",
+   "kind": "extra",
+   "missing": "",
+   "extra": "{deleteMessage}",
+   "source": "You must enter '{deleteMessage}' to proceed",
+   "translation": "Wpisz „{deleteMessage}”, aby kontynuować"
+  },
+  {
+   "locale": "pl",
+   "file": "packages/lib/translations/pl/web.po",
+   "line": 14709,
+   "key": "You must type '{deleteMessage}' to confirm",
+   "kind": "extra",
+   "missing": "",
+   "extra": "{deleteMessage}",
+   "source": "You must type '{deleteMessage}' to confirm",
+   "translation": "Wpisz „{deleteMessage}”, aby potwierdzić"
+  },
+  {
+   "locale": "zh",
+   "file": "packages/lib/translations/zh/web.po",
+   "line": 232,
+   "key": "{0, plural, one {Page {1} of {2} - # field found} other {Page {3} of {4} - # fields found}}",
+   "kind": "dropped",
+   "missing": "{3},{4}",
+   "extra": "",
+   "source": "{0, plural, one {Page {1} of {2} - # field found} other {Page {3} of {4} - # fields found}}",
+   "translation": "{0, plural, other {第 {1} 页，共 {2} 页 - 找到 # 个字段}}"
+  },
+  {
+   "locale": "zh",
+   "file": "packages/lib/translations/zh/web.po",
+   "line": 241,
+   "key": "{0, plural, one {Page {1} of {2} - # recipient found} other {Page {3} of {4} - # recipients found}}",
+   "kind": "dropped",
+   "missing": "{3},{4}",
+   "extra": "",
+   "source": "{0, plural, one {Page {1} of {2} - # recipient found} other {Page {3} of {4} - # recipients found}}",
+   "translation": "{0, plural, other {第 {1} 页，共 {2} 页 - 找到 # 位收件人}}"
+  },
+  {
+   "locale": "zh",
+   "file": "packages/lib/translations/zh/web.po",
+   "line": 480,
+   "key": "{recipientName} has rejected the document '{documentName}'",
+   "kind": "extra",
+   "missing": "",
+   "extra": "{documentName}",
+   "source": "{recipientName} has rejected the document '{documentName}'",
+   "translation": "{recipientName} 已拒签文档“{documentName}”"
+  },
+  {
+   "locale": "zh",
+   "file": "packages/lib/translations/zh/web.po",
+   "line": 14588,
+   "key": "You have rejected the document '{documentName}'",
+   "kind": "extra",
+   "missing": "",
+   "extra": "{documentName}",
+   "source": "You have rejected the document '{documentName}'",
+   "translation": "您已拒签文档“{documentName}”"
+  },
+  {
+   "locale": "zh",
+   "file": "packages/lib/translations/zh/web.po",
+   "line": 14674,
+   "key": "You must enter '{deleteMessage}' to proceed",
+   "kind": "extra",
+   "missing": "",
+   "extra": "{deleteMessage}",
+   "source": "You must enter '{deleteMessage}' to proceed",
+   "translation": "你必须输入“{deleteMessage}”才能继续"
+  },
+  {
+   "locale": "zh",
+   "file": "packages/lib/translations/zh/web.po",
+   "line": 14683,
+   "key": "You must type '{deleteMessage}' to confirm",
+   "kind": "extra",
+   "missing": "",
+   "extra": "{deleteMessage}",
+   "source": "You must type '{deleteMessage}' to confirm",
+   "translation": "您必须输入“{deleteMessage}”以确认"
+  },
+  {
+   "locale": "fr",
+   "file": "packages/lib/translations/fr/web.po",
+   "line": 12008,
+   "key": "This action is reversible, but please be careful as the account may be affected permanently (e.g. their settings and contents not being restored properly).",
+   "kind": "tag",
+   "missing": "",
+   "extra": "<b>",
+   "source": "This action is reversible, but please be careful as the account may be affected permanently (e.g. their settings and contents not being restored properly).",
+   "translation": "Cette action est réversible, mais veuillez faire attention car le compte peut être affecté de façon permanente <b>(</b>par exemple, leurs paramètres et contenus ne pourraient pas être restaurés correctement)."
+  },
+  {
+   "locale": "ja",
+   "file": "packages/lib/translations/ja/web.po",
+   "line": 189,
+   "key": "{0, plural, one {<0>You have <1>1</1> pending invitation</0>} other {<2>You have <3>#</3> pending invitations</2>}}",
+   "kind": "tag",
+   "missing": "<0>,<1>",
+   "extra": "",
+   "source": "{0, plural, one {<0>You have <1>1</1> pending invitation</0>} other {<2>You have <3>#</3> pending invitations</2>}}",
+   "translation": "{0, plural, other {<2>保留中の招待が <3>#</3> 件あります</2>}}"
+  },
+  {
+   "locale": "ko",
+   "file": "packages/lib/translations/ko/web.po",
+   "line": 189,
+   "key": "{0, plural, one {<0>You have <1>1</1> pending invitation</0>} other {<2>You have <3>#</3> pending invitations</2>}}",
+   "kind": "tag",
+   "missing": "<0>,<1>",
+   "extra": "",
+   "source": "{0, plural, one {<0>You have <1>1</1> pending invitation</0>} other {<2>You have <3>#</3> pending invitations</2>}}",
+   "translation": "{0, plural, other {<2>대기 중인 초대가 <3>#</3>건 있습니다</2>}}"
+  },
+  {
+   "locale": "pl",
+   "file": "packages/lib/translations/pl/web.po",
+   "line": 409,
+   "key": "{inviterName} has invited you to {0}<0/>\"{documentName}\"",
+   "kind": "tag",
+   "missing": "<0/>",
+   "extra": "",
+   "source": "{inviterName} has invited you to {0}<0/>\"{documentName}\"",
+   "translation": "Sprawdź i {0} dokument „{documentName}” utworzony przez użytkownika {inviterName}"
+  },
+  {
+   "locale": "pl",
+   "file": "packages/lib/translations/pl/web.po",
+   "line": 519,
+   "key": "{teamName} has invited you to {0}<0/>\"{documentName}\"",
+   "kind": "tag",
+   "missing": "<0/>",
+   "extra": "",
+   "source": "{teamName} has invited you to {0}<0/>\"{documentName}\"",
+   "translation": "Sprawdź i {0} dokument „{documentName}” utworzony przez zespół {teamName}"
+  },
+  {
+   "locale": "zh",
+   "file": "packages/lib/translations/zh/web.po",
+   "line": 189,
+   "key": "{0, plural, one {<0>You have <1>1</1> pending invitation</0>} other {<2>You have <3>#</3> pending invitations</2>}}",
+   "kind": "tag",
+   "missing": "<0>,<1>",
+   "extra": "",
+   "source": "{0, plural, one {<0>You have <1>1</1> pending invitation</0>} other {<2>You have <3>#</3> pending invitations</2>}}",
+   "translation": "{0, plural, other {<2>您有 <3>#</3> 条待处理邀请</2>}}"
+  }
+ ],
+ "findings_truncated": false
+}

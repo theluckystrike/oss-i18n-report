@@ -1,0 +1,42 @@
+{
+ "repo": "PostHog/posthog",
+ "url": "https://github.com/PostHog/posthog",
+ "category": "analytics",
+ "note": null,
+ "commit": "6ad75d28ee7cfcbb3aa4131ab34eb3131a0ec353",
+ "commit_date": "2026-10-03",
+ "audited_at": "2026-10-03",
+ "tool_commit": "34d6ce1e1c1b55ea7c8895891c73553e736c6c62",
+ "stars": 39966,
+ "pushed_at": "2026-09-27",
+ "default_branch": "master",
+ "description": ":hedgehog: PostHog is the leading platform for building self-driving products. Our developer tools – AI observability, analytics, session replay, flags, experiments, error tracking, logs, and more – capture all the context agents need to diagnose problems, uncover opportunities, and ship fixes. Steer it all from Slack, web, desktop, or the MCP.",
+ "meta_source": "repos.ecosyste.ms",
+ "owner_type": "Organization",
+ "tms": [
+  "lokalise"
+ ],
+ "tms_evidence": {
+  "lokalise": [
+   "config file frontend/public/services/lokalise.png",
+   "config file products/warehouse_sources/backend/temporal/data_imports/sources/generated_configs/lokalise.py"
+  ]
+ },
+ "automation": [],
+ "activity": {
+  "available": true,
+  "window_days": 180,
+  "commits": 26042,
+  "authors": 285,
+  "outside_commits": 159,
+  "outside_authors": 114,
+  "locale_commits": 0,
+  "outside_locale_commits": 0,
+  "outside_locale_authors": 0,
+  "bot_locale_commits": 0,
+  "last_outside_locale_commit": null,
+  "last_outside_commit": "2026-09-30",
+  "bot_locale_tms": {}
+ },
+ "skipped": "no locale files with an English source and 2+ translations found"
+}

@@ -1,0 +1,96 @@
+{
+ "repo": "notum-cz/strapi-plugin-record-locking",
+ "url": "https://github.com/notum-cz/strapi-plugin-record-locking",
+ "category": "plugin",
+ "note": null,
+ "commit": "6528fbd2203c3bb6bd275e427f7d3b97d8fe95f6",
+ "commit_date": "2026-06-15",
+ "audited_at": "2026-10-03",
+ "tool_commit": "34d6ce1e1c1b55ea7c8895891c73553e736c6c62",
+ "stars": 29,
+ "pushed_at": "2026-06-15",
+ "default_branch": "main",
+ "description": "This plugin provides the functionality to prevent data loss in cases where multiple users are simultaneously editing the same record within STRAPI v5.",
+ "meta_source": "repos.ecosyste.ms",
+ "owner_type": "Organization",
+ "tms": [],
+ "tms_evidence": {},
+ "automation": [],
+ "activity": {
+  "available": true,
+  "window_days": 180,
+  "commits": 4,
+  "authors": 2,
+  "outside_commits": 4,
+  "outside_authors": 2,
+  "locale_commits": 0,
+  "outside_locale_commits": 0,
+  "outside_locale_authors": 0,
+  "bot_locale_commits": 0,
+  "last_outside_locale_commit": null,
+  "last_outside_commit": "2026-06-15",
+  "bot_locale_tms": {}
+ },
+ "locale_groups": [
+  {
+   "pattern": "admin/src/translations/{loc}.json",
+   "source": "admin/src/translations/en.json",
+   "source_locale": "en",
+   "mode": "icu",
+   "source_strings": 5,
+   "locales": [
+    "cs",
+    "de"
+   ],
+   "findings": 0
+  }
+ ],
+ "locales": [
+  "cs",
+  "de"
+ ],
+ "locales_count": 2,
+ "strings_checked": 10,
+ "findings_total": 0,
+ "findings_by_kind": {
+  "syntax": 0,
+  "renamed": 0,
+  "dropped": 0,
+  "extra": 0,
+  "broken": 0,
+  "mixed": 0,
+  "tag": 0,
+  "plural_count": 0
+ },
+ "findings_per_1k": 0.0,
+ "locales_with_findings": 0,
+ "worst_locales": [],
+ "per_locale": {
+  "cs": {
+   "checked": 5,
+   "syntax": 0,
+   "renamed": 0,
+   "dropped": 0,
+   "extra": 0,
+   "broken": 0,
+   "mixed": 0,
+   "tag": 0,
+   "plural_count": 0
+  },
+  "de": {
+   "checked": 5,
+   "syntax": 0,
+   "renamed": 0,
+   "dropped": 0,
+   "extra": 0,
+   "broken": 0,
+   "mixed": 0,
+   "tag": 0,
+   "plural_count": 0
+  }
+ },
+ "examples": [],
+ "parse_errors": [],
+ "findings": [],
+ "findings_truncated": false
+}

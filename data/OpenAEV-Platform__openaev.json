@@ -1,0 +1,315 @@
+{
+ "repo": "OpenAEV-Platform/openaev",
+ "url": "https://github.com/OpenAEV-Platform/openaev",
+ "category": "security",
+ "note": "fix PR already open: OpenAEV-Platform/openaev#8258 (per i18n-audit findings log)",
+ "commit": "d1248c926f74d916a395fb9910770b913cfdec28",
+ "commit_date": "2026-10-02",
+ "audited_at": "2026-10-03",
+ "tool_commit": "34d6ce1e1c1b55ea7c8895891c73553e736c6c62",
+ "stars": 1821,
+ "pushed_at": "2026-10-01",
+ "default_branch": "main",
+ "description": "Open Adversarial Exposure Validation Platform",
+ "meta_source": "repos.ecosyste.ms",
+ "owner_type": "Organization",
+ "tms": [],
+ "tms_evidence": {},
+ "automation": [
+  "openaev-front/scripts/auto-translate.js"
+ ],
+ "activity": {
+  "available": true,
+  "window_days": 180,
+  "commits": 1550,
+  "authors": 49,
+  "outside_commits": 26,
+  "outside_authors": 21,
+  "locale_commits": 189,
+  "outside_locale_commits": 7,
+  "outside_locale_authors": 7,
+  "bot_locale_commits": 6,
+  "last_outside_locale_commit": "2026-10-02",
+  "last_outside_commit": "2026-10-02",
+  "bot_locale_tms": {}
+ },
+ "locale_groups": [
+  {
+   "pattern": "openaev-front/src/utils/lang/{loc}.json",
+   "source": "openaev-front/src/utils/lang/en.json",
+   "source_locale": "en",
+   "mode": "icu",
+   "source_strings": 4279,
+   "locales": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "ko",
+    "ru",
+    "zh"
+   ],
+   "findings": 4
+  }
+ ],
+ "locales": [
+  "de",
+  "es",
+  "fr",
+  "it",
+  "ja",
+  "ko",
+  "ru",
+  "zh"
+ ],
+ "locales_count": 8,
+ "strings_checked": 34232,
+ "findings_total": 4,
+ "findings_by_kind": {
+  "syntax": 0,
+  "renamed": 1,
+  "dropped": 1,
+  "extra": 1,
+  "broken": 1,
+  "mixed": 0,
+  "tag": 4,
+  "plural_count": 0
+ },
+ "findings_per_1k": 0.12,
+ "locales_with_findings": 3,
+ "worst_locales": [
+  {
+   "locale": "zh",
+   "findings": 2,
+   "checked": 4279
+  },
+  {
+   "locale": "ja",
+   "findings": 1,
+   "checked": 4279
+  },
+  {
+   "locale": "ko",
+   "findings": 1,
+   "checked": 4279
+  }
+ ],
+ "per_locale": {
+  "de": {
+   "checked": 4279,
+   "syntax": 0,
+   "renamed": 0,
+   "dropped": 0,
+   "extra": 0,
+   "broken": 0,
+   "mixed": 0,
+   "tag": 0,
+   "plural_count": 0
+  },
+  "es": {
+   "checked": 4279,
+   "syntax": 0,
+   "renamed": 0,
+   "dropped": 0,
+   "extra": 0,
+   "broken": 0,
+   "mixed": 0,
+   "tag": 0,
+   "plural_count": 0
+  },
+  "fr": {
+   "checked": 4279,
+   "syntax": 0,
+   "renamed": 0,
+   "dropped": 0,
+   "extra": 0,
+   "broken": 0,
+   "mixed": 0,
+   "tag": 0,
+   "plural_count": 0
+  },
+  "it": {
+   "checked": 4279,
+   "syntax": 0,
+   "renamed": 0,
+   "dropped": 0,
+   "extra": 0,
+   "broken": 0,
+   "mixed": 0,
+   "tag": 2,
+   "plural_count": 0
+  },
+  "ja": {
+   "checked": 4279,
+   "syntax": 0,
+   "renamed": 0,
+   "dropped": 0,
+   "extra": 0,
+   "broken": 1,
+   "mixed": 0,
+   "tag": 2,
+   "plural_count": 0
+  },
+  "ko": {
+   "checked": 4279,
+   "syntax": 0,
+   "renamed": 0,
+   "dropped": 1,
+   "extra": 0,
+   "broken": 0,
+   "mixed": 0,
+   "tag": 0,
+   "plural_count": 0
+  },
+  "ru": {
+   "checked": 4279,
+   "syntax": 0,
+   "renamed": 0,
+   "dropped": 0,
+   "extra": 0,
+   "broken": 0,
+   "mixed": 0,
+   "tag": 0,
+   "plural_count": 0
+  },
+  "zh": {
+   "checked": 4279,
+   "syntax": 0,
+   "renamed": 1,
+   "dropped": 0,
+   "extra": 1,
+   "broken": 0,
+   "mixed": 0,
+   "tag": 0,
+   "plural_count": 0
+  }
+ },
+ "examples": [
+  {
+   "locale": "ja",
+   "file": "openaev-front/src/utils/lang/ja.json",
+   "line": 1765,
+   "key": "getting_started_description_test_scenarios_text",
+   "kind": "broken",
+   "missing": "",
+   "extra": "",
+   "source": "Test more scenarios from our {xtmHubLink} !",
+   "translation": "11}}のシナリオをもっとテストする!"
+  },
+  {
+   "locale": "ko",
+   "file": "openaev-front/src/utils/lang/ko.json",
+   "line": 1765,
+   "key": "getting_started_description_test_scenarios_text",
+   "kind": "dropped",
+   "missing": "{xtmHubLink}",
+   "extra": "",
+   "source": "Test more scenarios from our {xtmHubLink} !",
+   "translation": "에서 더 많은 시나리오를 테스트하세요 !"
+  },
+  {
+   "locale": "zh",
+   "file": "openaev-front/src/utils/lang/zh.json",
+   "line": 1312,
+   "key": "Do you want to launch this atomic testing: {title}?",
+   "kind": "renamed",
+   "missing": "{title}",
+   "extra": "{truc}",
+   "source": "Do you want to launch this atomic testing: {title}?",
+   "translation": "你想启动这个原子测试吗: {truc}?"
+  }
+ ],
+ "parse_errors": [],
+ "findings": [
+  {
+   "locale": "ja",
+   "file": "openaev-front/src/utils/lang/ja.json",
+   "line": 1765,
+   "key": "getting_started_description_test_scenarios_text",
+   "kind": "broken",
+   "missing": "",
+   "extra": "",
+   "source": "Test more scenarios from our {xtmHubLink} !",
+   "translation": "11}}のシナリオをもっとテストする!"
+  },
+  {
+   "locale": "ko",
+   "file": "openaev-front/src/utils/lang/ko.json",
+   "line": 1765,
+   "key": "getting_started_description_test_scenarios_text",
+   "kind": "dropped",
+   "missing": "{xtmHubLink}",
+   "extra": "",
+   "source": "Test more scenarios from our {xtmHubLink} !",
+   "translation": "에서 더 많은 시나리오를 테스트하세요 !"
+  },
+  {
+   "locale": "zh",
+   "file": "openaev-front/src/utils/lang/zh.json",
+   "line": 1312,
+   "key": "Do you want to launch this atomic testing: {title}?",
+   "kind": "renamed",
+   "missing": "{title}",
+   "extra": "{truc}",
+   "source": "Do you want to launch this atomic testing: {title}?",
+   "translation": "你想启动这个原子测试吗: {truc}?"
+  },
+  {
+   "locale": "zh",
+   "file": "openaev-front/src/utils/lang/zh.json",
+   "line": 1611,
+   "key": "faq.howto.understand_results.details",
+   "kind": "extra",
+   "missing": "",
+   "extra": "{levelList}",
+   "source": "You can look at your assessments results at different level: \n",
+   "translation": "您可以查看不同级别的评估结果：\n {levelList}"
+  },
+  {
+   "locale": "it",
+   "file": "openaev-front/src/utils/lang/it.json",
+   "line": 3798,
+   "key": "This is a communication check before the beginning of the simulation. Please click on the following link in order to confirm you successfully received this message <a href=${'comcheck.url}'>${comcheck.url}</a>.",
+   "kind": "tag",
+   "missing": "",
+   "extra": "<a/>",
+   "source": "This is a communication check before the beginning of the simulation. Please click on the following link in order to confirm you successfully received this message: <a href='${comcheck.url}'>${comcheck.url}</a>.",
+   "translation": "Questo è un controllo di comunicazione prima dell'inizio della simulazione. Fare clic sul seguente link per confermare la ricezione del messaggio: <a href='${comcheck.url}'>${comcheck.url}<a/>."
+  },
+  {
+   "locale": "it",
+   "file": "openaev-front/src/utils/lang/it.json",
+   "line": 4172,
+   "key": "We would like thank your for your participation in this simulation. You are kindly requested to fill this lessons learned questionnaire: <a href='${lessons_uri}'>${lessons_uri}</a>.",
+   "kind": "tag",
+   "missing": "",
+   "extra": "<a/>",
+   "source": "We would like thank your for your participation in this simulation. You are kindly requested to fill this lessons learned questionnaire: <a href='${lessons_uri}'>${lessons_uri}</a>.",
+   "translation": "Desideriamo ringraziarla per la sua partecipazione a questa simulazione. Siete pregati di compilare il questionario sulle lezioni apprese: <a href='${lessons_uri}'>{lessons_uri}<a/>."
+  },
+  {
+   "locale": "ja",
+   "file": "openaev-front/src/utils/lang/ja.json",
+   "line": 3798,
+   "key": "This is a communication check before the beginning of the simulation. Please click on the following link in order to confirm you successfully received this message <a href=${'comcheck.url}'>${comcheck.url}</a>.",
+   "kind": "tag",
+   "missing": "",
+   "extra": "<a/>",
+   "source": "This is a communication check before the beginning of the simulation. Please click on the following link in order to confirm you successfully received this message: <a href='${comcheck.url}'>${comcheck.url}</a>.",
+   "translation": "これはシミュレーション開始前の通信チェックです。このメッセージが正常に受信されたことを確認するため、以下のリンクをクリックしてください：<a href='${comcheck.url}'>{comcheck.url}<a/>."
+  },
+  {
+   "locale": "ja",
+   "file": "openaev-front/src/utils/lang/ja.json",
+   "line": 4172,
+   "key": "We would like thank your for your participation in this simulation. You are kindly requested to fill this lessons learned questionnaire: <a href='${lessons_uri}'>${lessons_uri}</a>.",
+   "kind": "tag",
+   "missing": "",
+   "extra": "<a/>",
+   "source": "We would like thank your for your participation in this simulation. You are kindly requested to fill this lessons learned questionnaire: <a href='${lessons_uri}'>${lessons_uri}</a>.",
+   "translation": "このシミュレーションにご参加いただき、ありがとうございました。このアンケートにご協力ください：<a href='${lessons_uri}'>{lessons_uri}<a/>."
+  }
+ ],
+ "findings_truncated": false
+}

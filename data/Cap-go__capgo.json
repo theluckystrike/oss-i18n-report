@@ -1,0 +1,47 @@
+{
+ "repo": "Cap-go/capgo",
+ "url": "https://github.com/Cap-go/capgo",
+ "category": "developer-tools",
+ "note": null,
+ "commit": "6629ae3b9bc5e44617c95a1f9e56ba3a67c0d96f",
+ "commit_date": "2026-10-03",
+ "audited_at": "2026-10-03",
+ "tool_commit": "34d6ce1e1c1b55ea7c8895891c73553e736c6c62",
+ "stars": 209,
+ "pushed_at": "2026-10-03",
+ "default_branch": "main",
+ "description": "Console, Backend and CLI to manage Capgo Instant update and Native build for Capacitor apps ",
+ "meta_source": "ungh.cc",
+ "owner_type": "Organization",
+ "tms": [
+  "inlang",
+  "lokalise"
+ ],
+ "tms_evidence": {
+  "inlang": [
+   "config file project.inlang/.gitignore",
+   "config file project.inlang/project_id",
+   "config file project.inlang/settings.json"
+  ],
+  "lokalise": [
+   "mentioned in README.md: \"...n Ally](https://marketplace.visualstudio.com/items?itemName=lokalise.i18n-ally) -     All in one i18n support   - [Windi CSS Int...\""
+  ]
+ },
+ "automation": [],
+ "activity": {
+  "available": true,
+  "window_days": 180,
+  "commits": 2711,
+  "authors": 16,
+  "outside_commits": 24,
+  "outside_authors": 6,
+  "locale_commits": 0,
+  "outside_locale_commits": 0,
+  "outside_locale_authors": 0,
+  "bot_locale_commits": 0,
+  "last_outside_locale_commit": null,
+  "last_outside_commit": "2026-09-12",
+  "bot_locale_tms": {}
+ },
+ "skipped": "no locale files with an English source and 2+ translations found"
+}

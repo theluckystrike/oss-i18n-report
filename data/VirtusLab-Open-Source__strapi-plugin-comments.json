@@ -1,0 +1,205 @@
+{
+ "repo": "VirtusLab-Open-Source/strapi-plugin-comments",
+ "url": "https://github.com/VirtusLab-Open-Source/strapi-plugin-comments",
+ "category": "plugin",
+ "note": null,
+ "commit": "62d08effa7f7b67d4b897fa2f566ad86464f03c4",
+ "commit_date": "2026-09-15",
+ "audited_at": "2026-10-03",
+ "tool_commit": "34d6ce1e1c1b55ea7c8895891c73553e736c6c62",
+ "stars": 436,
+ "pushed_at": "2026-09-15",
+ "default_branch": "master",
+ "description": "A plugin for Strapi Headless CMS that provides end to end comments feature with their moderation panel, bad words filtering, abuse reporting and more.",
+ "meta_source": "repos.ecosyste.ms",
+ "owner_type": "Organization",
+ "tms": [],
+ "tms_evidence": {},
+ "automation": [],
+ "activity": {
+  "available": true,
+  "window_days": 180,
+  "commits": 25,
+  "authors": 5,
+  "outside_commits": 7,
+  "outside_authors": 3,
+  "locale_commits": 3,
+  "outside_locale_commits": 1,
+  "outside_locale_authors": 1,
+  "bot_locale_commits": 0,
+  "last_outside_locale_commit": "2026-09-15",
+  "last_outside_commit": "2026-09-15",
+  "bot_locale_tms": {}
+ },
+ "locale_groups": [
+  {
+   "pattern": "admin/src/translations/{loc}.ts",
+   "source": "admin/src/translations/en.ts",
+   "source_locale": "en",
+   "mode": "icu",
+   "source_strings": 216,
+   "locales": [
+    "fr",
+    "pl",
+    "pt-BR",
+    "ru",
+    "tr",
+    "zh-Hans"
+   ],
+   "findings": 2
+  }
+ ],
+ "locales": [
+  "fr",
+  "pl",
+  "pt-BR",
+  "ru",
+  "tr",
+  "zh-Hans"
+ ],
+ "locales_count": 6,
+ "strings_checked": 1174,
+ "findings_total": 2,
+ "findings_by_kind": {
+  "syntax": 0,
+  "renamed": 2,
+  "dropped": 0,
+  "extra": 0,
+  "broken": 0,
+  "mixed": 0,
+  "tag": 0,
+  "plural_count": 0
+ },
+ "findings_per_1k": 1.7,
+ "locales_with_findings": 2,
+ "worst_locales": [
+  {
+   "locale": "fr",
+   "findings": 1,
+   "checked": 216
+  },
+  {
+   "locale": "tr",
+   "findings": 1,
+   "checked": 200
+  }
+ ],
+ "per_locale": {
+  "fr": {
+   "checked": 216,
+   "syntax": 0,
+   "renamed": 1,
+   "dropped": 0,
+   "extra": 0,
+   "broken": 0,
+   "mixed": 0,
+   "tag": 0,
+   "plural_count": 0
+  },
+  "pl": {
+   "checked": 202,
+   "syntax": 0,
+   "renamed": 0,
+   "dropped": 0,
+   "extra": 0,
+   "broken": 0,
+   "mixed": 0,
+   "tag": 0,
+   "plural_count": 0
+  },
+  "pt-BR": {
+   "checked": 152,
+   "syntax": 0,
+   "renamed": 0,
+   "dropped": 0,
+   "extra": 0,
+   "broken": 0,
+   "mixed": 0,
+   "tag": 0,
+   "plural_count": 0
+  },
+  "ru": {
+   "checked": 202,
+   "syntax": 0,
+   "renamed": 0,
+   "dropped": 0,
+   "extra": 0,
+   "broken": 0,
+   "mixed": 0,
+   "tag": 0,
+   "plural_count": 0
+  },
+  "tr": {
+   "checked": 200,
+   "syntax": 0,
+   "renamed": 1,
+   "dropped": 0,
+   "extra": 0,
+   "broken": 0,
+   "mixed": 0,
+   "tag": 0,
+   "plural_count": 0
+  },
+  "zh-Hans": {
+   "checked": 202,
+   "syntax": 0,
+   "renamed": 0,
+   "dropped": 0,
+   "extra": 0,
+   "broken": 0,
+   "mixed": 0,
+   "tag": 0,
+   "plural_count": 0
+  }
+ },
+ "examples": [
+  {
+   "locale": "tr",
+   "file": "admin/src/translations/tr.ts",
+   "line": null,
+   "key": "page.details.panel.discussion.warnings.reports.dialog.actions.resolve.selected",
+   "kind": "renamed",
+   "missing": "{count}",
+   "extra": "{Count}",
+   "source": "Resolve reports ({count})",
+   "translation": "Raporları çözümle ({Count})"
+  },
+  {
+   "locale": "fr",
+   "file": "admin/src/translations/fr.ts",
+   "line": null,
+   "key": "page.settings.form.approvalFlow.hint",
+   "kind": "renamed",
+   "missing": "{name}",
+   "extra": "{nom}",
+   "source": "Comments associated with content type \"{name}\" are going to be taken through manual approval flow",
+   "translation": "Les commentaires associés au type de contenu « {nom} » seront soumis à un flux de vérification manuel"
+  }
+ ],
+ "parse_errors": [],
+ "findings": [
+  {
+   "locale": "fr",
+   "file": "admin/src/translations/fr.ts",
+   "line": null,
+   "key": "page.settings.form.approvalFlow.hint",
+   "kind": "renamed",
+   "missing": "{name}",
+   "extra": "{nom}",
+   "source": "Comments associated with content type \"{name}\" are going to be taken through manual approval flow",
+   "translation": "Les commentaires associés au type de contenu « {nom} » seront soumis à un flux de vérification manuel"
+  },
+  {
+   "locale": "tr",
+   "file": "admin/src/translations/tr.ts",
+   "line": null,
+   "key": "page.details.panel.discussion.warnings.reports.dialog.actions.resolve.selected",
+   "kind": "renamed",
+   "missing": "{count}",
+   "extra": "{Count}",
+   "source": "Resolve reports ({count})",
+   "translation": "Raporları çözümle ({Count})"
+  }
+ ],
+ "findings_truncated": false
+}

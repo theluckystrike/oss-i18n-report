@@ -1,0 +1,671 @@
+{
+ "repo": "forem/forem",
+ "url": "https://github.com/forem/forem",
+ "category": "community",
+ "note": null,
+ "commit": "ce7970420a1ea797579a52d39a8c37baac9aa50a",
+ "commit_date": "2026-10-02",
+ "audited_at": "2026-10-03",
+ "tool_commit": "34d6ce1e1c1b55ea7c8895891c73553e736c6c62",
+ "stars": 22784,
+ "pushed_at": "2026-09-29",
+ "default_branch": "main",
+ "description": "For empowering community 🌱",
+ "meta_source": "repos.ecosyste.ms",
+ "owner_type": "Organization",
+ "tms": [],
+ "tms_evidence": {},
+ "automation": [],
+ "activity": {
+  "available": true,
+  "window_days": 180,
+  "commits": 562,
+  "authors": 36,
+  "outside_commits": 50,
+  "outside_authors": 25,
+  "locale_commits": 77,
+  "outside_locale_commits": 6,
+  "outside_locale_authors": 5,
+  "bot_locale_commits": 2,
+  "last_outside_locale_commit": "2026-09-26",
+  "last_outside_commit": "2026-10-02",
+  "bot_locale_tms": {}
+ },
+ "locale_groups": [
+  {
+   "pattern": "config/locales/controllers/admin/{loc}.yml",
+   "source": "config/locales/controllers/admin/en.yml",
+   "source_locale": "en",
+   "mode": "icu",
+   "source_strings": 226,
+   "locales": [
+    "fr",
+    "pt"
+   ],
+   "findings": 0
+  },
+  {
+   "pattern": "config/locales/controllers/api/{loc}.yml",
+   "source": "config/locales/controllers/api/en.yml",
+   "source_locale": "en",
+   "mode": "icu",
+   "source_strings": 12,
+   "locales": [
+    "fr",
+    "pt"
+   ],
+   "findings": 0
+  },
+  {
+   "pattern": "config/locales/controllers/{loc}.yml",
+   "source": "config/locales/controllers/en.yml",
+   "source_locale": "en",
+   "mode": "icu",
+   "source_strings": 133,
+   "locales": [
+    "fr",
+    "pt"
+   ],
+   "findings": 0
+  },
+  {
+   "pattern": "config/locales/devise.{loc}.yml",
+   "source": "config/locales/devise.en.yml",
+   "source_locale": "en",
+   "mode": "icu",
+   "source_strings": 68,
+   "locales": [
+    "fr",
+    "pt"
+   ],
+   "findings": 0
+  },
+  {
+   "pattern": "config/locales/devise_invitable.{loc}.yml",
+   "source": "config/locales/devise_invitable.en.yml",
+   "source_locale": "en",
+   "mode": "icu",
+   "source_strings": 19,
+   "locales": [
+    "fr",
+    "pt"
+   ],
+   "findings": 0
+  },
+  {
+   "pattern": "config/locales/{loc}.yml",
+   "source": "config/locales/en.yml",
+   "source_locale": "en",
+   "mode": "icu",
+   "source_strings": 221,
+   "locales": [
+    "fr",
+    "pt"
+   ],
+   "findings": 0
+  },
+  {
+   "pattern": "config/locales/helpers/{loc}.yml",
+   "source": "config/locales/helpers/en.yml",
+   "source_locale": "en",
+   "mode": "icu",
+   "source_strings": 382,
+   "locales": [
+    "fr",
+    "pt"
+   ],
+   "findings": 0
+  },
+  {
+   "pattern": "config/locales/languages/{loc}.yml",
+   "source": "config/locales/languages/en.yml",
+   "source_locale": "en",
+   "mode": "icu",
+   "source_strings": 109,
+   "locales": [
+    "fr",
+    "pt"
+   ],
+   "findings": 0
+  },
+  {
+   "pattern": "config/locales/lib/{loc}.yml",
+   "source": "config/locales/lib/en.yml",
+   "source_locale": "en",
+   "mode": "icu",
+   "source_strings": 141,
+   "locales": [
+    "fr",
+    "pt"
+   ],
+   "findings": 0
+  },
+  {
+   "pattern": "config/locales/liquid_tags/{loc}.yml",
+   "source": "config/locales/liquid_tags/en.yml",
+   "source_locale": "en",
+   "mode": "icu",
+   "source_strings": 133,
+   "locales": [
+    "fr",
+    "pt"
+   ],
+   "findings": 0
+  },
+  {
+   "pattern": "config/locales/mailers/{loc}.yml",
+   "source": "config/locales/mailers/en.yml",
+   "source_locale": "en",
+   "mode": "icu",
+   "source_strings": 47,
+   "locales": [
+    "fr",
+    "pt"
+   ],
+   "findings": 0
+  },
+  {
+   "pattern": "config/locales/misc/{loc}.yml",
+   "source": "config/locales/misc/en.yml",
+   "source_locale": "en",
+   "mode": "icu",
+   "source_strings": 27,
+   "locales": [
+    "fr",
+    "pt"
+   ],
+   "findings": 0
+  },
+  {
+   "pattern": "config/locales/models/{loc}.yml",
+   "source": "config/locales/models/en.yml",
+   "source_locale": "en",
+   "mode": "icu",
+   "source_strings": 119,
+   "locales": [
+    "fr",
+    "pt"
+   ],
+   "findings": 0
+  },
+  {
+   "pattern": "config/locales/services/{loc}.yml",
+   "source": "config/locales/services/en.yml",
+   "source_locale": "en",
+   "mode": "icu",
+   "source_strings": 60,
+   "locales": [
+    "fr",
+    "pt"
+   ],
+   "findings": 0
+  },
+  {
+   "pattern": "config/locales/utils/{loc}.yml",
+   "source": "config/locales/utils/en.yml",
+   "source_locale": "en",
+   "mode": "icu",
+   "source_strings": 7,
+   "locales": [
+    "fr",
+    "pt"
+   ],
+   "findings": 0
+  },
+  {
+   "pattern": "config/locales/validators/{loc}.yml",
+   "source": "config/locales/validators/en.yml",
+   "source_locale": "en",
+   "mode": "icu",
+   "source_strings": 13,
+   "locales": [
+    "fr",
+    "pt"
+   ],
+   "findings": 0
+  },
+  {
+   "pattern": "config/locales/views/actions/{loc}.yml",
+   "source": "config/locales/views/actions/en.yml",
+   "source_locale": "en",
+   "mode": "icu",
+   "source_strings": 13,
+   "locales": [
+    "fr",
+    "pt"
+   ],
+   "findings": 0
+  },
+  {
+   "pattern": "config/locales/views/admin/{loc}.yml",
+   "source": "config/locales/views/admin/en.yml",
+   "source_locale": "en",
+   "mode": "icu",
+   "source_strings": 628,
+   "locales": [
+    "fr",
+    "pt"
+   ],
+   "findings": 0
+  },
+  {
+   "pattern": "config/locales/views/admin/surveys.{loc}.yml",
+   "source": "config/locales/views/admin/surveys.en.yml",
+   "source_locale": "en",
+   "mode": "icu",
+   "source_strings": 11,
+   "locales": [
+    "fr",
+    "pt"
+   ],
+   "findings": 0
+  },
+  {
+   "pattern": "config/locales/views/agent_sessions/{loc}.yml",
+   "source": "config/locales/views/agent_sessions/en.yml",
+   "source_locale": "en",
+   "mode": "icu",
+   "source_strings": 32,
+   "locales": [
+    "fr",
+    "pt"
+   ],
+   "findings": 0
+  },
+  {
+   "pattern": "config/locales/views/article_form/{loc}.yml",
+   "source": "config/locales/views/article_form/en.yml",
+   "source_locale": "en",
+   "mode": "icu",
+   "source_strings": 5,
+   "locales": [
+    "fr",
+    "pt"
+   ],
+   "findings": 0
+  },
+  {
+   "pattern": "config/locales/views/articles/{loc}.yml",
+   "source": "config/locales/views/articles/en.yml",
+   "source_locale": "en",
+   "mode": "icu",
+   "source_strings": 89,
+   "locales": [
+    "fr",
+    "pt"
+   ],
+   "findings": 0
+  },
+  {
+   "pattern": "config/locales/views/auth/{loc}.yml",
+   "source": "config/locales/views/auth/en.yml",
+   "source_locale": "en",
+   "mode": "icu",
+   "source_strings": 57,
+   "locales": [
+    "fr",
+    "pt"
+   ],
+   "findings": 0
+  },
+  {
+   "pattern": "config/locales/views/calendar/{loc}.yml",
+   "source": "config/locales/views/calendar/en.yml",
+   "source_locale": "en",
+   "mode": "icu",
+   "source_strings": 25,
+   "locales": [
+    "fr",
+    "pt"
+   ],
+   "findings": 0
+  },
+  {
+   "pattern": "config/locales/views/comments/{loc}.yml",
+   "source": "config/locales/views/comments/en.yml",
+   "source_locale": "en",
+   "mode": "icu",
+   "source_strings": 118,
+   "locales": [
+    "fr",
+    "pt"
+   ],
+   "findings": 0
+  },
+  {
+   "pattern": "config/locales/views/credits/{loc}.yml",
+   "source": "config/locales/views/credits/en.yml",
+   "source_locale": "en",
+   "mode": "icu",
+   "source_strings": 36,
+   "locales": [
+    "fr",
+    "pt"
+   ],
+   "findings": 0
+  },
+  {
+   "pattern": "config/locales/views/dashboard/{loc}.yml",
+   "source": "config/locales/views/dashboard/en.yml",
+   "source_locale": "en",
+   "mode": "icu",
+   "source_strings": 238,
+   "locales": [
+    "fr",
+    "pt"
+   ],
+   "findings": 0
+  },
+  {
+   "pattern": "config/locales/views/editor/{loc}.yml",
+   "source": "config/locales/views/editor/en.yml",
+   "source_locale": "en",
+   "mode": "icu",
+   "source_strings": 22,
+   "locales": [
+    "fr",
+    "pt"
+   ],
+   "findings": 0
+  },
+  {
+   "pattern": "config/locales/views/feedback/{loc}.yml",
+   "source": "config/locales/views/feedback/en.yml",
+   "source_locale": "en",
+   "mode": "icu",
+   "source_strings": 13,
+   "locales": [
+    "fr",
+    "pt"
+   ],
+   "findings": 0
+  },
+  {
+   "pattern": "config/locales/views/leaderboards/{loc}.yml",
+   "source": "config/locales/views/leaderboards/en.yml",
+   "source_locale": "en",
+   "mode": "icu",
+   "source_strings": 8,
+   "locales": [
+    "fr",
+    "pt"
+   ],
+   "findings": 0
+  },
+  {
+   "pattern": "config/locales/views/leadership/{loc}.yml",
+   "source": "config/locales/views/leadership/en.yml",
+   "source_locale": "en",
+   "mode": "icu",
+   "source_strings": 29,
+   "locales": [
+    "fr",
+    "pt"
+   ],
+   "findings": 0
+  },
+  {
+   "pattern": "config/locales/views/liquids/{loc}.yml",
+   "source": "config/locales/views/liquids/en.yml",
+   "source_locale": "en",
+   "mode": "icu",
+   "source_strings": 27,
+   "locales": [
+    "fr",
+    "pt"
+   ],
+   "findings": 0
+  },
+  {
+   "pattern": "config/locales/views/listings/{loc}.yml",
+   "source": "config/locales/views/listings/en.yml",
+   "source_locale": "en",
+   "mode": "icu",
+   "source_strings": 57,
+   "locales": [
+    "fr",
+    "pt"
+   ],
+   "findings": 0
+  },
+  {
+   "pattern": "config/locales/views/main/{loc}.yml",
+   "source": "config/locales/views/main/en.yml",
+   "source_locale": "en",
+   "mode": "icu",
+   "source_strings": 61,
+   "locales": [
+    "fr",
+    "pt"
+   ],
+   "findings": 0
+  },
+  {
+   "pattern": "config/locales/views/manager/{loc}.yml",
+   "source": "config/locales/views/manager/en.yml",
+   "source_locale": "en",
+   "mode": "icu",
+   "source_strings": 15,
+   "locales": [
+    "fr",
+    "pt"
+   ],
+   "findings": 0
+  },
+  {
+   "pattern": "config/locales/views/misc/{loc}.yml",
+   "source": "config/locales/views/misc/en.yml",
+   "source_locale": "en",
+   "mode": "icu",
+   "source_strings": 92,
+   "locales": [
+    "fr",
+    "pt"
+   ],
+   "findings": 0
+  },
+  {
+   "pattern": "config/locales/views/moderations/{loc}.yml",
+   "source": "config/locales/views/moderations/en.yml",
+   "source_locale": "en",
+   "mode": "icu",
+   "source_strings": 177,
+   "locales": [
+    "fr",
+    "pt"
+   ],
+   "findings": 0
+  },
+  {
+   "pattern": "config/locales/views/notifications/{loc}.yml",
+   "source": "config/locales/views/notifications/en.yml",
+   "source_locale": "en",
+   "mode": "icu",
+   "source_strings": 81,
+   "locales": [
+    "fr",
+    "pt"
+   ],
+   "findings": 0
+  },
+  {
+   "pattern": "config/locales/views/organizations/{loc}.yml",
+   "source": "config/locales/views/organizations/en.yml",
+   "source_locale": "en",
+   "mode": "icu",
+   "source_strings": 182,
+   "locales": [
+    "fr",
+    "pt"
+   ],
+   "findings": 0
+  },
+  {
+   "pattern": "config/locales/views/podcasts/{loc}.yml",
+   "source": "config/locales/views/podcasts/en.yml",
+   "source_locale": "en",
+   "mode": "icu",
+   "source_strings": 28,
+   "locales": [
+    "fr",
+    "pt"
+   ],
+   "findings": 0
+  },
+  {
+   "pattern": "config/locales/views/reactions/{loc}.yml",
+   "source": "config/locales/views/reactions/en.yml",
+   "source_locale": "en",
+   "mode": "icu",
+   "source_strings": 31,
+   "locales": [
+    "fr",
+    "pt"
+   ],
+   "findings": 0
+  },
+  {
+   "pattern": "config/locales/views/search/{loc}.yml",
+   "source": "config/locales/views/search/en.yml",
+   "source_locale": "en",
+   "mode": "icu",
+   "source_strings": 23,
+   "locales": [
+    "fr",
+    "pt"
+   ],
+   "findings": 0
+  },
+  {
+   "pattern": "config/locales/views/settings/{loc}.yml",
+   "source": "config/locales/views/settings/en.yml",
+   "source_locale": "en",
+   "mode": "icu",
+   "source_strings": 248,
+   "locales": [
+    "fr",
+    "pt"
+   ],
+   "findings": 0
+  },
+  {
+   "pattern": "config/locales/views/sidebars/{loc}.yml",
+   "source": "config/locales/views/sidebars/en.yml",
+   "source_locale": "en",
+   "mode": "icu",
+   "source_strings": 5,
+   "locales": [
+    "fr",
+    "pt"
+   ],
+   "findings": 0
+  },
+  {
+   "pattern": "config/locales/views/subforems/{loc}.yml",
+   "source": "config/locales/views/subforems/en.yml",
+   "source_locale": "en",
+   "mode": "icu",
+   "source_strings": 188,
+   "locales": [
+    "fr",
+    "pt"
+   ],
+   "findings": 0
+  },
+  {
+   "pattern": "config/locales/views/tags/{loc}.yml",
+   "source": "config/locales/views/tags/en.yml",
+   "source_locale": "en",
+   "mode": "icu",
+   "source_strings": 42,
+   "locales": [
+    "fr",
+    "pt"
+   ],
+   "findings": 0
+  },
+  {
+   "pattern": "config/locales/views/trends/{loc}.yml",
+   "source": "config/locales/views/trends/en.yml",
+   "source_locale": "en",
+   "mode": "icu",
+   "source_strings": 16,
+   "locales": [
+    "fr",
+    "pt"
+   ],
+   "findings": 0
+  },
+  {
+   "pattern": "config/locales/views/users/{loc}.yml",
+   "source": "config/locales/views/users/en.yml",
+   "source_locale": "en",
+   "mode": "icu",
+   "source_strings": 69,
+   "locales": [
+    "fr"
+   ],
+   "findings": 0
+  }
+ ],
+ "locales": [
+  "fr",
+  "pt"
+ ],
+ "locales_count": 2,
+ "strings_checked": 7898,
+ "findings_total": 0,
+ "findings_by_kind": {
+  "syntax": 0,
+  "renamed": 0,
+  "dropped": 0,
+  "extra": 0,
+  "broken": 0,
+  "mixed": 0,
+  "tag": 1,
+  "plural_count": 0
+ },
+ "findings_per_1k": 0.0,
+ "locales_with_findings": 0,
+ "worst_locales": [],
+ "per_locale": {
+  "fr": {
+   "checked": 4364,
+   "syntax": 0,
+   "renamed": 0,
+   "dropped": 0,
+   "extra": 0,
+   "broken": 0,
+   "mixed": 0,
+   "tag": 1,
+   "plural_count": 0
+  },
+  "pt": {
+   "checked": 3534,
+   "syntax": 0,
+   "renamed": 0,
+   "dropped": 0,
+   "extra": 0,
+   "broken": 0,
+   "mixed": 0,
+   "tag": 0,
+   "plural_count": 0
+  }
+ },
+ "examples": [],
+ "parse_errors": [],
+ "findings": [
+  {
+   "locale": "fr",
+   "file": "config/locales/devise_invitable.fr.yml",
+   "line": 28,
+   "key": "devise.mailer.invitation_instructions.ignore",
+   "kind": "tag",
+   "missing": "",
+   "extra": "<br>",
+   "source": "If you don't want to accept the invitation, please ignore this email. Your account won't be created until you access the link above and set your password.",
+   "translation": "Si vous ne souhaitez pas accepter cette invitation, veuillez ignorer cet e-mail.<br />Votre compte ne sera pas créé tant que vous n'accéderez pas au lien ci-dessous et que vous ayez défini votre mot de passe."
+  }
+ ],
+ "findings_truncated": false
+}

@@ -1,0 +1,405 @@
+{
+ "repo": "docmost/docmost",
+ "url": "https://github.com/docmost/docmost",
+ "category": "knowledge-base",
+ "note": null,
+ "commit": "b6434371ed5fe5aada45126cdf7fe3aae9b22fcf",
+ "commit_date": "2026-09-30",
+ "audited_at": "2026-10-03",
+ "tool_commit": "34d6ce1e1c1b55ea7c8895891c73553e736c6c62",
+ "stars": 21860,
+ "pushed_at": "2026-10-02",
+ "default_branch": "main",
+ "description": "Docmost is an open-source collaborative wiki and documentation software. It is an open-source alternative to Confluence and Notion.",
+ "meta_source": "repos.ecosyste.ms",
+ "owner_type": "Organization",
+ "tms": [
+  "crowdin"
+ ],
+ "tms_evidence": {
+  "crowdin": [
+   "config file crowdin.yml",
+   "mentioned in README.md: \"...pment)  ## Thanks Special thanks to;  <img width=\"100\" alt=\"Crowdin\" src=\"https://github.com/user-attachments/assets/a6c3d352-e...\"",
+   "9 locale commits by crowdin in the last 180 days"
+  ]
+ },
+ "automation": [],
+ "activity": {
+  "available": true,
+  "window_days": 180,
+  "commits": 202,
+  "authors": 12,
+  "outside_commits": 16,
+  "outside_authors": 9,
+  "locale_commits": 12,
+  "outside_locale_commits": 1,
+  "outside_locale_authors": 1,
+  "bot_locale_commits": 9,
+  "last_outside_locale_commit": "2026-05-01",
+  "last_outside_commit": "2026-08-21",
+  "bot_locale_tms": {
+   "crowdin": 9
+  }
+ },
+ "locale_groups": [
+  {
+   "pattern": "apps/client/public/locales/{loc}/*.json",
+   "source": "apps/client/public/locales/en-US/translation.json",
+   "source_locale": "en-US",
+   "mode": "i18next",
+   "source_strings": 1478,
+   "locales": [
+    "de-DE",
+    "es-ES",
+    "fr-FR",
+    "it-IT",
+    "ja-JP",
+    "ko-KR",
+    "nl-NL",
+    "pt-BR",
+    "ru-RU",
+    "uk-UA",
+    "zh-CN"
+   ],
+   "findings": 11
+  }
+ ],
+ "locales": [
+  "de-DE",
+  "es-ES",
+  "fr-FR",
+  "it-IT",
+  "ja-JP",
+  "ko-KR",
+  "nl-NL",
+  "pt-BR",
+  "ru-RU",
+  "uk-UA",
+  "zh-CN"
+ ],
+ "locales_count": 11,
+ "strings_checked": 16258,
+ "findings_total": 11,
+ "findings_by_kind": {
+  "syntax": 0,
+  "renamed": 0,
+  "dropped": 1,
+  "extra": 0,
+  "broken": 10,
+  "mixed": 0,
+  "tag": 0,
+  "plural_count": 0
+ },
+ "findings_per_1k": 0.68,
+ "locales_with_findings": 6,
+ "worst_locales": [
+  {
+   "locale": "es-ES",
+   "findings": 3,
+   "checked": 1478
+  },
+  {
+   "locale": "ru-RU",
+   "findings": 3,
+   "checked": 1478
+  },
+  {
+   "locale": "uk-UA",
+   "findings": 2,
+   "checked": 1478
+  },
+  {
+   "locale": "fr-FR",
+   "findings": 1,
+   "checked": 1478
+  },
+  {
+   "locale": "ja-JP",
+   "findings": 1,
+   "checked": 1478
+  }
+ ],
+ "per_locale": {
+  "de-DE": {
+   "checked": 1478,
+   "syntax": 0,
+   "renamed": 0,
+   "dropped": 0,
+   "extra": 0,
+   "broken": 0,
+   "mixed": 0,
+   "tag": 0,
+   "plural_count": 0
+  },
+  "es-ES": {
+   "checked": 1478,
+   "syntax": 0,
+   "renamed": 0,
+   "dropped": 1,
+   "extra": 0,
+   "broken": 2,
+   "mixed": 0,
+   "tag": 0,
+   "plural_count": 0
+  },
+  "fr-FR": {
+   "checked": 1478,
+   "syntax": 0,
+   "renamed": 0,
+   "dropped": 0,
+   "extra": 0,
+   "broken": 1,
+   "mixed": 0,
+   "tag": 0,
+   "plural_count": 0
+  },
+  "it-IT": {
+   "checked": 1478,
+   "syntax": 0,
+   "renamed": 0,
+   "dropped": 0,
+   "extra": 0,
+   "broken": 0,
+   "mixed": 0,
+   "tag": 0,
+   "plural_count": 0
+  },
+  "ja-JP": {
+   "checked": 1478,
+   "syntax": 0,
+   "renamed": 0,
+   "dropped": 0,
+   "extra": 0,
+   "broken": 1,
+   "mixed": 0,
+   "tag": 0,
+   "plural_count": 0
+  },
+  "ko-KR": {
+   "checked": 1478,
+   "syntax": 0,
+   "renamed": 0,
+   "dropped": 0,
+   "extra": 0,
+   "broken": 0,
+   "mixed": 0,
+   "tag": 0,
+   "plural_count": 0
+  },
+  "nl-NL": {
+   "checked": 1478,
+   "syntax": 0,
+   "renamed": 0,
+   "dropped": 0,
+   "extra": 0,
+   "broken": 0,
+   "mixed": 0,
+   "tag": 0,
+   "plural_count": 0
+  },
+  "pt-BR": {
+   "checked": 1478,
+   "syntax": 0,
+   "renamed": 0,
+   "dropped": 0,
+   "extra": 0,
+   "broken": 1,
+   "mixed": 0,
+   "tag": 0,
+   "plural_count": 0
+  },
+  "ru-RU": {
+   "checked": 1478,
+   "syntax": 0,
+   "renamed": 0,
+   "dropped": 0,
+   "extra": 0,
+   "broken": 3,
+   "mixed": 0,
+   "tag": 0,
+   "plural_count": 0
+  },
+  "uk-UA": {
+   "checked": 1478,
+   "syntax": 0,
+   "renamed": 0,
+   "dropped": 0,
+   "extra": 0,
+   "broken": 2,
+   "mixed": 0,
+   "tag": 0,
+   "plural_count": 0
+  },
+  "zh-CN": {
+   "checked": 1478,
+   "syntax": 0,
+   "renamed": 0,
+   "dropped": 0,
+   "extra": 0,
+   "broken": 0,
+   "mixed": 0,
+   "tag": 0,
+   "plural_count": 0
+  }
+ },
+ "examples": [
+  {
+   "locale": "es-ES",
+   "file": "apps/client/public/locales/es-ES/translation.json",
+   "line": 438,
+   "key": "{{count}} Columns",
+   "kind": "broken",
+   "missing": "",
+   "extra": "",
+   "source": "{{count}} Columns",
+   "translation": "{count, plural, one {# columna} other {# columnas}}"
+  },
+  {
+   "locale": "fr-FR",
+   "file": "apps/client/public/locales/fr-FR/translation.json",
+   "line": 438,
+   "key": "{{count}} Columns",
+   "kind": "broken",
+   "missing": "",
+   "extra": "",
+   "source": "{{count}} Columns",
+   "translation": "{count, plural, one {# colonne} other {# colonnes}}"
+  },
+  {
+   "locale": "uk-UA",
+   "file": "apps/client/public/locales/uk-UA/translation.json",
+   "line": 438,
+   "key": "{{count}} Columns",
+   "kind": "broken",
+   "missing": "",
+   "extra": "",
+   "source": "{{count}} Columns",
+   "translation": "{count, plural, one{# колонка} few{# колонки} many{# колонок} other{# колонки}}"
+  }
+ ],
+ "parse_errors": [],
+ "findings": [
+  {
+   "locale": "es-ES",
+   "file": "apps/client/public/locales/es-ES/translation.json",
+   "line": 438,
+   "key": "{{count}} Columns",
+   "kind": "broken",
+   "missing": "",
+   "extra": "",
+   "source": "{{count}} Columns",
+   "translation": "{count, plural, one {# columna} other {# columnas}}"
+  },
+  {
+   "locale": "es-ES",
+   "file": "apps/client/public/locales/es-ES/translation.json",
+   "line": 609,
+   "key": "Pages in trash will be permanently deleted after {{count}} days.",
+   "kind": "broken",
+   "missing": "",
+   "extra": "",
+   "source": "Pages in trash will be permanently deleted after {{count}} days.",
+   "translation": "{count, plural, one{Las páginas en la papelera se eliminarán permanentemente después de # día.} other{Las páginas en la papelera se eliminarán permanentemente después de # días.}}"
+  },
+  {
+   "locale": "es-ES",
+   "file": "apps/client/public/locales/es-ES/translation.json",
+   "line": 1424,
+   "key": "{{count}} published spaces",
+   "kind": "dropped",
+   "missing": "{{count}}",
+   "extra": "",
+   "source": "{{count}} published spaces",
+   "translation": "{{count, plural, one {# espacio publicado} other {# espacios publicados}}}"
+  },
+  {
+   "locale": "fr-FR",
+   "file": "apps/client/public/locales/fr-FR/translation.json",
+   "line": 438,
+   "key": "{{count}} Columns",
+   "kind": "broken",
+   "missing": "",
+   "extra": "",
+   "source": "{{count}} Columns",
+   "translation": "{count, plural, one {# colonne} other {# colonnes}}"
+  },
+  {
+   "locale": "ja-JP",
+   "file": "apps/client/public/locales/ja-JP/translation.json",
+   "line": 609,
+   "key": "Pages in trash will be permanently deleted after {{count}} days.",
+   "kind": "broken",
+   "missing": "",
+   "extra": "",
+   "source": "Pages in trash will be permanently deleted after {{count}} days.",
+   "translation": "{count, plural, other {ゴミ箱内のページは#日後に完全に削除されます。}}"
+  },
+  {
+   "locale": "pt-BR",
+   "file": "apps/client/public/locales/pt-BR/translation.json",
+   "line": 609,
+   "key": "Pages in trash will be permanently deleted after {{count}} days.",
+   "kind": "broken",
+   "missing": "",
+   "extra": "",
+   "source": "Pages in trash will be permanently deleted after {{count}} days.",
+   "translation": "{count, plural, one {A página na lixeira será excluída permanentemente após # dia.} other {As páginas na lixeira serão excluídas permanentemente após # dias.}}"
+  },
+  {
+   "locale": "ru-RU",
+   "file": "apps/client/public/locales/ru-RU/translation.json",
+   "line": 438,
+   "key": "{{count}} Columns",
+   "kind": "broken",
+   "missing": "",
+   "extra": "",
+   "source": "{{count}} Columns",
+   "translation": "{count, plural, one{# столбец} few{# столбца} many{# столбцов} other{# столбца}}"
+  },
+  {
+   "locale": "ru-RU",
+   "file": "apps/client/public/locales/ru-RU/translation.json",
+   "line": 609,
+   "key": "Pages in trash will be permanently deleted after {{count}} days.",
+   "kind": "broken",
+   "missing": "",
+   "extra": "",
+   "source": "Pages in trash will be permanently deleted after {{count}} days.",
+   "translation": "{count, plural, one {Страница в корзине будет окончательно удалена через # день.} few {Страницы в корзине будут окончательно удалены через # дня.} many {Страницы в корзине будут окончательно удалены через # дней.} other {Страницы в корзине будут окончательно удалены через # дней.}}"
+  },
+  {
+   "locale": "ru-RU",
+   "file": "apps/client/public/locales/ru-RU/translation.json",
+   "line": 1424,
+   "key": "{{count}} published spaces",
+   "kind": "broken",
+   "missing": "",
+   "extra": "",
+   "source": "{{count}} published spaces",
+   "translation": "{count, plural, one {# опубликованное пространство} few {# опубликованных пространства} many {# опубликованных пространств} other {# опубликованного пространства}}"
+  },
+  {
+   "locale": "uk-UA",
+   "file": "apps/client/public/locales/uk-UA/translation.json",
+   "line": 438,
+   "key": "{{count}} Columns",
+   "kind": "broken",
+   "missing": "",
+   "extra": "",
+   "source": "{{count}} Columns",
+   "translation": "{count, plural, one{# колонка} few{# колонки} many{# колонок} other{# колонки}}"
+  },
+  {
+   "locale": "uk-UA",
+   "file": "apps/client/public/locales/uk-UA/translation.json",
+   "line": 609,
+   "key": "Pages in trash will be permanently deleted after {{count}} days.",
+   "kind": "broken",
+   "missing": "",
+   "extra": "",
+   "source": "Pages in trash will be permanently deleted after {{count}} days.",
+   "translation": "Сторінки в кошику будуть остаточно видалені через {count, plural, one{# день} few{# дні} many{# днів} other{# дня}}."
+  }
+ ],
+ "findings_truncated": false
+}

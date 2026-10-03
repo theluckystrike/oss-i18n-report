@@ -1,0 +1,16 @@
+repo,reason
+Agilo/medusa-invoices-plugin,no locale files with an English source and 2+ translations found
+appsmithorg/appsmith,no locale files with an English source and 2+ translations found
+Budibase/budibase,no locale files with an English source and 2+ translations found
+Cap-go/capgo,no locale files with an English source and 2+ translations found
+ChatGPTNextWeb/NextChat,"locale files found but none could be parsed (app/locales/ar.ts: Build failed with 2 errors:
+app/locales/ar.ts:1:26: ERROR: Could not resolve ""../store/config""
+app/locales/ar.ts:3:32: E)"
+ckeditor/strapi-plugin-ckeditor,no locale files with an English source and 2+ translations found
+invoiceninja/invoiceninja,no locale files with an English source and 2+ translations found
+lambda-curry/medusa2-starter,no locale files with an English source and 2+ translations found
+n8n-io/n8n,no locale files with an English source and 2+ translations found
+novuhq/novu,no locale files with an English source and 2+ translations found
+PostHog/posthog,no locale files with an English source and 2+ translations found
+spacedriveapp/spacedrive,no locale files with an English source and 2+ translations found
+supabase/supabase,no locale files with an English source and 2+ translations found

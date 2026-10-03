@@ -1,0 +1,301 @@
+{
+ "repo": "RSSNext/Folo",
+ "url": "https://github.com/RSSNext/Folo",
+ "category": "reader",
+ "note": null,
+ "commit": "83c2bad929874938fa82255450311655c3d4a444",
+ "commit_date": "2026-10-03",
+ "audited_at": "2026-10-03",
+ "tool_commit": "34d6ce1e1c1b55ea7c8895891c73553e736c6c62",
+ "stars": 39027,
+ "pushed_at": "2026-09-26",
+ "default_branch": "dev",
+ "description": "🧡 Folo is the AI RSS Reader",
+ "meta_source": "repos.ecosyste.ms",
+ "owner_type": "Organization",
+ "tms": [],
+ "tms_evidence": {},
+ "automation": [],
+ "activity": {
+  "available": true,
+  "window_days": 180,
+  "commits": 342,
+  "authors": 7,
+  "outside_commits": 8,
+  "outside_authors": 5,
+  "locale_commits": 25,
+  "outside_locale_commits": 2,
+  "outside_locale_authors": 2,
+  "bot_locale_commits": 0,
+  "last_outside_locale_commit": "2026-09-26",
+  "last_outside_commit": "2026-09-26",
+  "bot_locale_tms": {}
+ },
+ "locale_groups": [
+  {
+   "pattern": "locales/ai/{loc}.json",
+   "source": "locales/ai/en.json",
+   "source_locale": "en",
+   "mode": "i18next",
+   "source_strings": 437,
+   "locales": [
+    "fr-FR",
+    "ja",
+    "zh-CN",
+    "zh-TW"
+   ],
+   "findings": 0
+  },
+  {
+   "pattern": "locales/app/{loc}.json",
+   "source": "locales/app/en.json",
+   "source_locale": "en",
+   "mode": "i18next",
+   "source_strings": 606,
+   "locales": [
+    "fr-FR",
+    "ja",
+    "zh-CN",
+    "zh-TW"
+   ],
+   "findings": 0
+  },
+  {
+   "pattern": "locales/common/{loc}.json",
+   "source": "locales/common/en.json",
+   "source_locale": "en",
+   "mode": "i18next",
+   "source_strings": 118,
+   "locales": [
+    "fr-FR",
+    "ja",
+    "zh-CN",
+    "zh-TW"
+   ],
+   "findings": 0
+  },
+  {
+   "pattern": "locales/errors/{loc}.json",
+   "source": "locales/errors/en.json",
+   "source_locale": "en",
+   "mode": "i18next",
+   "source_strings": 87,
+   "locales": [
+    "fr-FR",
+    "ja",
+    "zh-CN",
+    "zh-TW"
+   ],
+   "findings": 0
+  },
+  {
+   "pattern": "locales/external/{loc}.json",
+   "source": "locales/external/en.json",
+   "source_locale": "en",
+   "mode": "i18next",
+   "source_strings": 51,
+   "locales": [
+    "fr-FR",
+    "ja",
+    "zh-CN",
+    "zh-TW"
+   ],
+   "findings": 0
+  },
+  {
+   "pattern": "locales/mobile/default/{loc}.json",
+   "source": "locales/mobile/default/en.json",
+   "source_locale": "en",
+   "mode": "i18next",
+   "source_strings": 164,
+   "locales": [
+    "fr-FR",
+    "ja",
+    "zh-CN",
+    "zh-TW"
+   ],
+   "findings": 0
+  },
+  {
+   "pattern": "locales/native/{loc}.json",
+   "source": "locales/native/en.json",
+   "source_locale": "en",
+   "mode": "i18next",
+   "source_strings": 72,
+   "locales": [
+    "fr-FR",
+    "ja",
+    "zh-CN",
+    "zh-TW"
+   ],
+   "findings": 0
+  },
+  {
+   "pattern": "locales/settings/{loc}.json",
+   "source": "locales/settings/en.json",
+   "source_locale": "en",
+   "mode": "i18next",
+   "source_strings": 873,
+   "locales": [
+    "fr-FR",
+    "ja",
+    "zh-CN",
+    "zh-TW"
+   ],
+   "findings": 0
+  },
+  {
+   "pattern": "locales/shortcuts/{loc}.json",
+   "source": "locales/shortcuts/en.json",
+   "source_locale": "en",
+   "mode": "i18next",
+   "source_strings": 75,
+   "locales": [
+    "fr-FR",
+    "ja",
+    "zh-CN",
+    "zh-TW"
+   ],
+   "findings": 0
+  }
+ ],
+ "locales": [
+  "fr-FR",
+  "ja",
+  "zh-CN",
+  "zh-TW"
+ ],
+ "locales_count": 4,
+ "strings_checked": 9924,
+ "findings_total": 0,
+ "findings_by_kind": {
+  "syntax": 0,
+  "renamed": 0,
+  "dropped": 0,
+  "extra": 0,
+  "broken": 0,
+  "mixed": 0,
+  "tag": 6,
+  "plural_count": 0
+ },
+ "findings_per_1k": 0.0,
+ "locales_with_findings": 0,
+ "worst_locales": [],
+ "per_locale": {
+  "fr-FR": {
+   "checked": 2481,
+   "syntax": 0,
+   "renamed": 0,
+   "dropped": 0,
+   "extra": 0,
+   "broken": 0,
+   "mixed": 0,
+   "tag": 2,
+   "plural_count": 0
+  },
+  "ja": {
+   "checked": 2481,
+   "syntax": 0,
+   "renamed": 0,
+   "dropped": 0,
+   "extra": 0,
+   "broken": 0,
+   "mixed": 0,
+   "tag": 0,
+   "plural_count": 0
+  },
+  "zh-CN": {
+   "checked": 2481,
+   "syntax": 0,
+   "renamed": 0,
+   "dropped": 0,
+   "extra": 0,
+   "broken": 0,
+   "mixed": 0,
+   "tag": 2,
+   "plural_count": 0
+  },
+  "zh-TW": {
+   "checked": 2481,
+   "syntax": 0,
+   "renamed": 0,
+   "dropped": 0,
+   "extra": 0,
+   "broken": 0,
+   "mixed": 0,
+   "tag": 2,
+   "plural_count": 0
+  }
+ },
+ "examples": [],
+ "parse_errors": [],
+ "findings": [
+  {
+   "locale": "fr-FR",
+   "file": "locales/settings/fr-FR.json",
+   "line": 537,
+   "key": "integration.outline.endpoint.description",
+   "kind": "tag",
+   "missing": "<YOUR_OUTLINE_DOMAIN>",
+   "extra": "<VOTRE_DOMAINE_OUTLINE>",
+   "source": "The URL is 'https://<YOUR_OUTLINE_DOMAIN>/api'.",
+   "translation": "L'URL est 'https://<VOTRE_DOMAINE_OUTLINE>/api'."
+  },
+  {
+   "locale": "fr-FR",
+   "file": "locales/settings/fr-FR.json",
+   "line": 551,
+   "key": "integration.readeck.endpoint.description",
+   "kind": "tag",
+   "missing": "<YOUR_READECK_DOMAIN>",
+   "extra": "<VOTRE_DOMAINE_READECK>",
+   "source": "The URL is 'https://<YOUR_READECK_DOMAIN>'.",
+   "translation": "L'URL est 'https://<VOTRE_DOMAINE_READECK>'."
+  },
+  {
+   "locale": "zh-CN",
+   "file": "locales/settings/zh-CN.json",
+   "line": 537,
+   "key": "integration.outline.endpoint.description",
+   "kind": "tag",
+   "missing": "<YOUR_OUTLINE_DOMAIN>",
+   "extra": "",
+   "source": "The URL is 'https://<YOUR_OUTLINE_DOMAIN>/api'.",
+   "translation": "此地址为「https://<你的 OUTLINE 域名>/api」。"
+  },
+  {
+   "locale": "zh-CN",
+   "file": "locales/settings/zh-CN.json",
+   "line": 551,
+   "key": "integration.readeck.endpoint.description",
+   "kind": "tag",
+   "missing": "<YOUR_READECK_DOMAIN>",
+   "extra": "",
+   "source": "The URL is 'https://<YOUR_READECK_DOMAIN>'.",
+   "translation": "此地址为「https://<你的 READECK 域名>」。"
+  },
+  {
+   "locale": "zh-TW",
+   "file": "locales/settings/zh-TW.json",
+   "line": 537,
+   "key": "integration.outline.endpoint.description",
+   "kind": "tag",
+   "missing": "<YOUR_OUTLINE_DOMAIN>",
+   "extra": "",
+   "source": "The URL is 'https://<YOUR_OUTLINE_DOMAIN>/api'.",
+   "translation": "此網址為 'https://<你的 OUTLINE 網域>/api'。"
+  },
+  {
+   "locale": "zh-TW",
+   "file": "locales/settings/zh-TW.json",
+   "line": 551,
+   "key": "integration.readeck.endpoint.description",
+   "kind": "tag",
+   "missing": "<YOUR_READECK_DOMAIN>",
+   "extra": "",
+   "source": "The URL is 'https://<YOUR_READECK_DOMAIN>'.",
+   "translation": "此網址為 'https://<你的 READECK 網域>'。"
+  }
+ ],
+ "findings_truncated": false
+}

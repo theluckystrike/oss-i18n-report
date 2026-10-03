@@ -1,0 +1,269 @@
+{
+ "repo": "Infisical/infisical",
+ "url": "https://github.com/Infisical/infisical",
+ "category": "security",
+ "note": "fix PR already open: Infisical/infisical#8419 (per i18n-audit findings log)",
+ "commit": "5a27a6daf7b0e91fb2b91f2913d2feaf8f2b8baa",
+ "commit_date": "2026-10-02",
+ "audited_at": "2026-10-03",
+ "tool_commit": "34d6ce1e1c1b55ea7c8895891c73553e736c6c62",
+ "stars": 29494,
+ "pushed_at": "2026-09-29",
+ "default_branch": "main",
+ "description": "Infisical is the open-source platform for secrets, certificates, and privileged access management.",
+ "meta_source": "repos.ecosyste.ms",
+ "owner_type": "Organization",
+ "tms": [],
+ "tms_evidence": {},
+ "automation": [],
+ "activity": {
+  "available": true,
+  "window_days": 180,
+  "commits": 6642,
+  "authors": 60,
+  "outside_commits": 42,
+  "outside_authors": 26,
+  "locale_commits": 1,
+  "outside_locale_commits": 0,
+  "outside_locale_authors": 0,
+  "bot_locale_commits": 0,
+  "last_outside_locale_commit": null,
+  "last_outside_commit": "2026-10-01",
+  "bot_locale_tms": {}
+ },
+ "locale_groups": [
+  {
+   "pattern": "frontend/public/locales/{loc}/*.json",
+   "source": "frontend/public/locales/en/translations.json",
+   "source_locale": "en",
+   "mode": "i18next",
+   "source_strings": 268,
+   "locales": [
+    "es",
+    "fr",
+    "ko",
+    "pt-BR",
+    "tr"
+   ],
+   "findings": 4
+  }
+ ],
+ "locales": [
+  "es",
+  "fr",
+  "ko",
+  "pt-BR",
+  "tr"
+ ],
+ "locales_count": 5,
+ "strings_checked": 1171,
+ "findings_total": 4,
+ "findings_by_kind": {
+  "syntax": 0,
+  "renamed": 0,
+  "dropped": 0,
+  "extra": 4,
+  "broken": 0,
+  "mixed": 0,
+  "tag": 4,
+  "plural_count": 0
+ },
+ "findings_per_1k": 3.42,
+ "locales_with_findings": 2,
+ "worst_locales": [
+  {
+   "locale": "ko",
+   "findings": 2,
+   "checked": 203
+  },
+  {
+   "locale": "pt-BR",
+   "findings": 2,
+   "checked": 231
+  }
+ ],
+ "per_locale": {
+  "es": {
+   "checked": 251,
+   "syntax": 0,
+   "renamed": 0,
+   "dropped": 0,
+   "extra": 0,
+   "broken": 0,
+   "mixed": 0,
+   "tag": 0,
+   "plural_count": 0
+  },
+  "fr": {
+   "checked": 237,
+   "syntax": 0,
+   "renamed": 0,
+   "dropped": 0,
+   "extra": 0,
+   "broken": 0,
+   "mixed": 0,
+   "tag": 0,
+   "plural_count": 0
+  },
+  "ko": {
+   "checked": 203,
+   "syntax": 0,
+   "renamed": 0,
+   "dropped": 0,
+   "extra": 2,
+   "broken": 0,
+   "mixed": 0,
+   "tag": 2,
+   "plural_count": 0
+  },
+  "pt-BR": {
+   "checked": 231,
+   "syntax": 0,
+   "renamed": 0,
+   "dropped": 0,
+   "extra": 2,
+   "broken": 0,
+   "mixed": 0,
+   "tag": 2,
+   "plural_count": 0
+  },
+  "tr": {
+   "checked": 249,
+   "syntax": 0,
+   "renamed": 0,
+   "dropped": 0,
+   "extra": 0,
+   "broken": 0,
+   "mixed": 0,
+   "tag": 0,
+   "plural_count": 0
+  }
+ },
+ "examples": [
+  {
+   "locale": "pt-BR",
+   "file": "frontend/public/locales/pt-BR/translations.json",
+   "line": 144,
+   "key": "mfa.step2-message",
+   "kind": "extra",
+   "missing": "",
+   "extra": "{{email}}",
+   "source": "We've sent a verification code to",
+   "translation": "<wrapper>Enviamos um e-mail de verificação para</wrapper><email>{{email}}</email>"
+  },
+  {
+   "locale": "ko",
+   "file": "frontend/public/locales/ko/translations.json",
+   "line": 120,
+   "key": "mfa.step2-message",
+   "kind": "extra",
+   "missing": "",
+   "extra": "{{email}}",
+   "source": "We've sent a verification code to",
+   "translation": "<email>{{email}}</email><wrapper>로 인증 메일을 전송하였습니다</wrapper><email>{{email}}</email>"
+  },
+  {
+   "locale": "pt-BR",
+   "file": "frontend/public/locales/pt-BR/translations.json",
+   "line": 144,
+   "key": "signup.step2-message",
+   "kind": "extra",
+   "missing": "",
+   "extra": "{{email}}",
+   "source": "We've sent a verification code to",
+   "translation": "<wrapper>Enviamos um e-mail de verificação para</wrapper><email>{{email}}</email>"
+  }
+ ],
+ "parse_errors": [],
+ "findings": [
+  {
+   "locale": "ko",
+   "file": "frontend/public/locales/ko/translations.json",
+   "line": 120,
+   "key": "mfa.step2-message",
+   "kind": "extra",
+   "missing": "",
+   "extra": "{{email}}",
+   "source": "We've sent a verification code to",
+   "translation": "<email>{{email}}</email><wrapper>로 인증 메일을 전송하였습니다</wrapper><email>{{email}}</email>"
+  },
+  {
+   "locale": "ko",
+   "file": "frontend/public/locales/ko/translations.json",
+   "line": 120,
+   "key": "signup.step2-message",
+   "kind": "extra",
+   "missing": "",
+   "extra": "{{email}}",
+   "source": "We've sent a verification code to",
+   "translation": "<email>{{email}}</email><wrapper>로 인증 메일을 전송하였습니다</wrapper><email>{{email}}</email>"
+  },
+  {
+   "locale": "pt-BR",
+   "file": "frontend/public/locales/pt-BR/translations.json",
+   "line": 144,
+   "key": "mfa.step2-message",
+   "kind": "extra",
+   "missing": "",
+   "extra": "{{email}}",
+   "source": "We've sent a verification code to",
+   "translation": "<wrapper>Enviamos um e-mail de verificação para</wrapper><email>{{email}}</email>"
+  },
+  {
+   "locale": "pt-BR",
+   "file": "frontend/public/locales/pt-BR/translations.json",
+   "line": 144,
+   "key": "signup.step2-message",
+   "kind": "extra",
+   "missing": "",
+   "extra": "{{email}}",
+   "source": "We've sent a verification code to",
+   "translation": "<wrapper>Enviamos um e-mail de verificação para</wrapper><email>{{email}}</email>"
+  },
+  {
+   "locale": "ko",
+   "file": "frontend/public/locales/ko/translations.json",
+   "line": 120,
+   "key": "mfa.step2-message",
+   "kind": "tag",
+   "missing": "",
+   "extra": "<email>,<wrapper>",
+   "source": "We've sent a verification code to",
+   "translation": "<email>{{email}}</email><wrapper>로 인증 메일을 전송하였습니다</wrapper><email>{{email}}</email>"
+  },
+  {
+   "locale": "ko",
+   "file": "frontend/public/locales/ko/translations.json",
+   "line": 120,
+   "key": "signup.step2-message",
+   "kind": "tag",
+   "missing": "",
+   "extra": "<email>,<wrapper>",
+   "source": "We've sent a verification code to",
+   "translation": "<email>{{email}}</email><wrapper>로 인증 메일을 전송하였습니다</wrapper><email>{{email}}</email>"
+  },
+  {
+   "locale": "pt-BR",
+   "file": "frontend/public/locales/pt-BR/translations.json",
+   "line": 144,
+   "key": "mfa.step2-message",
+   "kind": "tag",
+   "missing": "",
+   "extra": "<email>,<wrapper>",
+   "source": "We've sent a verification code to",
+   "translation": "<wrapper>Enviamos um e-mail de verificação para</wrapper><email>{{email}}</email>"
+  },
+  {
+   "locale": "pt-BR",
+   "file": "frontend/public/locales/pt-BR/translations.json",
+   "line": 144,
+   "key": "signup.step2-message",
+   "kind": "tag",
+   "missing": "",
+   "extra": "<email>,<wrapper>",
+   "source": "We've sent a verification code to",
+   "translation": "<wrapper>Enviamos um e-mail de verificação para</wrapper><email>{{email}}</email>"
+  }
+ ],
+ "findings_truncated": false
+}
