@@ -251,7 +251,7 @@ def main():
 <div><b>{len(audited)}</b><span>repos audited</span></div>
 <div><b>{fmt(total)}</b><span>findings</span></div>
 <div><b>{fmt(checked)}</b><span>translated strings checked</span></div>
-<div><b>{locales}</b><span>locale files sets</span></div>
+<div><b>{locales}</b><span>locale file sets</span></div>
 </div>
 <p>{with_f} of {len(audited)} repos have at least one finding and {zero} have none. The median repo has {median} findings per 1,000 translated strings. Repos that use a translation management system (TMS) account for {fmt(tms_total)} findings in {fmt(tms_checked)} strings ({(1000 * tms_total / tms_checked if tms_checked else 0):.2f} per 1,000); repos without one account for {fmt(no_tms_total)} in {fmt(no_tms_checked)} strings ({(1000 * no_tms_total / no_tms_checked if no_tms_checked else 0):.2f} per 1,000). A TMS was detected in {tms_n} repos.</p>
 <p class="note">A finding is a mismatch that is very likely visible to users. It is not a judgement of the project: every repo here ships dozens of languages, which is already more than most software does. Some findings sit on keys the code no longer uses; counts are an upper bound on what users see.</p>
