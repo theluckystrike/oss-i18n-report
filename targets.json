@@ -7,7 +7,8 @@
   },
   {
    "repo": "strapi/strapi",
-   "category": "cms"
+   "category": "cms",
+   "note": "fix PR already open: strapi/strapi#27908 (68 strings in 19 locales, per i18n-audit legacy/FINDINGS-2026-10-03.md)"
   },
   {
    "repo": "calcom/cal.diy",
@@ -68,7 +69,8 @@
   },
   {
    "repo": "ToolJet/ToolJet",
-   "category": "low-code"
+   "category": "low-code",
+   "note": "fix PR already open: ToolJet/ToolJet#18211 (57 strings, per i18n-audit findings log)"
   },
   {
    "repo": "Budibase/budibase",
@@ -128,7 +130,8 @@
   },
   {
    "repo": "umami-software/umami",
-   "category": "analytics"
+   "category": "analytics",
+   "note": "findings are on the default branch; the dev branch is already fixed upstream (per i18n-audit findings log)"
   },
   {
    "repo": "invoiceninja/invoiceninja",
@@ -150,19 +153,23 @@
   },
   {
    "repo": "open-metadata/OpenMetadata",
-   "category": "data"
+   "category": "data",
+   "note": "fix PR already open: open-metadata/OpenMetadata#34584 (152 strings in 18 locales, per i18n-audit findings log)"
   },
   {
    "repo": "OpenAEV-Platform/openaev",
-   "category": "security"
+   "category": "security",
+   "note": "fix PR already open: OpenAEV-Platform/openaev#8258 (per i18n-audit findings log)"
   },
   {
    "repo": "Infisical/infisical",
-   "category": "security"
+   "category": "security",
+   "note": "fix PR already open: Infisical/infisical#8419 (per i18n-audit findings log)"
   },
   {
    "repo": "janhq/jan",
-   "category": "ai"
+   "category": "ai",
+   "note": "backlog of unreviewed translation PRs (per i18n-audit findings log)"
   },
   {
    "repo": "AppFlowy-IO/AppFlowy",
@@ -256,7 +263,17 @@
   },
   {
    "repo": "opf/openproject",
-   "category": "project-management"
+   "category": "project-management",
+   "groups": [
+    {
+     "pattern": "config/locales/crowdin/{loc}.yml",
+     "source": "config/locales/en.yml"
+    },
+    {
+     "pattern": "config/locales/crowdin/js-{loc}.yml",
+     "source": "config/locales/js-en.yml"
+    }
+   ]
   },
   {
    "repo": "forem/forem",
@@ -285,6 +302,38 @@
   {
    "repo": "notum-cz/strapi-plugin-record-locking",
    "category": "plugin"
+  },
+  {
+   "repo": "frappe/erpnext",
+   "category": "erp"
+  },
+  {
+   "repo": "frappe/frappe",
+   "category": "framework"
+  },
+  {
+   "repo": "Mintplex-Labs/anything-llm",
+   "category": "ai"
+  },
+  {
+   "repo": "spacedriveapp/spacedrive",
+   "category": "files"
+  },
+  {
+   "repo": "RSSNext/Folo",
+   "category": "reader"
+  },
+  {
+   "repo": "Cap-go/capgo",
+   "category": "developer-tools"
+  },
+  {
+   "repo": "inventree/InvenTree",
+   "category": "inventory"
+  },
+  {
+   "repo": "ChatGPTNextWeb/NextChat",
+   "category": "ai"
   }
  ]
 }

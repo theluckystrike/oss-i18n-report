@@ -186,6 +186,24 @@ def explicit_groups(spec, files):
 
 
 # ------------------------------------------------------------------ loaders
+MSG_FIELDS = ('defaultMessage', 'message', 'string', 'translation')
+MSG_META = set(MSG_FIELDS) | {'description', 'context', 'placeholders', 'meaning', 'comment', 'developer_comment'}
+
+
+def collapse(o):
+    """Message objects ({"defaultMessage": ..., "description": ...}, Chrome's {"message": ...},
+    {"string": ..., "context": ...}) become their message string."""
+    if isinstance(o, dict):
+        if o and set(o) <= MSG_META:
+            for f in MSG_FIELDS:
+                if isinstance(o.get(f), str):
+                    return o[f]
+        return {k: collapse(v) for k, v in o.items()}
+    if isinstance(o, list):
+        return [collapse(v) for v in o]
+    return o
+
+
 def load_json_file(path):
     with open(path, encoding='utf-8-sig') as f:
         obj = json.load(f)
@@ -201,7 +219,7 @@ def load_json_file(path):
                     if isinstance(v, str):
                         res[f"{x['id']}_{k}"] = v
         return res
-    d = seed.flat(obj)
+    d = seed.flat(collapse(obj))
     return {k: v for k, v in d.items() if not k.startswith('@') and not k.startswith('$schema')}
 
 
@@ -438,7 +456,12 @@ def detect_tms(files, dest, docs, history):
                 tms.setdefault(name, []).append(f'mentioned in {p}: "...{ctx}..."')
     for name, n in history.get('bot_locale_tms', {}).items():
         tms.setdefault(name, []).append(f'{n} locale commits by {name} in the last {history.get("window_days")} days')
-    automation = sorted({f for f in files if AUTOMATION_FILES.search(f) and not EXCLUDE.search(f)})[:10]
+    if not tms and history.get('bot_locale_commits', 0) >= 5 and \
+            history['bot_locale_commits'] >= 0.5 * history.get('locale_commits', 0):
+        tms['bot-synced'] = [f'{history["bot_locale_commits"]} of {history["locale_commits"]} recent locale commits '
+                             f'were made by bots (TMS not identified)']
+    automation = sorted({f for f in files if AUTOMATION_FILES.search(f) and not EXCLUDE.search(f)
+                         and not re.search(r'(^|/)(src|app|client|server|migrations?)/|\.(md|mdx|sql|tsx|jsx|svg|png)$', f)})[:10]
     return {k: v[:4] for k, v in tms.items()}, automation
 
 
@@ -526,6 +549,46 @@ def ref_key(k, src):
     return None
 
 
+COUNT_NAMES = {'count', 'n', 'num', 'number', 'smart_count', 'total', 'amount', 'qty', 'quantity', '0'}
+PLURAL_KEY = re.compile(r'(_|\.)(zero|one|two|few|many|other)$|\[\d+\]$')
+
+
+def tok_name(t):
+    return re.sub(r'^[{%$_t(\s]+|[\s})_]+$', '', t).strip()
+
+
+def refine(kind, miss, extra, key, src):
+    """Adjust seed classifications for cases that are not user-visible bugs.
+    Returns (kind, miss, extra) or None to drop the finding."""
+    m = [x for x in miss.split(',') if x]
+    e = [x for x in extra.split(',') if x]
+    # i18next nesting: a translator may inline the text of a nested $t(key); that renders fine
+    if any(x.startswith('$t(') for x in m + e):
+        m = [x for x in m if not x.startswith('$t(')]
+        e = [x for x in e if not x.startswith('$t(')]
+        if not m and not e:
+            return None
+    # paired formatting markers such as {{b}}...{{/b}}: losing them drops bold text, not a value
+    names = {tok_name(x) for x in m + e}
+    marker = {n for n in names if n.startswith('/') or '/' + n in names}
+    if marker and kind != 'broken':
+        m = [x for x in m if tok_name(x) not in marker]
+        e = [x for x in e if tok_name(x) not in marker]
+        if not m and not e:
+            return 'tag', miss, extra
+    # plural forms: a singular or dual form may legitimately omit (or add) the count
+    pk = PLURAL_KEY.search(key)
+    countlike = all(tok_name(x).lower() in COUNT_NAMES or 'count' in tok_name(x).lower() or x in ('%s', '%d') for x in m + e)
+    # adding the count to any plural form is harmless; omitting it is fine only where the
+    # form itself implies the number (zero / one / two, or the first PO plural form)
+    if pk and (m or e) and countlike and kind != 'broken' and \
+            (not m or re.search(r'(zero|one|two)$|\[\d+\]$', key)):
+        return 'plural_count', ','.join(m), ','.join(e)
+    if kind in ('renamed', 'mixed') and (m or e) and not (m and e):
+        kind = 'dropped' if m else 'extra'
+    return kind, ','.join(m), ','.join(e)
+
+
 def detect_mode(strings):
     c = collections.Counter()
     for s in strings:
@@ -538,8 +601,9 @@ def detect_mode(strings):
         if seed.PRINTF.search(s) or seed.SPRINTF.search(s):
             c['rocket'] += 1
     if not c:
-        return 'i18next'
-    return c.most_common(1)[0][0]
+        return 'i18next', 0
+    mode, n = c.most_common(1)[0]
+    return mode, n
 
 
 def find_line(text, key, ext):
@@ -572,7 +636,7 @@ def find_line(text, key, ext):
     return text.count('\n', 0, pos) + 1
 
 
-def audit_group(g, dest, js_cache):
+def audit_group(g, dest, js_cache, vue=False):
     """Return (per-locale stats, findings, mode)."""
     ext = g['ext']
     loaded = {}
@@ -591,8 +655,9 @@ def audit_group(g, dest, js_cache):
                     d = load_yaml_file(full, loc)
                 elif ext == '.po':
                     d, idmap = load_po_file(full)
-                    for k, v in idmap.items():
-                        ids[(ns + ':' if ns else '') + k] = v
+                    if loc == g['source_loc'] or g['source_loc'] == '__msgid__':
+                        for k, v in idmap.items():
+                            ids.setdefault((ns + ':' if ns else '') + k, v)
                 else:
                     obj = js_cache.get(path)
                     if not isinstance(obj, dict) or '__error__' in obj:
@@ -616,7 +681,26 @@ def audit_group(g, dest, js_cache):
     if src and sum(1 for v in src.values() if not v.strip()) > 0.5 * len(src):
         key_is_source = True  # e.g. open-webui: keys are the English strings, values empty
         src = {k: (v if v.strip() else k.split(':', 1)[-1]) for k, v in src.items()}
-    mode = g.get('mode') or detect_mode([v for v in src.values() if isinstance(v, str)])
+    mode, evidence = detect_mode([v for v in src.values() if isinstance(v, str)])
+    if g.get('mode'):
+        mode, evidence = g['mode'], 10 ** 6
+    g['_evidence'] = (mode, evidence)
+    if mode == 'icu' and vue:
+        mode = 'vue'
+    if mode == 'icu' and ext == '.po':
+        # only Lingui catalogs follow ICU apostrophe quoting; other PO files (Python str.format) do not
+        head = ''
+        for nsmap in g['files'].values():
+            for pth in nsmap.values():
+                try:
+                    head += open(os.path.join(dest, pth), encoding='utf-8', errors='replace').read(3000)
+                except OSError:
+                    pass
+                break
+            if head:
+                break
+        if 'lingui' not in head.lower():
+            mode = 'pyformat'
     texts = {}
     stats, findings = {}, []
     for loc in sorted(loaded):
@@ -640,17 +724,17 @@ def audit_group(g, dest, js_cache):
             checked += 1
             if s == v:
                 continue
-            for kind, miss, extra in seed.classify(s, v, k, mode):
-                if mode in ('i18next', 'rocket') and ('$t(' in miss or '$t(' in extra):
-                    # a translator may inline the text of a nested $t(key); that renders fine
-                    miss = ','.join(x for x in miss.split(',') if x and not x.startswith('$t('))
-                    extra = ','.join(x for x in extra.split(',') if x and not x.startswith('$t('))
-                    if not miss and not extra:
-                        continue
-                    if kind in ('renamed', 'mixed'):
-                        kind = 'dropped' if miss and not extra else 'extra' if extra and not miss else kind
-                if kind == 'extra' and mode in ('i18next', 'rocket') and k.endswith(seed.SUF) and extra == '{{count}}':
-                    kind = 'plural_count'  # i18next passes count to every plural form
+            if 'crwdns' in v:  # Crowdin in-context pseudo-translation markers, not shown to users
+                continue
+            if mode in ('vue', 'pyformat'):  # {x} like ICU, but apostrophes are plain text
+                cs, cv, cmode = s.replace("'", '\u2019'), v.replace("'", '\u2019'), 'icu'
+            else:
+                cs, cv, cmode = s, v, mode
+            for kind, miss, extra in seed.classify(cs, cv, k, cmode):
+                ref = refine(kind, miss, extra, k, src)
+                if ref is None:
+                    continue
+                kind, miss, extra = ref
                 n[kind] += 1
                 if path not in texts:
                     try:
@@ -714,19 +798,34 @@ def audit_repo(t, since, window_days, refresh):
     hist = history_stats(dest, non_source_locale_files, source_files, window_days, cmode)
     tms, automation = detect_tms(files, dest, docs, hist)
     meta = repo_meta(repo)
-    base = dict(repo=repo, url=f'https://github.com/{repo}', category=t.get('category'), commit=sha,
+    base = dict(repo=repo, url=f'https://github.com/{repo}', category=t.get('category'), note=t.get('note'), commit=sha,
                 commit_date=commit_date, audited_at=datetime.date.today().isoformat(), tool_commit=TOOL_SHA,
                 **meta, tms=sorted(tms), tms_evidence=tms, automation=automation, activity=hist)
     if not groups:
         return dict(base, skipped='no locale files with an English source and 2+ translations found')
     js = [p for g in groups if g['ext'] in ('.ts', '.js', '.mjs') for nsmap in g['files'].values() for p in nsmap.values()]
     js_cache = load_js_files(js, dest)
+    vue = sum(1 for f in files if f.endswith('.vue')) >= 20  # vue-i18n apps
     per_loc = collections.defaultdict(lambda: collections.Counter())
     all_findings, gout, errors = [], [], []
     for g in groups:
         if g.get('mode') is None and t.get('mode'):
             g['mode'] = t['mode']
-        st, fi, mode, errs, nsrc = audit_group(g, dest, js_cache)
+        st, fi, mode, errs, nsrc = audit_group(g, dest, js_cache, vue=vue)
+        g['_result'] = (st, fi, mode, errs, nsrc)
+    votes = collections.Counter()
+    for g in groups:
+        m, ev = g.get('_evidence', ('i18next', 0))
+        votes[m] += ev
+    repo_mode = votes.most_common(1)[0][0] if votes and votes.most_common(1)[0][1] else None
+    for g in groups:
+        m, ev = g.get('_evidence', ('i18next', 0))
+        if repo_mode and ev < 5 and m != repo_mode and not t.get('mode'):
+            # too few placeholders to tell the syntax: use the repo's majority syntax
+            g['mode'] = repo_mode
+            g['_result'] = audit_group(g, dest, js_cache, vue=vue)
+        st, fi, mode, errs, nsrc = g.pop('_result')
+        g.pop('_evidence', None)
         errors += errs
         if nsrc < 5:
             continue
@@ -795,7 +894,9 @@ def write_outputs(results):
         stars = r.get('stars') or 0
         outside = a.get('outside_commits', 0) if a.get('available') else 0
         score = r['findings_total'] * math.log10(stars + 10) * math.log2(2 + outside)
-        notes = []
+        if r['automation']:
+            score *= 0.5  # locale files regenerated by a script: a manual fix may be overwritten
+        notes = [r['note']] if r.get('note') else []
         if r['automation']:
             notes.append('locale files may be regenerated by ' + ', '.join(r['automation'][:2]))
         if not a.get('available'):
@@ -827,11 +928,12 @@ def check_local(path, max_print=200):
     else:
         files = [os.path.relpath(os.path.join(d, f), path) for d, _, fs in os.walk(path) if '/.git' not in d for f in fs]
     groups = discover(files)
+    vue = sum(1 for f in files if f.endswith('.vue')) >= 20
     js = [x for g in groups if g['ext'] in ('.ts', '.js', '.mjs') for nsmap in g['files'].values() for x in nsmap.values()]
     js_cache = load_js_files(js, path)
     total, shown = 0, 0
     for g in groups:
-        _, findings, mode, errors, _ = audit_group(g, path, js_cache)
+        _, findings, mode, errors, _ = audit_group(g, path, js_cache, vue=vue)
         for e in errors:
             print(f'warning: could not parse {e}', file=sys.stderr)
         for f in findings:
