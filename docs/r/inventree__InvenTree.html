@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>inventree/InvenTree: i18n findings</title>
+<meta name="description" content="Translation placeholder findings for inventree/InvenTree.">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="site"><div class="wrap"><a class="brand" href="../index.html">State of i18n in open-source apps</a>
+<nav><a href="../index.html#method">Method</a><a href="../index.html#kinds">Bug kinds</a><a href="../index.html#repos">Repos</a><a href="../index.html#ci">Fix in CI</a></nav></div></header>
+<main class="wrap">
+
+<p class="crumb"><a href="../index.html#repos">All repos</a></p>
+<h1>inventree/InvenTree</h1>
+<p class="lede">Open Source Inventory Management System</p>
+<div class="stats">
+<div><b>8</b><span>findings</span></div>
+<div><b>38</b><span>locales</span></div>
+<div><b>100,136</b><span>strings checked</span></div>
+<div><b>0.08</b><span>per 1,000 strings</span></div>
+</div>
+<table class="kv"><tbody>
+<tr><th>Commit audited</th><td><a href="https://github.com/inventree/InvenTree/tree/6c4d2ef3471a04e0c5834c38ae5086ca62f11ce8"><code>6c4d2ef3471a</code></a> (2026-10-03)</td></tr>
+<tr><th>Stars</th><td>7,634</td></tr>
+<tr><th>Owner type</th><td>Organization</td></tr>
+<tr><th>Translation management</th><td>crowdin<ul class='ev'><li><b>crowdin</b>: config file crowdin.yml</li></ul></td></tr>
+
+<tr><th>Recent activity</th><td>749 commits on the default branch in the last 180 days; 58 by 45 occasional contributors, 1 of which touched translation files.</td></tr>
+<tr><th>Findings by kind</th><td>dropped 3, extra 5; informational: tag 1</td></tr>
+</tbody></table>
+<h2>Locale files</h2>
+<div class="scroll"><table><thead><tr><th>Pattern</th><th>Syntax</th><th class="num">Source strings</th><th class="num">Locales</th><th class="num">Findings</th></tr></thead><tbody><tr><td><code>src/backend/InvenTree/locale/{loc}/*.po</code></td><td>pyformat</td><td class="num">2,596</td><td class="num">38</td><td class="num">5</td></tr><tr><td><code>src/frontend/src/locales/{loc}/*.po</code></td><td>icu</td><td class="num">2,464</td><td class="num">34</td><td class="num">3</td></tr></tbody></table></div>
+<h2>Locales with the most findings</h2><div class='scroll'><table><thead><tr><th>Locale</th><th class='num'>Findings</th><th class='num'>Strings checked</th></tr></thead><tbody><tr><td>tr</td><td class="num">3</td><td class="num">4,175</td></tr><tr><td>es</td><td class="num">1</td><td class="num">5,042</td></tr><tr><td>es_MX</td><td class="num">1</td><td class="num">2,631</td></tr><tr><td>ja</td><td class="num">1</td><td class="num">4,691</td></tr><tr><td>ko</td><td class="num">1</td><td class="num">4,729</td></tr></tbody></table></div>
+<h2>Examples</h2><ul class='examples'><li><p><a href="https://github.com/inventree/InvenTree/blob/6c4d2ef3471a04e0c5834c38ae5086ca62f11ce8/src/frontend/src/locales/ko/messages.po#L4623"><code>src/frontend/src/locales/ko/messages.po:4623</code></a> <span class="tag-kind">dropped</span> locale <b>ko</b>, key <code>View {model}</code></p><div class="pair"><div><span class="lbl">Source</span><code>View {model}</code></div><div><span class="lbl">Translation</span><code>&lt;&lt;&lt;모델&gt;&gt;&gt; 보기</code></div></div></li><li><p><a href="https://github.com/inventree/InvenTree/blob/6c4d2ef3471a04e0c5834c38ae5086ca62f11ce8/src/backend/InvenTree/locale/tr/LC_MESSAGES/django.po#L137"><code>src/backend/InvenTree/locale/tr/LC_MESSAGES/django.po:137</code></a> <span class="tag-kind">extra</span> locale <b>tr</b>, key <code>Cannot serialize more than 1000 items at once</code></p><div class="pair"><div><span class="lbl">Source</span><code>Cannot serialize more than 1000 items at once</code></div><div><span class="lbl">Translation</span><code>Geçersiz grup: {grup}</code></div></div></li><li><p><a href="https://github.com/inventree/InvenTree/blob/6c4d2ef3471a04e0c5834c38ae5086ca62f11ce8/src/frontend/src/locales/ja/messages.po#L753"><code>src/frontend/src/locales/ja/messages.po:753</code></a> <span class="tag-kind">dropped</span> locale <b>ja</b>, key <code>Server returned status {returnCode}</code></p><div class="pair"><div><span class="lbl">Source</span><code>Server returned status {returnCode}</code></div><div><span class="lbl">Translation</span><code>サーバーが返したステータス [0］</code></div></div></li></ul>
+<h2>Findings</h2><p class='note'>Up to 40 shown. The full list, with every key and line, is in <a href='https://github.com/theluckystrike/oss-i18n-report/blob/main/data/inventree__InvenTree.json'>data/inventree__InvenTree.json</a>.</p><div class='scroll'><table class='sortable findings'><thead><tr><th>Locale</th><th>File</th><th>Kind</th><th>Missing</th><th>Extra</th><th>Source</th><th>Translation</th></tr></thead><tbody><tr><td>es</td><td><a href="https://github.com/inventree/InvenTree/blob/6c4d2ef3471a04e0c5834c38ae5086ca62f11ce8/src/backend/InvenTree/locale/es/LC_MESSAGES/django.po#L269">django.po:269</a></td><td>extra</td><td><code></code></td><td><code>{pattern}</code></td><td class="txt">Reference must match required pattern</td><td class="txt">La referencia debe coincidir con la expresión regular {pattern}</td></tr><tr><td>es_MX</td><td><a href="https://github.com/inventree/InvenTree/blob/6c4d2ef3471a04e0c5834c38ae5086ca62f11ce8/src/backend/InvenTree/locale/es_MX/LC_MESSAGES/django.po#L269">django.po:269</a></td><td>extra</td><td><code></code></td><td><code>{pattern}</code></td><td class="txt">Reference must match required pattern</td><td class="txt">La referencia debe coincidir con la expresión regular {pattern}</td></tr><tr><td>ja</td><td><a href="https://github.com/inventree/InvenTree/blob/6c4d2ef3471a04e0c5834c38ae5086ca62f11ce8/src/frontend/src/locales/ja/messages.po#L753">messages.po:753</a></td><td>dropped</td><td><code>{returnCode}</code></td><td><code></code></td><td class="txt">Server returned status {returnCode}</td><td class="txt">サーバーが返したステータス [0］</td></tr><tr><td>ko</td><td><a href="https://github.com/inventree/InvenTree/blob/6c4d2ef3471a04e0c5834c38ae5086ca62f11ce8/src/frontend/src/locales/ko/messages.po#L4623">messages.po:4623</a></td><td>dropped</td><td><code>{model}</code></td><td><code></code></td><td class="txt">View {model}</td><td class="txt">&lt;&lt;&lt;모델&gt;&gt;&gt; 보기</td></tr><tr><td>ru</td><td><a href="https://github.com/inventree/InvenTree/blob/6c4d2ef3471a04e0c5834c38ae5086ca62f11ce8/src/backend/InvenTree/locale/ru/LC_MESSAGES/django.po#L269">django.po:269</a></td><td>extra</td><td><code></code></td><td><code>{pattern}</code></td><td class="txt">Reference must match required pattern</td><td class="txt">Ссылка должна соответствовать шаблону {pattern}</td></tr><tr><td>tr</td><td><a href="https://github.com/inventree/InvenTree/blob/6c4d2ef3471a04e0c5834c38ae5086ca62f11ce8/src/backend/InvenTree/locale/tr/LC_MESSAGES/django.po#L137">django.po:137</a></td><td>extra</td><td><code></code></td><td><code>{grup}</code></td><td class="txt">Cannot serialize more than 1000 items at once</td><td class="txt">Geçersiz grup: {grup}</td></tr><tr><td>tr</td><td><a href="https://github.com/inventree/InvenTree/blob/6c4d2ef3471a04e0c5834c38ae5086ca62f11ce8/src/backend/InvenTree/locale/tr/LC_MESSAGES/django.po#L269">django.po:269</a></td><td>extra</td><td><code></code></td><td><code>{pattern}</code></td><td class="txt">Reference must match required pattern</td><td class="txt">Referans {pattern} deseniyle mutlaka eşleşmeli</td></tr><tr><td>tr</td><td><a href="https://github.com/inventree/InvenTree/blob/6c4d2ef3471a04e0c5834c38ae5086ca62f11ce8/src/frontend/src/locales/tr/messages.po#L6833">messages.po:6833</a></td><td>dropped</td><td><code>{exportName}</code></td><td><code></code></td><td class="txt">Export {exportName} in {moduleUrl} is not a function (found type {0}).</td><td class="txt">{moduleUrl} modülündeki &#x27;{exportName}&#x27; dışa aktarımı bir fonksiyon değil (tespit edilen tür: {0}).</td></tr></tbody></table></div>
+
+</main>
+<footer class="wrap"><p>Built with <a href="https://github.com/theluckystrike/i18n-audit">i18n-audit</a>. Source, data and method: <a href="https://github.com/theluckystrike/oss-i18n-report">github.com/theluckystrike/oss-i18n-report</a>. Data collected 2026-10-03.</p></footer>
+<script src="../sortable.js" defer></script>
+</body>
+</html>

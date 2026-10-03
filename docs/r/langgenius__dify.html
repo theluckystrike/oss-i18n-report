@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>langgenius/dify: i18n findings</title>
+<meta name="description" content="Translation placeholder findings for langgenius/dify.">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="site"><div class="wrap"><a class="brand" href="../index.html">State of i18n in open-source apps</a>
+<nav><a href="../index.html#method">Method</a><a href="../index.html#kinds">Bug kinds</a><a href="../index.html#repos">Repos</a><a href="../index.html#ci">Fix in CI</a></nav></div></header>
+<main class="wrap">
+
+<p class="crumb"><a href="../index.html#repos">All repos</a></p>
+<h1>langgenius/dify</h1>
+<p class="lede">Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative workspace. Deploy on cloud, VPC, or self-hosted, so teams move from prototype to production without rebuilding the stack.</p>
+<div class="stats">
+<div><b>1</b><span>findings</span></div>
+<div><b>24</b><span>locales</span></div>
+<div><b>142,262</b><span>strings checked</span></div>
+<div><b>0.01</b><span>per 1,000 strings</span></div>
+</div>
+<table class="kv"><tbody>
+<tr><th>Commit audited</th><td><a href="https://github.com/langgenius/dify/tree/8222397ea989a15c305ee60d2e4b867883638f37"><code>8222397ea989</code></a> (2026-10-03)</td></tr>
+<tr><th>Stars</th><td>157,558</td></tr>
+<tr><th>Owner type</th><td>Organization</td></tr>
+<tr><th>Translation management</th><td>none detected</td></tr>
+
+<tr><th>Recent activity</th><td>3996 commits on the default branch in the last 180 days; 513 by 290 occasional contributors, 5 of which touched translation files.</td></tr>
+<tr><th>Findings by kind</th><td>broken 1</td></tr>
+</tbody></table>
+<h2>Locale files</h2>
+<div class="scroll"><table><thead><tr><th>Pattern</th><th>Syntax</th><th class="num">Source strings</th><th class="num">Locales</th><th class="num">Findings</th></tr></thead><tbody><tr><td><code>web/i18n/locales/{loc}/*.json</code></td><td>i18next</td><td class="num">5,929</td><td class="num">24</td><td class="num">1</td></tr></tbody></table></div>
+<h2>Locales with the most findings</h2><div class='scroll'><table><thead><tr><th>Locale</th><th class='num'>Findings</th><th class='num'>Strings checked</th></tr></thead><tbody><tr><td>ko-KR</td><td class="num">1</td><td class="num">5,923</td></tr></tbody></table></div>
+<h2>Examples</h2><ul class='examples'><li><p><a href="https://github.com/langgenius/dify/blob/8222397ea989a15c305ee60d2e4b867883638f37/web/i18n/locales/ko-KR/common.json#L244"><code>web/i18n/locales/ko-KR/common.json:244</code></a> <span class="tag-kind">broken</span> locale <b>ko-KR</b>, key <code>promptEditor.placeholder</code></p><div class="pair"><div><span class="lbl">Source</span><code>Write your prompt word here, enter &#x27;{&#x27; to insert a variable, enter &#x27;/&#x27; to insert a prompt content block</code></div><div><span class="lbl">Translation</span><code>여기에 프롬프트 단어를 입력하세요. 변수를 삽입하려면 &quot;{{&quot;를 입력하고, 프롬프트 컨텐츠 블록을 삽입하려면 &quot;/&quot;를 입력하세요.</code></div></div></li></ul>
+<h2>Findings</h2><p class='note'>Up to 40 shown. The full list, with every key and line, is in <a href='https://github.com/theluckystrike/oss-i18n-report/blob/main/data/langgenius__dify.json'>data/langgenius__dify.json</a>.</p><div class='scroll'><table class='sortable findings'><thead><tr><th>Locale</th><th>File</th><th>Kind</th><th>Missing</th><th>Extra</th><th>Source</th><th>Translation</th></tr></thead><tbody><tr><td>ko-KR</td><td><a href="https://github.com/langgenius/dify/blob/8222397ea989a15c305ee60d2e4b867883638f37/web/i18n/locales/ko-KR/common.json#L244">common.json:244</a></td><td>broken</td><td><code></code></td><td><code></code></td><td class="txt">Write your prompt word here, enter &#x27;{&#x27; to insert a variable, enter &#x27;/&#x27; to insert a prompt content block</td><td class="txt">여기에 프롬프트 단어를 입력하세요. 변수를 삽입하려면 &quot;{{&quot;를 입력하고, 프롬프트 컨텐츠 블록을 삽입하려면 &quot;/&quot;를 입력하세요.</td></tr></tbody></table></div>
+
+</main>
+<footer class="wrap"><p>Built with <a href="https://github.com/theluckystrike/i18n-audit">i18n-audit</a>. Source, data and method: <a href="https://github.com/theluckystrike/oss-i18n-report">github.com/theluckystrike/oss-i18n-report</a>. Data collected 2026-10-03.</p></footer>
+<script src="../sortable.js" defer></script>
+</body>
+</html>

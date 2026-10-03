@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OpenAEV-Platform/openaev: i18n findings</title>
+<meta name="description" content="Translation placeholder findings for OpenAEV-Platform/openaev.">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="site"><div class="wrap"><a class="brand" href="../index.html">State of i18n in open-source apps</a>
+<nav><a href="../index.html#method">Method</a><a href="../index.html#kinds">Bug kinds</a><a href="../index.html#repos">Repos</a><a href="../index.html#ci">Fix in CI</a></nav></div></header>
+<main class="wrap">
+
+<p class="crumb"><a href="../index.html#repos">All repos</a></p>
+<h1>OpenAEV-Platform/openaev</h1>
+<p class="lede">Open Adversarial Exposure Validation Platform</p>
+<div class="stats">
+<div><b>4</b><span>findings</span></div>
+<div><b>8</b><span>locales</span></div>
+<div><b>34,232</b><span>strings checked</span></div>
+<div><b>0.12</b><span>per 1,000 strings</span></div>
+</div>
+<table class="kv"><tbody>
+<tr><th>Commit audited</th><td><a href="https://github.com/OpenAEV-Platform/openaev/tree/d1248c926f74d916a395fb9910770b913cfdec28"><code>d1248c926f74</code></a> (2026-10-02)</td></tr>
+<tr><th>Stars</th><td>1,821</td></tr>
+<tr><th>Owner type</th><td>Organization</td></tr>
+<tr><th>Translation management</th><td>none detected</td></tr>
+<tr><th>Note</th><td>fix PR already open: OpenAEV-Platform/openaev#8258 (per i18n-audit findings log)</td></tr>
+<tr><th>Recent activity</th><td>1550 commits on the default branch in the last 180 days; 26 by 21 occasional contributors, 7 of which touched translation files.</td></tr>
+<tr><th>Findings by kind</th><td>renamed 1, dropped 1, extra 1, broken 1; informational: tag 4</td></tr>
+</tbody></table>
+<h2>Locale files</h2>
+<div class="scroll"><table><thead><tr><th>Pattern</th><th>Syntax</th><th class="num">Source strings</th><th class="num">Locales</th><th class="num">Findings</th></tr></thead><tbody><tr><td><code>openaev-front/src/utils/lang/{loc}.json</code></td><td>icu</td><td class="num">4,279</td><td class="num">8</td><td class="num">4</td></tr></tbody></table></div>
+<h2>Locales with the most findings</h2><div class='scroll'><table><thead><tr><th>Locale</th><th class='num'>Findings</th><th class='num'>Strings checked</th></tr></thead><tbody><tr><td>zh</td><td class="num">2</td><td class="num">4,279</td></tr><tr><td>ja</td><td class="num">1</td><td class="num">4,279</td></tr><tr><td>ko</td><td class="num">1</td><td class="num">4,279</td></tr></tbody></table></div>
+<h2>Examples</h2><ul class='examples'><li><p><a href="https://github.com/OpenAEV-Platform/openaev/blob/d1248c926f74d916a395fb9910770b913cfdec28/openaev-front/src/utils/lang/ja.json#L1765"><code>openaev-front/src/utils/lang/ja.json:1765</code></a> <span class="tag-kind">broken</span> locale <b>ja</b>, key <code>getting_started_description_test_scenarios_text</code></p><div class="pair"><div><span class="lbl">Source</span><code>Test more scenarios from our {xtmHubLink} !</code></div><div><span class="lbl">Translation</span><code>11}}のシナリオをもっとテストする!</code></div></div></li><li><p><a href="https://github.com/OpenAEV-Platform/openaev/blob/d1248c926f74d916a395fb9910770b913cfdec28/openaev-front/src/utils/lang/ko.json#L1765"><code>openaev-front/src/utils/lang/ko.json:1765</code></a> <span class="tag-kind">dropped</span> locale <b>ko</b>, key <code>getting_started_description_test_scenarios_text</code></p><div class="pair"><div><span class="lbl">Source</span><code>Test more scenarios from our {xtmHubLink} !</code></div><div><span class="lbl">Translation</span><code>에서 더 많은 시나리오를 테스트하세요 !</code></div></div></li><li><p><a href="https://github.com/OpenAEV-Platform/openaev/blob/d1248c926f74d916a395fb9910770b913cfdec28/openaev-front/src/utils/lang/zh.json#L1312"><code>openaev-front/src/utils/lang/zh.json:1312</code></a> <span class="tag-kind">renamed</span> locale <b>zh</b>, key <code>Do you want to launch this atomic testing: {title}?</code></p><div class="pair"><div><span class="lbl">Source</span><code>Do you want to launch this atomic testing: {title}?</code></div><div><span class="lbl">Translation</span><code>你想启动这个原子测试吗: {truc}?</code></div></div></li></ul>
+<h2>Findings</h2><p class='note'>Up to 40 shown. The full list, with every key and line, is in <a href='https://github.com/theluckystrike/oss-i18n-report/blob/main/data/OpenAEV-Platform__openaev.json'>data/OpenAEV-Platform__openaev.json</a>.</p><div class='scroll'><table class='sortable findings'><thead><tr><th>Locale</th><th>File</th><th>Kind</th><th>Missing</th><th>Extra</th><th>Source</th><th>Translation</th></tr></thead><tbody><tr><td>ja</td><td><a href="https://github.com/OpenAEV-Platform/openaev/blob/d1248c926f74d916a395fb9910770b913cfdec28/openaev-front/src/utils/lang/ja.json#L1765">ja.json:1765</a></td><td>broken</td><td><code></code></td><td><code></code></td><td class="txt">Test more scenarios from our {xtmHubLink} !</td><td class="txt">11}}のシナリオをもっとテストする!</td></tr><tr><td>ko</td><td><a href="https://github.com/OpenAEV-Platform/openaev/blob/d1248c926f74d916a395fb9910770b913cfdec28/openaev-front/src/utils/lang/ko.json#L1765">ko.json:1765</a></td><td>dropped</td><td><code>{xtmHubLink}</code></td><td><code></code></td><td class="txt">Test more scenarios from our {xtmHubLink} !</td><td class="txt">에서 더 많은 시나리오를 테스트하세요 !</td></tr><tr><td>zh</td><td><a href="https://github.com/OpenAEV-Platform/openaev/blob/d1248c926f74d916a395fb9910770b913cfdec28/openaev-front/src/utils/lang/zh.json#L1312">zh.json:1312</a></td><td>renamed</td><td><code>{title}</code></td><td><code>{truc}</code></td><td class="txt">Do you want to launch this atomic testing: {title}?</td><td class="txt">你想启动这个原子测试吗: {truc}?</td></tr><tr><td>zh</td><td><a href="https://github.com/OpenAEV-Platform/openaev/blob/d1248c926f74d916a395fb9910770b913cfdec28/openaev-front/src/utils/lang/zh.json#L1611">zh.json:1611</a></td><td>extra</td><td><code></code></td><td><code>{levelList}</code></td><td class="txt">You can look at your assessments results at different level: 
+</td><td class="txt">您可以查看不同级别的评估结果：
+ {levelList}</td></tr></tbody></table></div>
+
+</main>
+<footer class="wrap"><p>Built with <a href="https://github.com/theluckystrike/i18n-audit">i18n-audit</a>. Source, data and method: <a href="https://github.com/theluckystrike/oss-i18n-report">github.com/theluckystrike/oss-i18n-report</a>. Data collected 2026-10-03.</p></footer>
+<script src="../sortable.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>activepieces/activepieces: i18n findings</title>
+<meta name="description" content="Translation placeholder findings for activepieces/activepieces.">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="site"><div class="wrap"><a class="brand" href="../index.html">State of i18n in open-source apps</a>
+<nav><a href="../index.html#method">Method</a><a href="../index.html#kinds">Bug kinds</a><a href="../index.html#repos">Repos</a><a href="../index.html#ci">Fix in CI</a></nav></div></header>
+<main class="wrap">
+
+<p class="crumb"><a href="../index.html#repos">All repos</a></p>
+<h1>activepieces/activepieces</h1>
+<p class="lede">AI Agents &amp; MCPs &amp; AI Workflow Automation • (~400 MCP servers for AI agents) • AI Automation / AI Agent with MCPs • AI Workflows &amp; AI Agents • MCPs for AI Agents</p>
+<div class="stats">
+<div><b>1</b><span>findings</span></div>
+<div><b>10</b><span>locales</span></div>
+<div><b>14,122</b><span>strings checked</span></div>
+<div><b>0.07</b><span>per 1,000 strings</span></div>
+</div>
+<table class="kv"><tbody>
+<tr><th>Commit audited</th><td><a href="https://github.com/activepieces/activepieces/tree/e3e1cbebb6dafbf2bb0da35effc6dfd58b8c13e3"><code>e3e1cbebb6da</code></a> (2026-10-02)</td></tr>
+<tr><th>Stars</th><td>24,738</td></tr>
+<tr><th>Owner type</th><td>Organization</td></tr>
+<tr><th>Translation management</th><td>crowdin<ul class='ev'><li><b>crowdin</b>: config file crowdin.yml</li></ul></td></tr>
+
+<tr><th>Recent activity</th><td>1979 commits on the default branch in the last 180 days; 66 by 46 occasional contributors, 0 of which touched translation files.</td></tr>
+<tr><th>Findings by kind</th><td>broken 1</td></tr>
+</tbody></table>
+<h2>Locale files</h2>
+<div class="scroll"><table><thead><tr><th>Pattern</th><th>Syntax</th><th class="num">Source strings</th><th class="num">Locales</th><th class="num">Findings</th></tr></thead><tbody><tr><td><code>packages/pieces/community/postmark/src/i18n/{loc}.json</code></td><td>icu</td><td class="num">8</td><td class="num">0</td><td class="num">0</td></tr><tr><td><code>packages/web/public/locales/{loc}/*.json</code></td><td>icu</td><td class="num">3,157</td><td class="num">10</td><td class="num">1</td></tr></tbody></table></div>
+<h2>Locales with the most findings</h2><div class='scroll'><table><thead><tr><th>Locale</th><th class='num'>Findings</th><th class='num'>Strings checked</th></tr></thead><tbody><tr><td>ar</td><td class="num">1</td><td class="num">686</td></tr></tbody></table></div>
+<h2>Examples</h2><ul class='examples'><li><p><a href="https://github.com/activepieces/activepieces/blob/e3e1cbebb6dafbf2bb0da35effc6dfd58b8c13e3/packages/web/public/locales/ar/translation.json#L1125"><code>packages/web/public/locales/ar/translation.json:1125</code></a> <span class="tag-kind">broken</span> locale <b>ar</b>, key <code>recordsCount</code></p><div class="pair"><div><span class="lbl">Source</span><code>{recordsCount, plural, =0 {0 Records} =1 {1 Record} other {# Records}}</code></div><div><span class="lbl">Translation</span><code>{{recordsCount, plural, =0 {0 Records} =1 {1 Record} other {# Records}}</code></div></div></li></ul>
+<h2>Findings</h2><p class='note'>Up to 40 shown. The full list, with every key and line, is in <a href='https://github.com/theluckystrike/oss-i18n-report/blob/main/data/activepieces__activepieces.json'>data/activepieces__activepieces.json</a>.</p><div class='scroll'><table class='sortable findings'><thead><tr><th>Locale</th><th>File</th><th>Kind</th><th>Missing</th><th>Extra</th><th>Source</th><th>Translation</th></tr></thead><tbody><tr><td>ar</td><td><a href="https://github.com/activepieces/activepieces/blob/e3e1cbebb6dafbf2bb0da35effc6dfd58b8c13e3/packages/web/public/locales/ar/translation.json#L1125">translation.json:1125</a></td><td>broken</td><td><code></code></td><td><code></code></td><td class="txt">{recordsCount, plural, =0 {0 Records} =1 {1 Record} other {# Records}}</td><td class="txt">{{recordsCount, plural, =0 {0 Records} =1 {1 Record} other {# Records}}</td></tr></tbody></table></div>
+
+</main>
+<footer class="wrap"><p>Built with <a href="https://github.com/theluckystrike/i18n-audit">i18n-audit</a>. Source, data and method: <a href="https://github.com/theluckystrike/oss-i18n-report">github.com/theluckystrike/oss-i18n-report</a>. Data collected 2026-10-03.</p></footer>
+<script src="../sortable.js" defer></script>
+</body>
+</html>

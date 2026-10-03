@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>nocodb/nocodb: i18n findings</title>
+<meta name="description" content="Translation placeholder findings for nocodb/nocodb.">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="site"><div class="wrap"><a class="brand" href="../index.html">State of i18n in open-source apps</a>
+<nav><a href="../index.html#method">Method</a><a href="../index.html#kinds">Bug kinds</a><a href="../index.html#repos">Repos</a><a href="../index.html#ci">Fix in CI</a></nav></div></header>
+<main class="wrap">
+
+<p class="crumb"><a href="../index.html#repos">All repos</a></p>
+<h1>nocodb/nocodb</h1>
+<p class="lede">A Free &amp; Self-hostable Airtable Alternative</p>
+<div class="stats">
+<div><b>10</b><span>findings</span></div>
+<div><b>39</b><span>locales</span></div>
+<div><b>259,491</b><span>strings checked</span></div>
+<div><b>0.04</b><span>per 1,000 strings</span></div>
+</div>
+<table class="kv"><tbody>
+<tr><th>Commit audited</th><td><a href="https://github.com/nocodb/nocodb/tree/47b2d45f56f2dacfc980876171114d98332dba97"><code>47b2d45f56f2</code></a> (2026-10-03)</td></tr>
+<tr><th>Stars</th><td>65,105</td></tr>
+<tr><th>Owner type</th><td>Organization</td></tr>
+<tr><th>Translation management</th><td>crowdin<ul class='ev'><li><b>crowdin</b>: config file crowdin.yml</li></ul></td></tr>
+
+<tr><th>Recent activity</th><td>3522 commits on the default branch in the last 180 days; 338 by 13 occasional contributors, 215 of which touched translation files.</td></tr>
+<tr><th>Findings by kind</th><td>extra 10; informational: tag 5</td></tr>
+</tbody></table>
+<h2>Locale files</h2>
+<div class="scroll"><table><thead><tr><th>Pattern</th><th>Syntax</th><th class="num">Source strings</th><th class="num">Locales</th><th class="num">Findings</th></tr></thead><tbody><tr><td><code>packages/nc-gui/lang/{loc}.json</code></td><td>vue</td><td class="num">7,329</td><td class="num">39</td><td class="num">10</td></tr></tbody></table></div>
+<h2>Locales with the most findings</h2><div class='scroll'><table><thead><tr><th>Locale</th><th class='num'>Findings</th><th class='num'>Strings checked</th></tr></thead><tbody><tr><td>pl</td><td class="num">2</td><td class="num">6,656</td></tr><tr><td>es</td><td class="num">1</td><td class="num">6,646</td></tr><tr><td>fr</td><td class="num">1</td><td class="num">6,616</td></tr><tr><td>hr</td><td class="num">1</td><td class="num">6,655</td></tr><tr><td>it</td><td class="num">1</td><td class="num">6,652</td></tr></tbody></table></div>
+<h2>Examples</h2><ul class='examples'><li><p><a href="https://github.com/nocodb/nocodb/blob/47b2d45f56f2dacfc980876171114d98332dba97/packages/nc-gui/lang/zh-Hant.json#L6403"><code>packages/nc-gui/lang/zh-Hant.json:6403</code></a> <span class="tag-kind">extra</span> locale <b>zh-Hant</b>, key <code>msg.error.fieldRequired</code></p><div class="pair"><div><span class="lbl">Source</span><code>This field cannot be empty.</code></div><div><span class="lbl">Translation</span><code>{value} 不能為空</code></div></div></li><li><p><a href="https://github.com/nocodb/nocodb/blob/47b2d45f56f2dacfc980876171114d98332dba97/packages/nc-gui/lang/zh-Hans.json#L6403"><code>packages/nc-gui/lang/zh-Hans.json:6403</code></a> <span class="tag-kind">extra</span> locale <b>zh-Hans</b>, key <code>msg.error.fieldRequired</code></p><div class="pair"><div><span class="lbl">Source</span><code>This field cannot be empty.</code></div><div><span class="lbl">Translation</span><code>{value} 不能为空。</code></div></div></li><li><p><a href="https://github.com/nocodb/nocodb/blob/47b2d45f56f2dacfc980876171114d98332dba97/packages/nc-gui/lang/ko.json#L6403"><code>packages/nc-gui/lang/ko.json:6403</code></a> <span class="tag-kind">extra</span> locale <b>ko</b>, key <code>msg.error.fieldRequired</code></p><div class="pair"><div><span class="lbl">Source</span><code>This field cannot be empty.</code></div><div><span class="lbl">Translation</span><code>{value}은(는) 비워 둘 수 없습니다.</code></div></div></li></ul>
+<h2>Findings</h2><p class='note'>Up to 40 shown. The full list, with every key and line, is in <a href='https://github.com/theluckystrike/oss-i18n-report/blob/main/data/nocodb__nocodb.json'>data/nocodb__nocodb.json</a>.</p><div class='scroll'><table class='sortable findings'><thead><tr><th>Locale</th><th>File</th><th>Kind</th><th>Missing</th><th>Extra</th><th>Source</th><th>Translation</th></tr></thead><tbody><tr><td>es</td><td><a href="https://github.com/nocodb/nocodb/blob/47b2d45f56f2dacfc980876171114d98332dba97/packages/nc-gui/lang/es.json#L6389">es.json:6389</a></td><td>extra</td><td><code></code></td><td><code>{value}</code></td><td class="txt">This field cannot be empty.</td><td class="txt">{value} no puede estar vacía.</td></tr><tr><td>fr</td><td><a href="https://github.com/nocodb/nocodb/blob/47b2d45f56f2dacfc980876171114d98332dba97/packages/nc-gui/lang/fr.json#L6358">fr.json:6358</a></td><td>extra</td><td><code></code></td><td><code>{value}</code></td><td class="txt">This field cannot be empty.</td><td class="txt">{value} ne peut pas être vide.</td></tr><tr><td>hr</td><td><a href="https://github.com/nocodb/nocodb/blob/47b2d45f56f2dacfc980876171114d98332dba97/packages/nc-gui/lang/hr.json#L6398">hr.json:6398</a></td><td>extra</td><td><code></code></td><td><code>{value}</code></td><td class="txt">This field cannot be empty.</td><td class="txt">{value} ne može biti prazno.</td></tr><tr><td>it</td><td><a href="https://github.com/nocodb/nocodb/blob/47b2d45f56f2dacfc980876171114d98332dba97/packages/nc-gui/lang/it.json#L6395">it.json:6395</a></td><td>extra</td><td><code></code></td><td><code>{value}</code></td><td class="txt">This field cannot be empty.</td><td class="txt">{value} non può essere vuoto.</td></tr><tr><td>ko</td><td><a href="https://github.com/nocodb/nocodb/blob/47b2d45f56f2dacfc980876171114d98332dba97/packages/nc-gui/lang/ko.json#L6403">ko.json:6403</a></td><td>extra</td><td><code></code></td><td><code>{value}</code></td><td class="txt">This field cannot be empty.</td><td class="txt">{value}은(는) 비워 둘 수 없습니다.</td></tr><tr><td>pl</td><td><a href="https://github.com/nocodb/nocodb/blob/47b2d45f56f2dacfc980876171114d98332dba97/packages/nc-gui/lang/pl.json#L5686">pl.json:5686</a></td><td>extra</td><td><code></code></td><td><code>{tableName}</code></td><td class="txt">Looks like no records have been linked yet.</td><td class="txt">Kliknij &#x27;Połącz Rekordy&#x27;, aby rozpocząć kojarzenie danych z &#x27;{tableName}&#x27;.</td></tr><tr><td>pl</td><td><a href="https://github.com/nocodb/nocodb/blob/47b2d45f56f2dacfc980876171114d98332dba97/packages/nc-gui/lang/pl.json#L6399">pl.json:6399</a></td><td>extra</td><td><code></code></td><td><code>{value}</code></td><td class="txt">This field cannot be empty.</td><td class="txt">{value} nie może być puste.</td></tr><tr><td>ru</td><td><a href="https://github.com/nocodb/nocodb/blob/47b2d45f56f2dacfc980876171114d98332dba97/packages/nc-gui/lang/ru.json#L5691">ru.json:5691</a></td><td>extra</td><td><code></code></td><td><code>{tableName}</code></td><td class="txt">Looks like no records have been linked yet.</td><td class="txt">Похоже, еще не связано ни одной записи. Нажмите &quot;Связать записи&quot;, чтобы начать ассоциировать данные с &#x27;{tableName}&#x27;.</td></tr><tr><td>zh-Hans</td><td><a href="https://github.com/nocodb/nocodb/blob/47b2d45f56f2dacfc980876171114d98332dba97/packages/nc-gui/lang/zh-Hans.json#L6403">zh-Hans.json:6403</a></td><td>extra</td><td><code></code></td><td><code>{value}</code></td><td class="txt">This field cannot be empty.</td><td class="txt">{value} 不能为空。</td></tr><tr><td>zh-Hant</td><td><a href="https://github.com/nocodb/nocodb/blob/47b2d45f56f2dacfc980876171114d98332dba97/packages/nc-gui/lang/zh-Hant.json#L6403">zh-Hant.json:6403</a></td><td>extra</td><td><code></code></td><td><code>{value}</code></td><td class="txt">This field cannot be empty.</td><td class="txt">{value} 不能為空</td></tr></tbody></table></div>
+
+</main>
+<footer class="wrap"><p>Built with <a href="https://github.com/theluckystrike/i18n-audit">i18n-audit</a>. Source, data and method: <a href="https://github.com/theluckystrike/oss-i18n-report">github.com/theluckystrike/oss-i18n-report</a>. Data collected 2026-10-03.</p></footer>
+<script src="../sortable.js" defer></script>
+</body>
+</html>

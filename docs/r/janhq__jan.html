@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>janhq/jan: i18n findings</title>
+<meta name="description" content="Translation placeholder findings for janhq/jan.">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="site"><div class="wrap"><a class="brand" href="../index.html">State of i18n in open-source apps</a>
+<nav><a href="../index.html#method">Method</a><a href="../index.html#kinds">Bug kinds</a><a href="../index.html#repos">Repos</a><a href="../index.html#ci">Fix in CI</a></nav></div></header>
+<main class="wrap">
+
+<p class="crumb"><a href="../index.html#repos">All repos</a></p>
+<h1>janhq/jan</h1>
+<p class="lede">Jan is an open source alternative to ChatGPT that runs 100% offline on your computer.</p>
+<div class="stats">
+<div><b>2</b><span>findings</span></div>
+<div><b>15</b><span>locales</span></div>
+<div><b>13,277</b><span>strings checked</span></div>
+<div><b>0.15</b><span>per 1,000 strings</span></div>
+</div>
+<table class="kv"><tbody>
+<tr><th>Commit audited</th><td><a href="https://github.com/janhq/jan/tree/14a720628f9592c8e60f7e081ef733076db8a6a9"><code>14a720628f95</code></a> (2026-10-02)</td></tr>
+<tr><th>Stars</th><td>44,658</td></tr>
+<tr><th>Owner type</th><td>Organization</td></tr>
+<tr><th>Translation management</th><td>none detected</td></tr>
+<tr><th>Note</th><td>backlog of unreviewed translation PRs (per i18n-audit findings log)</td></tr>
+<tr><th>Recent activity</th><td>1096 commits on the default branch in the last 180 days; 50 by 34 occasional contributors, 8 of which touched translation files.</td></tr>
+<tr><th>Findings by kind</th><td>renamed 1, dropped 1</td></tr>
+</tbody></table>
+<h2>Locale files</h2>
+<div class="scroll"><table><thead><tr><th>Pattern</th><th>Syntax</th><th class="num">Source strings</th><th class="num">Locales</th><th class="num">Findings</th></tr></thead><tbody><tr><td><code>web-app/src/locales/{loc}/*.json</code></td><td>i18next</td><td class="num">1,443</td><td class="num">15</td><td class="num">2</td></tr></tbody></table></div>
+<h2>Locales with the most findings</h2><div class='scroll'><table><thead><tr><th>Locale</th><th class='num'>Findings</th><th class='num'>Strings checked</th></tr></thead><tbody><tr><td>it</td><td class="num">1</td><td class="num">995</td></tr><tr><td>pl</td><td class="num">1</td><td class="num">830</td></tr></tbody></table></div>
+<h2>Examples</h2><ul class='examples'><li><p><a href="https://github.com/janhq/jan/blob/14a720628f9592c8e60f7e081ef733076db8a6a9/web-app/src/locales/pl/common.json#L346"><code>web-app/src/locales/pl/common.json:346</code></a> <span class="tag-kind">renamed</span> locale <b>pl</b>, key <code>toast.downloadComplete.description</code></p><div class="pair"><div><span class="lbl">Source</span><code>{{item}} has been downloaded</code></div><div><span class="lbl">Translation</span><code>Model {{modelId}} został pobrany.</code></div></div></li><li><p><a href="https://github.com/janhq/jan/blob/14a720628f9592c8e60f7e081ef733076db8a6a9/web-app/src/locales/it/common.json#L420"><code>web-app/src/locales/it/common.json:420</code></a> <span class="tag-kind">dropped</span> locale <b>it</b>, key <code>toast.modelValidationStarted.description</code></p><div class="pair"><div><span class="lbl">Source</span><code>Downloaded model &quot;{{modelId}}&quot; successfully. Verifying integrity...</code></div><div><span class="lbl">Translation</span><code>Scaricato</code></div></div></li></ul>
+<h2>Findings</h2><p class='note'>Up to 40 shown. The full list, with every key and line, is in <a href='https://github.com/theluckystrike/oss-i18n-report/blob/main/data/janhq__jan.json'>data/janhq__jan.json</a>.</p><div class='scroll'><table class='sortable findings'><thead><tr><th>Locale</th><th>File</th><th>Kind</th><th>Missing</th><th>Extra</th><th>Source</th><th>Translation</th></tr></thead><tbody><tr><td>it</td><td><a href="https://github.com/janhq/jan/blob/14a720628f9592c8e60f7e081ef733076db8a6a9/web-app/src/locales/it/common.json#L420">common.json:420</a></td><td>dropped</td><td><code>{{modelId}}</code></td><td><code></code></td><td class="txt">Downloaded model &quot;{{modelId}}&quot; successfully. Verifying integrity...</td><td class="txt">Scaricato</td></tr><tr><td>pl</td><td><a href="https://github.com/janhq/jan/blob/14a720628f9592c8e60f7e081ef733076db8a6a9/web-app/src/locales/pl/common.json#L346">common.json:346</a></td><td>renamed</td><td><code>{{item}}</code></td><td><code>{{modelId}}</code></td><td class="txt">{{item}} has been downloaded</td><td class="txt">Model {{modelId}} został pobrany.</td></tr></tbody></table></div>
+
+</main>
+<footer class="wrap"><p>Built with <a href="https://github.com/theluckystrike/i18n-audit">i18n-audit</a>. Source, data and method: <a href="https://github.com/theluckystrike/oss-i18n-report">github.com/theluckystrike/oss-i18n-report</a>. Data collected 2026-10-03.</p></footer>
+<script src="../sortable.js" defer></script>
+</body>
+</html>

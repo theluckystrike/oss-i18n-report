@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>grafana/grafana: i18n findings</title>
+<meta name="description" content="Translation placeholder findings for grafana/grafana.">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="site"><div class="wrap"><a class="brand" href="../index.html">State of i18n in open-source apps</a>
+<nav><a href="../index.html#method">Method</a><a href="../index.html#kinds">Bug kinds</a><a href="../index.html#repos">Repos</a><a href="../index.html#ci">Fix in CI</a></nav></div></header>
+<main class="wrap">
+
+<p class="crumb"><a href="../index.html#repos">All repos</a></p>
+<h1>grafana/grafana</h1>
+<p class="lede">The open and composable observability and data visualization platform. Visualize metrics, logs, and traces from multiple sources like Prometheus, Loki, Elasticsearch, InfluxDB, Postgres and many more.</p>
+<div class="stats">
+<div><b>1</b><span>findings</span></div>
+<div><b>18</b><span>locales</span></div>
+<div><b>210,441</b><span>strings checked</span></div>
+<div><b>0.0</b><span>per 1,000 strings</span></div>
+</div>
+<table class="kv"><tbody>
+<tr><th>Commit audited</th><td><a href="https://github.com/grafana/grafana/tree/8c9a2ebed0ec3a4233702ceca57078e6d697e696"><code>8c9a2ebed0ec</code></a> (2026-10-03)</td></tr>
+<tr><th>Stars</th><td>77,038</td></tr>
+<tr><th>Owner type</th><td>Organization</td></tr>
+<tr><th>Translation management</th><td>crowdin<ul class='ev'><li><b>crowdin</b>: config file crowdin.yml</li></ul></td></tr>
+
+<tr><th>Recent activity</th><td>6226 commits on the default branch in the last 180 days; 287 by 203 occasional contributors, 0 of which touched translation files.</td></tr>
+<tr><th>Findings by kind</th><td>renamed 1; informational: tag 34</td></tr>
+</tbody></table>
+<h2>Locale files</h2>
+<div class="scroll"><table><thead><tr><th>Pattern</th><th>Syntax</th><th class="num">Source strings</th><th class="num">Locales</th><th class="num">Findings</th></tr></thead><tbody><tr><td><code>apps/advisor/pkg/translations/{loc}/*.json</code></td><td>i18next</td><td class="num">53</td><td class="num">18</td><td class="num">0</td></tr><tr><td><code>e2e-playwright/test-plugins/grafana-test-datasource/locales/{loc}/*.json</code></td><td>i18next</td><td class="num">9</td><td class="num">2</td><td class="num">0</td></tr><tr><td><code>e2e-playwright/test-plugins/grafana-test-panel/locales/{loc}/*.json</code></td><td>i18next</td><td class="num">10</td><td class="num">2</td><td class="num">0</td></tr><tr><td><code>packages/grafana-sql/src/locales/{loc}/*.json</code></td><td>i18next</td><td class="num">77</td><td class="num">18</td><td class="num">0</td></tr><tr><td><code>public/app/plugins/datasource/azuremonitor/locales/{loc}/*.json</code></td><td>i18next</td><td class="num">262</td><td class="num">18</td><td class="num">0</td></tr><tr><td><code>public/locales/{loc}/*.json</code></td><td>i18next</td><td class="num">11,659</td><td class="num">18</td><td class="num">1</td></tr></tbody></table></div>
+<h2>Locales with the most findings</h2><div class='scroll'><table><thead><tr><th>Locale</th><th class='num'>Findings</th><th class='num'>Strings checked</th></tr></thead><tbody><tr><td>fr-FR</td><td class="num">1</td><td class="num">11,672</td></tr></tbody></table></div>
+<h2>Examples</h2><ul class='examples'><li><p><a href="https://github.com/grafana/grafana/blob/8c9a2ebed0ec3a4233702ceca57078e6d697e696/public/locales/fr-FR/grafana.json#L3648"><code>public/locales/fr-FR/grafana.json:3648</code></a> <span class="tag-kind">renamed</span> locale <b>fr-FR</b>, key <code>alerting.templates.help.intro</code></p><div class="pair"><div><span class="lbl">Source</span><code>Notification templates use Go templating language to create notification messages.
+
+In Grafana, a template group can define multiple notification templates using {{ define &quot;&lt;NAME&gt;&quot; }}.
+These templates can then be used in contact points and within other notification templates by calling {{ template &quot;&lt;NAME&gt;&quot; }}.
+For detailed information about notification templates, refer to our documentation.</code></div><div><span class="lbl">Translation</span><code>Les modèles de notification utilisent le langage de modélisation Go pour créer des messages de notification.
+
+Dans Grafana, un groupe de modèles peut définir plusieurs modèles de notification en utilisant {{ définir « &lt;NAME&gt; » }}.
+Ces modèles peuvent ensuite être utilisés dans les points de contact et dans d&#x27;autres modèles de notification en appelant {{ modèle « &lt;NAME&gt; » }}.
+Pour en savoir plus sur les modèles de notification, reportez-vous à notre documentation.</code></div></div></li></ul>
+<h2>Findings</h2><p class='note'>Up to 40 shown. The full list, with every key and line, is in <a href='https://github.com/theluckystrike/oss-i18n-report/blob/main/data/grafana__grafana.json'>data/grafana__grafana.json</a>.</p><div class='scroll'><table class='sortable findings'><thead><tr><th>Locale</th><th>File</th><th>Kind</th><th>Missing</th><th>Extra</th><th>Source</th><th>Translation</th></tr></thead><tbody><tr><td>fr-FR</td><td><a href="https://github.com/grafana/grafana/blob/8c9a2ebed0ec3a4233702ceca57078e6d697e696/public/locales/fr-FR/grafana.json#L3648">grafana.json:3648</a></td><td>renamed</td><td><code>{{define}},{{template}}</code></td><td><code>{{définir}},{{modèle}}</code></td><td class="txt">Notification templates use Go templating language to create notification messages.
+
+In Grafana, a template group can define multiple notification templates usin</td><td class="txt">Les modèles de notification utilisent le langage de modélisation Go pour créer des messages de notification.
+
+Dans Grafana, un groupe de modèles peut définir pl</td></tr></tbody></table></div>
+
+</main>
+<footer class="wrap"><p>Built with <a href="https://github.com/theluckystrike/i18n-audit">i18n-audit</a>. Source, data and method: <a href="https://github.com/theluckystrike/oss-i18n-report">github.com/theluckystrike/oss-i18n-report</a>. Data collected 2026-10-03.</p></footer>
+<script src="../sortable.js" defer></script>
+</body>
+</html>

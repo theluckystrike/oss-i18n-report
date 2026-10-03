@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RocketChat/Rocket.Chat: i18n findings</title>
+<meta name="description" content="Translation placeholder findings for RocketChat/Rocket.Chat.">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="site"><div class="wrap"><a class="brand" href="../index.html">State of i18n in open-source apps</a>
+<nav><a href="../index.html#method">Method</a><a href="../index.html#kinds">Bug kinds</a><a href="../index.html#repos">Repos</a><a href="../index.html#ci">Fix in CI</a></nav></div></header>
+<main class="wrap">
+
+<p class="crumb"><a href="../index.html#repos">All repos</a></p>
+<h1>RocketChat/Rocket.Chat</h1>
+<p class="lede">The Secure CommsOS™ for mission-critical operations</p>
+<div class="stats">
+<div><b>1</b><span>findings</span></div>
+<div><b>66</b><span>locales</span></div>
+<div><b>214,569</b><span>strings checked</span></div>
+<div><b>0.0</b><span>per 1,000 strings</span></div>
+</div>
+<table class="kv"><tbody>
+<tr><th>Commit audited</th><td><a href="https://github.com/RocketChat/Rocket.Chat/tree/889c0af89cde9ede06fa3250bc94bdac1a5f9a8d"><code>889c0af89cde</code></a> (2026-10-02)</td></tr>
+<tr><th>Stars</th><td>46,187</td></tr>
+<tr><th>Owner type</th><td>Organization</td></tr>
+<tr><th>Translation management</th><td>lingohub<ul class='ev'><li><b>lingohub</b>: 4 locale commits by lingohub in the last 180 days</li></ul></td></tr>
+
+<tr><th>Recent activity</th><td>1160 commits on the default branch in the last 180 days; 31 by 20 occasional contributors, 2 of which touched translation files.</td></tr>
+<tr><th>Findings by kind</th><td>broken 1; informational: tag 147</td></tr>
+</tbody></table>
+<h2>Locale files</h2>
+<div class="scroll"><table><thead><tr><th>Pattern</th><th>Syntax</th><th class="num">Source strings</th><th class="num">Locales</th><th class="num">Findings</th></tr></thead><tbody><tr><td><code>packages/i18n/src/locales/{loc}.i18n.json</code></td><td>i18next</td><td class="num">7,572</td><td class="num">65</td><td class="num">1</td></tr><tr><td><code>packages/livechat/src/i18n/{loc}.json</code></td><td>i18next</td><td class="num">103</td><td class="num">55</td><td class="num">0</td></tr></tbody></table></div>
+<h2>Locales with the most findings</h2><div class='scroll'><table><thead><tr><th>Locale</th><th class='num'>Findings</th><th class='num'>Strings checked</th></tr></thead><tbody><tr><td>lo</td><td class="num">1</td><td class="num">2,728</td></tr></tbody></table></div>
+<h2>Examples</h2><ul class='examples'><li><p><a href="https://github.com/RocketChat/Rocket.Chat/blob/889c0af89cde9ede06fa3250bc94bdac1a5f9a8d/packages/i18n/src/locales/lo.i18n.json#L433"><code>packages/i18n/src/locales/lo.i18n.json:433</code></a> <span class="tag-kind">broken</span> locale <b>lo</b>, key <code>CAS_Sync_User_Data_FieldMap_Description</code></p><div class="pair"><div><span class="lbl">Source</span><code>Use this JSON input to build internal attributes (key) from external attributes (value). External attribute names enclosed with &#x27;%&#x27; will interpolated in value strings.  
+Example, `{&quot;email&quot;:&quot;%email%&quot;, &quot;name&quot;:&quot;%firstname%, %lastname%&quot;}`  
+  
+The attribute map is always interpolated. In CAS 1.0 only the `username` attribute is available. Available internal attributes are: username, name, email, rooms; rooms is a comma separated list of rooms to join upon user creation e.g: `{&quot;rooms&quot;: &quot;%team%,%department%&quot;}` would join CAS users on creation to their team and department channel.</code></div><div><span class="lbl">Translation</span><code>ໃຊ້ຂໍ້ມູນ JSON ນີ້ເພື່ອສ້າງຄຸນລັກສະນະພາຍໃນ (ຄີ) ຈາກຄຸນລັກສະນະພາຍນອກ (ມູນຄ່າ). ຊື່ຂອງແອັບພລິເຄຊັນພາຍນອກທີ່ຕິດກັບ &#x27;%&#x27; ຈະຖືກແປພາຍໃນລະຫັດທີ່ມີຄ່າ.  
+ຕົວຢ່າງ, `{&quot; ອີເມວ &quot;:&quot;% ອີເມວ% &quot;,&quot; ຊື່ &quot;:&quot;% firstname%,% lastname% &quot;}`  
+  
+ແຜນທີ່ແອຕົດລິບິວແມ່ນສະແດງຂໍ້ແຕກຕ່າງ. ໃນ CAS 1.0 ພຽງແຕ່ມີຄຸນສົມບັດ `ຊື່ &#x27;ທີ່ມີຢູ່. ຄຸນສົມບັດພາຍໃນທີ່ມີຢູ່ແມ່ນ: ຊື່ຜູ້ໃຊ້, ຊື່, ອີເມວ, ຫ້ອງ; ຫ້ອງແມ່ນຫ້ອງສະແດງທີ່ແຕກຕ່າງກັນໂດຍແຍກກັນໂດຍແຍກກັນຈາກ {{&quot;ຫ້ອງ&quot;: &quot;% ທີມ%,% %% %%%%%}&quot;} ຈະເຂົ້າຮ່ວມຜູ້ໃຊ້ CAS ໃນການສ້າງເພື່ອທີມງານແລະຊ່ອງທາງຂອງພວກເຂົາ.</code></div></div></li></ul>
+<h2>Findings</h2><p class='note'>Up to 40 shown. The full list, with every key and line, is in <a href='https://github.com/theluckystrike/oss-i18n-report/blob/main/data/RocketChat__Rocket.Chat.json'>data/RocketChat__Rocket.Chat.json</a>.</p><div class='scroll'><table class='sortable findings'><thead><tr><th>Locale</th><th>File</th><th>Kind</th><th>Missing</th><th>Extra</th><th>Source</th><th>Translation</th></tr></thead><tbody><tr><td>lo</td><td><a href="https://github.com/RocketChat/Rocket.Chat/blob/889c0af89cde9ede06fa3250bc94bdac1a5f9a8d/packages/i18n/src/locales/lo.i18n.json#L433">lo.i18n.json:433</a></td><td>broken</td><td><code></code></td><td><code></code></td><td class="txt">Use this JSON input to build internal attributes (key) from external attributes (value). External attribute names enclosed with &#x27;%&#x27; will interpolated in value s</td><td class="txt">ໃຊ້ຂໍ້ມູນ JSON ນີ້ເພື່ອສ້າງຄຸນລັກສະນະພາຍໃນ (ຄີ) ຈາກຄຸນລັກສະນະພາຍນອກ (ມູນຄ່າ). ຊື່ຂອງແອັບພລິເຄຊັນພາຍນອກທີ່ຕິດກັບ &#x27;%&#x27; ຈະຖືກແປພາຍໃນລະຫັດທີ່ມີຄ່າ.  
+ຕົວຢ່າງ, `{&quot; ອີ</td></tr></tbody></table></div>
+
+</main>
+<footer class="wrap"><p>Built with <a href="https://github.com/theluckystrike/i18n-audit">i18n-audit</a>. Source, data and method: <a href="https://github.com/theluckystrike/oss-i18n-report">github.com/theluckystrike/oss-i18n-report</a>. Data collected 2026-10-03.</p></footer>
+<script src="../sortable.js" defer></script>
+</body>
+</html>

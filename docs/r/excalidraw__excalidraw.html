@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>excalidraw/excalidraw: i18n findings</title>
+<meta name="description" content="Translation placeholder findings for excalidraw/excalidraw.">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="site"><div class="wrap"><a class="brand" href="../index.html">State of i18n in open-source apps</a>
+<nav><a href="../index.html#method">Method</a><a href="../index.html#kinds">Bug kinds</a><a href="../index.html#repos">Repos</a><a href="../index.html#ci">Fix in CI</a></nav></div></header>
+<main class="wrap">
+
+<p class="crumb"><a href="../index.html#repos">All repos</a></p>
+<h1>excalidraw/excalidraw</h1>
+<p class="lede">Virtual whiteboard for sketching hand-drawn like diagrams</p>
+<div class="stats">
+<div><b>8</b><span>findings</span></div>
+<div><b>53</b><span>locales</span></div>
+<div><b>24,036</b><span>strings checked</span></div>
+<div><b>0.33</b><span>per 1,000 strings</span></div>
+</div>
+<table class="kv"><tbody>
+<tr><th>Commit audited</th><td><a href="https://github.com/excalidraw/excalidraw/tree/ed10ac7dca7e40f3f4a31269b4bfba980d0db41e"><code>ed10ac7dca7e</code></a> (2026-10-01)</td></tr>
+<tr><th>Stars</th><td>133,124</td></tr>
+<tr><th>Owner type</th><td>Organization</td></tr>
+<tr><th>Translation management</th><td>crowdin<ul class='ev'><li><b>crowdin</b>: config file crowdin.yml</li></ul></td></tr>
+
+<tr><th>Recent activity</th><td>139 commits on the default branch in the last 180 days; 31 by 25 occasional contributors, 0 of which touched translation files.</td></tr>
+<tr><th>Findings by kind</th><td>renamed 1, dropped 7; informational: tag 22</td></tr>
+</tbody></table>
+<h2>Locale files</h2>
+<div class="scroll"><table><thead><tr><th>Pattern</th><th>Syntax</th><th class="num">Source strings</th><th class="num">Locales</th><th class="num">Findings</th></tr></thead><tbody><tr><td><code>packages/excalidraw/locales/{loc}.json</code></td><td>i18next</td><td class="num">634</td><td class="num">53</td><td class="num">8</td></tr></tbody></table></div>
+<h2>Locales with the most findings</h2><div class='scroll'><table><thead><tr><th>Locale</th><th class='num'>Findings</th><th class='num'>Strings checked</th></tr></thead><tbody><tr><td>si-LK</td><td class="num">7</td><td class="num">403</td></tr><tr><td>es-ES</td><td class="num">1</td><td class="num">593</td></tr></tbody></table></div>
+<h2>Examples</h2><ul class='examples'><li><p><a href="https://github.com/excalidraw/excalidraw/blob/ed10ac7dca7e40f3f4a31269b4bfba980d0db41e/packages/excalidraw/locales/si-LK.json#L285"><code>packages/excalidraw/locales/si-LK.json:285</code></a> <span class="tag-kind">dropped</span> locale <b>si-LK</b>, key <code>alerts.removeItemsFromsLibrary</code></p><div class="pair"><div><span class="lbl">Source</span><code>Delete {{count}} item(s) from library?</code></div><div><span class="lbl">Translation</span><code>පුස්තකාලයෙන් අයිතම ඉවත් කරන්න</code></div></div></li><li><p><a href="https://github.com/excalidraw/excalidraw/blob/ed10ac7dca7e40f3f4a31269b4bfba980d0db41e/packages/excalidraw/locales/es-ES.json#L692"><code>packages/excalidraw/locales/es-ES.json:692</code></a> <span class="tag-kind">renamed</span> locale <b>es-ES</b>, key <code>chat.errors.promptTooLong</code></p><div class="pair"><div><span class="lbl">Source</span><code>Prompt is too long (max {{max}} characters)</code></div><div><span class="lbl">Translation</span><code>El mensaje es demasiado largo (máximo {{mix}} caracteres)</code></div></div></li><li><p><a href="https://github.com/excalidraw/excalidraw/blob/ed10ac7dca7e40f3f4a31269b4bfba980d0db41e/packages/excalidraw/locales/si-LK.json#L293"><code>packages/excalidraw/locales/si-LK.json:293</code></a> <span class="tag-kind">dropped</span> locale <b>si-LK</b>, key <code>errors.fileTooBig</code></p><div class="pair"><div><span class="lbl">Source</span><code>File is too big. Maximum allowed size is {{maxSize}}.</code></div><div><span class="lbl">Translation</span><code>ගොනුව ඉතා විශාලයි</code></div></div></li></ul>
+<h2>Findings</h2><p class='note'>Up to 40 shown. The full list, with every key and line, is in <a href='https://github.com/theluckystrike/oss-i18n-report/blob/main/data/excalidraw__excalidraw.json'>data/excalidraw__excalidraw.json</a>.</p><div class='scroll'><table class='sortable findings'><thead><tr><th>Locale</th><th>File</th><th>Kind</th><th>Missing</th><th>Extra</th><th>Source</th><th>Translation</th></tr></thead><tbody><tr><td>es-ES</td><td><a href="https://github.com/excalidraw/excalidraw/blob/ed10ac7dca7e40f3f4a31269b4bfba980d0db41e/packages/excalidraw/locales/es-ES.json#L692">es-ES.json:692</a></td><td>renamed</td><td><code>{{max}}</code></td><td><code>{{mix}}</code></td><td class="txt">Prompt is too long (max {{max}} characters)</td><td class="txt">El mensaje es demasiado largo (máximo {{mix}} caracteres)</td></tr><tr><td>si-LK</td><td><a href="https://github.com/excalidraw/excalidraw/blob/ed10ac7dca7e40f3f4a31269b4bfba980d0db41e/packages/excalidraw/locales/si-LK.json#L280">si-LK.json:280</a></td><td>dropped</td><td><code>{{numShapes}}</code></td><td><code></code></td><td class="txt">This will add {{numShapes}} shape(s) to your library. Are you sure?</td><td class="txt">පුස්තකාලයට එක් කිරීම තහවුරු කරන්න</td></tr><tr><td>si-LK</td><td><a href="https://github.com/excalidraw/excalidraw/blob/ed10ac7dca7e40f3f4a31269b4bfba980d0db41e/packages/excalidraw/locales/si-LK.json#L285">si-LK.json:285</a></td><td>dropped</td><td><code>{{count}}</code></td><td><code></code></td><td class="txt">Delete {{count}} item(s) from library?</td><td class="txt">පුස්තකාලයෙන් අයිතම ඉවත් කරන්න</td></tr><tr><td>si-LK</td><td><a href="https://github.com/excalidraw/excalidraw/blob/ed10ac7dca7e40f3f4a31269b4bfba980d0db41e/packages/excalidraw/locales/si-LK.json#L293">si-LK.json:293</a></td><td>dropped</td><td><code>{{maxSize}}</code></td><td><code></code></td><td class="txt">File is too big. Maximum allowed size is {{maxSize}}.</td><td class="txt">ගොනුව ඉතා විශාලයි</td></tr><tr><td>si-LK</td><td><a href="https://github.com/excalidraw/excalidraw/blob/ed10ac7dca7e40f3f4a31269b4bfba980d0db41e/packages/excalidraw/locales/si-LK.json#L410">si-LK.json:410</a></td><td>dropped</td><td><code>{{eventId}}</code></td><td><code></code></td><td class="txt">The error with identifier {{eventId}} was tracked on our system.</td><td class="txt">Sentry වෙත ලුහුබඳින ලදි</td></tr><tr><td>si-LK</td><td><a href="https://github.com/excalidraw/excalidraw/blob/ed10ac7dca7e40f3f4a31269b4bfba980d0db41e/packages/excalidraw/locales/si-LK.json#L511">si-LK.json:511</a></td><td>dropped</td><td><code>{{authorName}}</code></td><td><code></code></td><td class="txt">Thank you {{authorName}}. Your library has been submitted for review. You can track the status &lt;link&gt;here&lt;/link&gt;</td><td class="txt">ප්‍රකාශන සාර්ථකත්ව අන්තර්ගතය</td></tr><tr><td>si-LK</td><td><a href="https://github.com/excalidraw/excalidraw/blob/ed10ac7dca7e40f3f4a31269b4bfba980d0db41e/packages/excalidraw/locales/si-LK.json#L566">si-LK.json:566</a></td><td>dropped</td><td><code>{{exportColorScheme}},{{exportSelection}}</code></td><td><code></code></td><td class="txt">Copied {{exportSelection}} to clipboard as PNG
+({{exportColorScheme}})</td><td class="txt">PNG ලෙස ක්ලිප්බෝඩ් එකට පිටපත් කරන ලදි</td></tr><tr><td>si-LK</td><td><a href="https://github.com/excalidraw/excalidraw/blob/ed10ac7dca7e40f3f4a31269b4bfba980d0db41e/packages/excalidraw/locales/si-LK.json#L572">si-LK.json:572</a></td><td>dropped</td><td><code>{{shortcut}}</code></td><td><code></code></td><td class="txt">Use {{shortcut}} to paste as a single element,
+or paste into an existing text editor</td><td class="txt">තනි අංගයක් ලෙස ඇලවීම</td></tr></tbody></table></div>
+
+</main>
+<footer class="wrap"><p>Built with <a href="https://github.com/theluckystrike/i18n-audit">i18n-audit</a>. Source, data and method: <a href="https://github.com/theluckystrike/oss-i18n-report">github.com/theluckystrike/oss-i18n-report</a>. Data collected 2026-10-03.</p></footer>
+<script src="../sortable.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VirtusLab-Open-Source/strapi-plugin-comments: i18n findings</title>
+<meta name="description" content="Translation placeholder findings for VirtusLab-Open-Source/strapi-plugin-comments.">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="site"><div class="wrap"><a class="brand" href="../index.html">State of i18n in open-source apps</a>
+<nav><a href="../index.html#method">Method</a><a href="../index.html#kinds">Bug kinds</a><a href="../index.html#repos">Repos</a><a href="../index.html#ci">Fix in CI</a></nav></div></header>
+<main class="wrap">
+
+<p class="crumb"><a href="../index.html#repos">All repos</a></p>
+<h1>VirtusLab-Open-Source/strapi-plugin-comments</h1>
+<p class="lede">A plugin for Strapi Headless CMS that provides end to end comments feature with their moderation panel, bad words filtering, abuse reporting and more.</p>
+<div class="stats">
+<div><b>2</b><span>findings</span></div>
+<div><b>6</b><span>locales</span></div>
+<div><b>1,174</b><span>strings checked</span></div>
+<div><b>1.7</b><span>per 1,000 strings</span></div>
+</div>
+<table class="kv"><tbody>
+<tr><th>Commit audited</th><td><a href="https://github.com/VirtusLab-Open-Source/strapi-plugin-comments/tree/62d08effa7f7b67d4b897fa2f566ad86464f03c4"><code>62d08effa7f7</code></a> (2026-09-15)</td></tr>
+<tr><th>Stars</th><td>436</td></tr>
+<tr><th>Owner type</th><td>Organization</td></tr>
+<tr><th>Translation management</th><td>none detected</td></tr>
+
+<tr><th>Recent activity</th><td>25 commits on the default branch in the last 180 days; 7 by 3 occasional contributors, 1 of which touched translation files.</td></tr>
+<tr><th>Findings by kind</th><td>renamed 2</td></tr>
+</tbody></table>
+<h2>Locale files</h2>
+<div class="scroll"><table><thead><tr><th>Pattern</th><th>Syntax</th><th class="num">Source strings</th><th class="num">Locales</th><th class="num">Findings</th></tr></thead><tbody><tr><td><code>admin/src/translations/{loc}.ts</code></td><td>icu</td><td class="num">216</td><td class="num">6</td><td class="num">2</td></tr></tbody></table></div>
+<h2>Locales with the most findings</h2><div class='scroll'><table><thead><tr><th>Locale</th><th class='num'>Findings</th><th class='num'>Strings checked</th></tr></thead><tbody><tr><td>fr</td><td class="num">1</td><td class="num">216</td></tr><tr><td>tr</td><td class="num">1</td><td class="num">200</td></tr></tbody></table></div>
+<h2>Examples</h2><ul class='examples'><li><p><a href="https://github.com/VirtusLab-Open-Source/strapi-plugin-comments/blob/62d08effa7f7b67d4b897fa2f566ad86464f03c4/admin/src/translations/tr.ts"><code>admin/src/translations/tr.ts</code></a> <span class="tag-kind">renamed</span> locale <b>tr</b>, key <code>page.details.panel.discussion.warnings.reports.dialog.actions.resolve.selected</code></p><div class="pair"><div><span class="lbl">Source</span><code>Resolve reports ({count})</code></div><div><span class="lbl">Translation</span><code>Raporları çözümle ({Count})</code></div></div></li><li><p><a href="https://github.com/VirtusLab-Open-Source/strapi-plugin-comments/blob/62d08effa7f7b67d4b897fa2f566ad86464f03c4/admin/src/translations/fr.ts"><code>admin/src/translations/fr.ts</code></a> <span class="tag-kind">renamed</span> locale <b>fr</b>, key <code>page.settings.form.approvalFlow.hint</code></p><div class="pair"><div><span class="lbl">Source</span><code>Comments associated with content type &quot;{name}&quot; are going to be taken through manual approval flow</code></div><div><span class="lbl">Translation</span><code>Les commentaires associés au type de contenu « {nom} » seront soumis à un flux de vérification manuel</code></div></div></li></ul>
+<h2>Findings</h2><p class='note'>Up to 40 shown. The full list, with every key and line, is in <a href='https://github.com/theluckystrike/oss-i18n-report/blob/main/data/VirtusLab-Open-Source__strapi-plugin-comments.json'>data/VirtusLab-Open-Source__strapi-plugin-comments.json</a>.</p><div class='scroll'><table class='sortable findings'><thead><tr><th>Locale</th><th>File</th><th>Kind</th><th>Missing</th><th>Extra</th><th>Source</th><th>Translation</th></tr></thead><tbody><tr><td>fr</td><td><a href="https://github.com/VirtusLab-Open-Source/strapi-plugin-comments/blob/62d08effa7f7b67d4b897fa2f566ad86464f03c4/admin/src/translations/fr.ts">fr.ts</a></td><td>renamed</td><td><code>{name}</code></td><td><code>{nom}</code></td><td class="txt">Comments associated with content type &quot;{name}&quot; are going to be taken through manual approval flow</td><td class="txt">Les commentaires associés au type de contenu « {nom} » seront soumis à un flux de vérification manuel</td></tr><tr><td>tr</td><td><a href="https://github.com/VirtusLab-Open-Source/strapi-plugin-comments/blob/62d08effa7f7b67d4b897fa2f566ad86464f03c4/admin/src/translations/tr.ts">tr.ts</a></td><td>renamed</td><td><code>{count}</code></td><td><code>{Count}</code></td><td class="txt">Resolve reports ({count})</td><td class="txt">Raporları çözümle ({Count})</td></tr></tbody></table></div>
+
+</main>
+<footer class="wrap"><p>Built with <a href="https://github.com/theluckystrike/i18n-audit">i18n-audit</a>. Source, data and method: <a href="https://github.com/theluckystrike/oss-i18n-report">github.com/theluckystrike/oss-i18n-report</a>. Data collected 2026-10-03.</p></footer>
+<script src="../sortable.js" defer></script>
+</body>
+</html>
