@@ -1,0 +1,8 @@
+{
+  "name": "oss-i18n-report-tools",
+  "private": true,
+  "description": "Loader for locale files written as TS/JS modules (used by bench.py)",
+  "dependencies": {
+    "esbuild": "0.25.10"
+  }
+}

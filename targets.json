@@ -1,0 +1,290 @@
+{
+ "_comment": "Targets for bench.py. 'repo' is owner/name. Optional keys: 'category', 'groups' (explicit locale groups: list of {pattern, source}, where pattern contains {loc} and may contain * for namespace files), 'mode' (force i18next|icu|rails|rocket), 'exclude' (list of path substrings to ignore), 'note'.",
+ "targets": [
+  {
+   "repo": "medusajs/medusa",
+   "category": "commerce"
+  },
+  {
+   "repo": "strapi/strapi",
+   "category": "cms"
+  },
+  {
+   "repo": "calcom/cal.diy",
+   "category": "scheduling",
+   "note": "calcom/cal.com redirects here (same repository)"
+  },
+  {
+   "repo": "twentyhq/twenty",
+   "category": "crm"
+  },
+  {
+   "repo": "formbricks/formbricks",
+   "category": "surveys"
+  },
+  {
+   "repo": "documenso/documenso",
+   "category": "documents"
+  },
+  {
+   "repo": "makeplane/plane",
+   "category": "project-management"
+  },
+  {
+   "repo": "mattermost/mattermost",
+   "category": "chat"
+  },
+  {
+   "repo": "RocketChat/Rocket.Chat",
+   "category": "chat"
+  },
+  {
+   "repo": "nocodb/nocodb",
+   "category": "database"
+  },
+  {
+   "repo": "directus/directus",
+   "category": "cms"
+  },
+  {
+   "repo": "payloadcms/payload",
+   "category": "cms"
+  },
+  {
+   "repo": "PostHog/posthog",
+   "category": "analytics"
+  },
+  {
+   "repo": "novuhq/novu",
+   "category": "notifications"
+  },
+  {
+   "repo": "hoppscotch/hoppscotch",
+   "category": "developer-tools"
+  },
+  {
+   "repo": "appsmithorg/appsmith",
+   "category": "low-code"
+  },
+  {
+   "repo": "ToolJet/ToolJet",
+   "category": "low-code"
+  },
+  {
+   "repo": "Budibase/budibase",
+   "category": "low-code"
+  },
+  {
+   "repo": "n8n-io/n8n",
+   "category": "automation"
+  },
+  {
+   "repo": "langgenius/dify",
+   "category": "ai"
+  },
+  {
+   "repo": "lobehub/lobe-chat",
+   "category": "ai"
+  },
+  {
+   "repo": "open-webui/open-webui",
+   "category": "ai"
+  },
+  {
+   "repo": "danny-avila/LibreChat",
+   "category": "ai"
+  },
+  {
+   "repo": "immich-app/immich",
+   "category": "media"
+  },
+  {
+   "repo": "excalidraw/excalidraw",
+   "category": "whiteboard"
+  },
+  {
+   "repo": "tldraw/tldraw",
+   "category": "whiteboard"
+  },
+  {
+   "repo": "penpot/penpot",
+   "category": "design"
+  },
+  {
+   "repo": "outline/outline",
+   "category": "knowledge-base"
+  },
+  {
+   "repo": "docmost/docmost",
+   "category": "knowledge-base"
+  },
+  {
+   "repo": "chatwoot/chatwoot",
+   "category": "support"
+  },
+  {
+   "repo": "baptisteArno/typebot.io",
+   "category": "chatbots"
+  },
+  {
+   "repo": "umami-software/umami",
+   "category": "analytics"
+  },
+  {
+   "repo": "invoiceninja/invoiceninja",
+   "category": "invoicing"
+  },
+  {
+   "repo": "saleor/saleor-dashboard",
+   "category": "commerce",
+   "groups": [
+    {
+     "pattern": "locale/{loc}.json",
+     "source": "locale/defaultMessages.json"
+    }
+   ]
+  },
+  {
+   "repo": "vendure-ecommerce/vendure",
+   "category": "commerce"
+  },
+  {
+   "repo": "open-metadata/OpenMetadata",
+   "category": "data"
+  },
+  {
+   "repo": "OpenAEV-Platform/openaev",
+   "category": "security"
+  },
+  {
+   "repo": "Infisical/infisical",
+   "category": "security"
+  },
+  {
+   "repo": "janhq/jan",
+   "category": "ai"
+  },
+  {
+   "repo": "AppFlowy-IO/AppFlowy",
+   "category": "knowledge-base"
+  },
+  {
+   "repo": "logto-io/logto",
+   "category": "auth"
+  },
+  {
+   "repo": "supabase/supabase",
+   "category": "database"
+  },
+  {
+   "repo": "mercurjs/mercur",
+   "category": "commerce"
+  },
+  {
+   "repo": "Agilo/medusa-invoices-plugin",
+   "category": "plugin"
+  },
+  {
+   "repo": "lambda-curry/medusa2-starter",
+   "category": "starter"
+  },
+  {
+   "repo": "grafana/grafana",
+   "category": "observability"
+  },
+  {
+   "repo": "metabase/metabase",
+   "category": "analytics"
+  },
+  {
+   "repo": "mastodon/mastodon",
+   "category": "social"
+  },
+  {
+   "repo": "discourse/discourse",
+   "category": "community"
+  },
+  {
+   "repo": "zulip/zulip",
+   "category": "chat"
+  },
+  {
+   "repo": "appwrite/appwrite",
+   "category": "backend"
+  },
+  {
+   "repo": "toeverything/AFFiNE",
+   "category": "knowledge-base"
+  },
+  {
+   "repo": "activepieces/activepieces",
+   "category": "automation"
+  },
+  {
+   "repo": "hcengineering/platform",
+   "category": "project-management"
+  },
+  {
+   "repo": "lukevella/rallly",
+   "category": "scheduling"
+  },
+  {
+   "repo": "jitsi/jitsi-meet",
+   "category": "video",
+   "groups": [
+    {
+     "pattern": "lang/main-{loc}.json",
+     "source": "lang/main.json"
+    }
+   ]
+  },
+  {
+   "repo": "TryGhost/Ghost",
+   "category": "cms"
+  },
+  {
+   "repo": "teableio/teable",
+   "category": "database"
+  },
+  {
+   "repo": "nocobase/nocobase",
+   "category": "low-code"
+  },
+  {
+   "repo": "zammad/zammad",
+   "category": "support"
+  },
+  {
+   "repo": "opf/openproject",
+   "category": "project-management"
+  },
+  {
+   "repo": "forem/forem",
+   "category": "community"
+  },
+  {
+   "repo": "usememos/memos",
+   "category": "notes"
+  },
+  {
+   "repo": "VirtusLab-Open-Source/strapi-plugin-comments",
+   "category": "plugin"
+  },
+  {
+   "repo": "VirtusLab-Open-Source/strapi-plugin-navigation",
+   "category": "plugin"
+  },
+  {
+   "repo": "pluginpal/strapi-webtools",
+   "category": "plugin"
+  },
+  {
+   "repo": "ckeditor/strapi-plugin-ckeditor",
+   "category": "plugin"
+  },
+  {
+   "repo": "notum-cz/strapi-plugin-record-locking",
+   "category": "plugin"
+  }
+ ]
+}
