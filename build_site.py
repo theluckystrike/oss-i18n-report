@@ -83,7 +83,8 @@ def page(title, body, depth=0, desc=''):
 <main class="wrap">
 {body}
 </main>
-<footer class="wrap"><p>Built with <a href="{TOOL_URL}">i18n-audit</a>. Source, data and method: <a href="{REPO_URL}">{REPO_URL.replace('https://', '')}</a>. {STAMP}</p></footer>
+<footer class="wrap"><p>Built with <a href="{TOOL_URL}">i18n-audit</a>. Source, data and method: <a href="{REPO_URL}">{REPO_URL.replace('https://', '')}</a>. {STAMP}</p>
+<p>Want this checked and fixed in your own app? <a href="https://theluckystrike.github.io/oss-maintenance/i18n-audit/">Fixed-price i18n audit</a>. To support the free tool: <a href="https://github.com/sponsors/theluckystrike">GitHub Sponsors</a>.</p></footer>
 <script src="{pre}sortable.js" defer></script>
 </body>
 </html>
